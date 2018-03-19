@@ -1,0 +1,29 @@
+html {
+    
+    background: black;
+    color: white;
+    
+    margin: 0px;
+    padding: 0px;
+    
+    font-family: "Pixel Font";
+    font-size: 16px;
+}
+
+body {
+    
+    margin: 0px;
+}
+
+p {
+    
+    margin: 0px;
+    padding: 0px;
+}
+
+/*
+@font-face {
+    
+    font-family: "Pixel Font";
+    src: url("fonts/PixelOperator.ttf");S
+}*/
