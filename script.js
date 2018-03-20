@@ -1,6 +1,15 @@
+console.log("Script Initialized");
+
 //$("#nav").localScroll();
 
-var navHeight = 110;
+$(window).scroll(function(){
+                 
+    var wScroll = $(this).scrollTop();
+
+    console.log(wScroll);
+});
+
+//var navHeight = 110;
 
 //function navTo(element) {
 //    
