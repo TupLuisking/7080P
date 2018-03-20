@@ -1,6 +1,9 @@
 console.log("Script Initialized");
 
-//$("#nav").localScroll();
+window.onload = function() {
+    
+   console.log("WINDOW LOADED"); 
+}
 
 $(window).scroll(function(){
                  

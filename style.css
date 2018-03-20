@@ -13,7 +13,7 @@ html {
 body {
     
     margin: 0px;
-    padding-top: 125px;
+    padding-top: 120px;
     padding-bottom: 75px;
     
     text-align: center;
@@ -22,6 +22,8 @@ body {
 h1 {
     
     font-family: "Main Header";
+    margin: 0px;
+    padding: 0px;
 }
 
 p {
@@ -58,7 +60,7 @@ p {
 
 #nav li {
     
-    background: #333333;
+/*    background: #333333;*/
     
     height: inherit;
     width: 100px;
@@ -88,10 +90,13 @@ p {
 .hpevent {
     
     background: #555555;
+    background: url("images/sample.jpg");
+    background-size: cover;
+    background-position: center;
     
     text-align: center;
     
-    height: 50vh;
+    height: 420px;
     width: 80vw;
     
     align-self: center;
@@ -112,7 +117,43 @@ p {
     background: #df3e3f;
 }
 
+#directorsection {
+    
+    margin-top: 25px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
 
+.directorpanel {
+    
+    height: 300px;
+    width: 25vw;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    margin-bottom: 25px;
+}
+
+.directorimage {
+    
+    background-repeat: none;
+    background-size: auto 115%;
+    background-position: center;
+    
+    height: 100%;
+    width: 200px;
+    
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.directorimage:hover {
+    
+    background-size: auto 100%;
+}
 
 /*
 .section {
