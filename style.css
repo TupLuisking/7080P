@@ -95,27 +95,186 @@ p {
     flex-direction: column;
 }
 
-.hpevent {
+header {
     
-    background: #555555;
-    background: url("images/sample.jpg");
+/*    background: #444444;*/
+}
+
+#slides {
+    
+    position: relative;
+}
+
+header .slideshow {
+    
+    height: 40vw;
+    
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+}
+
+#minifilms {
     
-    text-align: center;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 15vw;
+    grid-template-areas:
+        "film1 film2 film3";
+    grid-gap: 10px;
+}
+
+
+.minifilm {
     
-    height: 420px;
-    width: 80vw;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#film1 {
     
-    align-self: center;
+    grid-area: film1;
+}
+
+#film2 {
+    
+    grid-area: film2;
+}
+
+#film3 {
+    
+    grid-area: film3;
+}
+
+header .slideshow img {
+
+    width: 100%;
+    object-fit: cover;
+    
+/*
+    animation-name: fade;
+    animation-duration: 1s;
+*/
+}
+
+#slidebuttonright, #slidebuttonleft {
+    
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2em;
+    
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    
+    position: absolute;
+    
+    transform: translateY(-50%);
+    
+    transition: 0.5s;
+}
+
+#slidebuttonright {
+    
+    right: 0px;
+}
+
+#slidebuttonleft {
+
+    left: 0px;
+}
+
+#slidebuttonleft:hover, #slidebuttonright:hover {
+    
+    background-color: rgba(0,0,0,0.5);
+}
+
+#calendarinfo {
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    position: relative;
+}
+
+#calendar {
+    
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-bottom: 25px;
+    padding: 10px;
+    
+    background: #333333;
+    
+    border-radius: 5%;
+    align-self: start;
+}
+
+#daylabels {
+    
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+#days {
+    
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 5px;
+}
+
+.day {
+    
+    width: 40px;
+    height: 40px;
+    cursor: default;
+    background: #222222;
     
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
     
-    margin-top: 5px;
-    margin-bottom: 5px;
+    border-radius: 10%;
+    
+    transition: 0.25s;
+}
+
+.eventful {
+    
+    background: #777777;
+}
+
+.day:hover {
+    
+    background: #666666;
+}
+
+#dayinfo {
+    
+    background: #666666;
+    
+/*    margin-left: 10px;*/
+    margin-right: 25px;
+    
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+    
+/*    max-width: 0;*/
+    
+    transition: 0.5s;
+}
+
+#dayinfo p {
+    
+    text-align: left;
+    padding: 10px;
 }
 
 /* DIRECTORS */
@@ -127,6 +286,7 @@ p {
 
 #directorsection {
     
+    margin-top: 25px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -134,8 +294,8 @@ p {
 
 .directorpanel {
     
-    height: 300px;
-    width: 25vw;
+    height: 200px;
+    width: 150px;
     
     display: flex;
     flex-direction: row;
@@ -151,6 +311,7 @@ p {
     background-repeat: none;
     background-size: auto 115%;
     background-position: center;
+    background-repeat: no-repeat;
     
     height: 100%;
     width: 200px;
