@@ -16,13 +16,21 @@ body {
     padding-top: 120px;
     padding-bottom: 75px;
     
+    width: 100%;
+    
     text-align: center;
+}
+
+::-webkit-scrollbar {
+    
+    width: 0px;
+    background: transparent;
 }
 
 h1 {
     
     font-family: "Main Header";
-    margin: 0px;
+    margin: 10px 0 10px 0;
     padding: 0px;
 }
 
@@ -119,10 +127,9 @@ p {
 
 #directorsection {
     
-    margin-top: 25px;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .directorpanel {
@@ -134,7 +141,9 @@ p {
     flex-direction: row;
     justify-content: center;
     
-    margin-bottom: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 30px;
 }
 
 .directorimage {
@@ -146,13 +155,20 @@ p {
     height: 100%;
     width: 200px;
     
-    transition: 0.5s;
+    transition: 0.25s;
     transition-timing-function: ease-in-out;
 }
 
 .directorimage:hover {
     
     background-size: auto 100%;
+}
+
+/* MODULES */
+
+#modules {
+    
+    background: #f7a289;
 }
 
 /*
