@@ -14,7 +14,6 @@ body {
     
     margin: 0px;
     padding-top: 20px;
-    padding-bottom: 20px;
     
     width: 100%;
     
@@ -306,6 +305,16 @@ p {
     color: inherit;
 }
 
+/* FOOTER */
+
+#footer {
+    
+    border-top: 1px solid white;
+    
+    margin-top: 50px;
+    padding-top: 10px;
+}
+
 /* HOMEPAGE */
 
 #homepage {
@@ -321,11 +330,6 @@ p {
     background: #060707;
 }
 
-header {
-    
-/*    background: #444444;*/
-}
-
 #slides {
     
     position: relative;
@@ -333,12 +337,14 @@ header {
 
 header {
     
-    height: 50vh;
+    height: 60vh;
     
     background-size: 110% auto;
     background-position: center;
     background-repeat: no-repeat;
-/*    background-attachment: fixed;*/
+    
+    background-size: cover;
+    background-attachment: fixed;
     
     display: flex;
     flex-direction: column;
@@ -612,8 +618,6 @@ header .slideshow {
 #directors {
     
     background: #df3e3f;
-    
-    height: 2000px;
 }
 
 #directors #nav {
@@ -641,8 +645,8 @@ header .slideshow {
 
 .directorpanel {
     
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     
     display: flex;
     flex-direction: row;
@@ -703,6 +707,11 @@ header .slideshow {
 
 #minifests {
     
+    background: #f7a289;
+}
+
+#minifests #nav {
+
     background: #f7a289;
 }
 
