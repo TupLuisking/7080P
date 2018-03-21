@@ -48,6 +48,7 @@ $(window).scroll(function(){
     }
     
     console.log("scroll: " + wScroll);
+    console.log("navend: " + navend);
 });
 
 // CLINGY NAV 
@@ -59,7 +60,7 @@ function showClingyNav() {
 
 function hideClingyNav() {
     
-    document.getElementById("nav").style.top = "-100%";
+    document.getElementById("nav").style.top = "-2000px";
 }
 
 // NAVIGATION
@@ -174,25 +175,4 @@ function changeDirImg(element, imgname) {
     console.log("Changing pic of " + element);
     
     element.src = "/images/" + imgname;
-}
-
-// MODAL
-
-var modalPictures = [];
-var modalDescriptions = [];
-
-function showTextModal() {
-    
-    console.log("showing text modal");
-    
-//    document.getElementById("modal").style.background = "rgba(0,0,0,0.69)";   
-    document.getElementById("textmodal").style.transform = "translateY(0)";  
-}
-
-function hideTextModal() {
-    
-    console.log("hiding text modal");
-    
-//    document.getElementById("modal").style.background = "rgba(0,0,0,0)";   
-    document.getElementById("textmodal").style.transform = "translateY(-100vh)";
 }
