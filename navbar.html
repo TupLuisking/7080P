@@ -1,8 +1,47 @@
+<div id=originalnavbar>
+    <div id=navtop> 
+        
+        <div id=navleft>
+            <a onclick="navTo(this)" href="/pages/about.html">About</a>
+            <a onclick="navTo(this)" href="/pages/about.html">FAQs</a>
+            <a onclick="navTo(this)" href="/pages/about.html">Membership</a>
+            <a onclick="navTo(this)" href="/pages/about.html">Partners</a>
+        </div>
+        <div id=logo>
+            <a href="/index.html"><img src="/images/bird.jpg"></a>
+        </div>
+        <div id=navright>
+            <div class=navrighticon><a href="#"><img src="/images/bird.jpg"></a></div>
+        </div>
+    </div>
+    <div>
+        <ul id=originalnav>
+            <li><a class=navdir onclick="navTo(this)" href="/pages/directors.html">Directors</a></li>
+            <li><a class=navmini onclick="navTo(this)" href="/pages/minifests.html">Minifests</a></li>
+            <li><a class=navcom onclick="navTo(this)" href="#">Community</a></li>
+            <li><a class=navmerch onclick="navTo(this)" href="#">Merch</a></li>
+        </ul>
+    </div>
+    
+    <div id=navend style="height:0"></div>
+</div>
+
+
 <div>
     <ul id=nav>
-        <li><a onclick="navTo(this)" href="/pages/directors.html">Directors</a></li>
-        <li><a onclick="navTo(this)" href="/pages/modules.html">Modules</a></li>
-        <li><a onclick="navTo(this)" href="#">Community</a></li>
-        <li><a onclick="navTo(this)" href="#">Merch</a></li>
+        <li><a class=navdir onclick="navTo(this)" href="/pages/directors.html">Directors</a></li>
+        <li><a class=navmini onclick="navTo(this)" href="/pages/minifests.html">Minifests</a></li>
+        <li><a class=navcom onclick="navTo(this)" href="#">Community</a></li>
+        <li><a class=navmerch onclick="navTo(this)" href="#">Merch</a></li>
     </ul>
+</div>
+
+<div id=textmodal>
+    
+    <div class=overlay onclick="hideTextModal()"></div>
+    <div id=textmodal-content>
+        <button onclick="hideTextModal()"><p>X</p></button>
+        <p>asdasd</p>
+    </div>
+    
 </div>

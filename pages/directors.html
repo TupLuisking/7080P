@@ -5,10 +5,11 @@
         
         <meta charset="utf-8" />
         <title>70/80</title>
-        <link href="..\style.css" rel="stylesheet" type="text/css" media="screen" />
+        <link href="\style.css" rel="stylesheet" type="text/css" media="screen" />
 <!--        <link rel="icon" href="images/icon.png"/>-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+        <script src="\scripts\jquery-3.3.1.min.js"></script>
     </head>
     
     <body id="directors">
@@ -21,44 +22,47 @@
         });
         </script>
         
-        <h1>
-            Directors
-        </h1>
-        
         <div id="directorsection">
             
             <div class="directorpanel">
-                <div style="background-image: url('/images/bird.jpg')"
-                     class="directorimage">
-                
-                </div>
-            </div>
-            
-            
-            <div class="directorpanel">
-                <div style="background-image: url('/images/bird.jpg')"
-                     class="directorimage">
-                
-                </div>
-            </div>
-            
-            <div class="directorpanel">
-                <div style="background-image: url('/images/bird.jpg')"
-                     class="directorimage">
-                
+                <div class="zoomhover directorimage">
+                    <a href="#">
+                        <img 
+                             onmouseover="changeDirImg(this, 'bird.jpg');" 
+                             onmouseout="changeDirImg(this, 'birdnull.jpg');" 
+                             src="/images/birdnull.jpg">
+                    </a>
+                    <div class=directorname><p>asdasdasdas</p></div>
                 </div>
             </div>
             
             <div class="directorpanel">
-                <div style="background-image: url('/images/bird.jpg')"
-                     class="directorimage">
-                
+                <div class="zoomhover directorimage">
+                    <a href="#">
+                        <img 
+                             onmouseover="changeDirImg(this, 'bird.jpg');" 
+                             onmouseout="changeDirImg(this, 'birdnull.jpg');" 
+                             src="/images/birdnull.jpg">
+                    </a>
+                    <div class=directorname><p>asdasdasdas</p></div>
+                </div>
+            </div>
+            
+            <div class="directorpanel">
+                <div class="zoomhover directorimage">
+                    <a href="#">
+                        <img 
+                             onmouseover="changeDirImg(this, 'bird.jpg');" 
+                             onmouseout="changeDirImg(this, 'birdnull.jpg');" 
+                             src="/images/birdnull.jpg">
+                    </a>
+                    <div class=directorname><p>asdasdasdas</p></div>
                 </div>
             </div>
             
         </div>
         
-        <script src="../script.js"></script>
+        <script src="\script.js"></script>
         
     </body>
     

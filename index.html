@@ -5,10 +5,11 @@
         
         <meta charset="utf-8" />
         <title>70/80</title>
-        <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+        <link href="\style.css" rel="stylesheet" type="text/css" media="screen" />
 <!--        <link rel="icon" href="images/icon.png"/>-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+        <script src="\scripts\jquery-3.3.1.min.js"></script>
     </head>
     
     <body id="homepage">
@@ -22,37 +23,57 @@
         });
         </script>
         
-        <header>
+        <header style="background-image: url('/images/sample.jpg')">
             
+<!--
             <div id=slides>
-            
+
+                <div class="slideshow" style="background-image: url('images/sample.jpg')">
+                </div>
+               
+
+                <div class="slideshow" style="background-image: url('images/sample2.jpg')">
+                </div>
+
                 <button id="slidebuttonleft" onclick="plusSlide(-1)"><p>&#10094;</p></button>
                 <button id="slidebuttonright" onclick="plusSlide(+1)">&#10095;</button>
 
-                <div class=slideshow style="background-image: url('images/sample.jpg')">
-                </div>
 
-                <div class=slideshow style="background-image: url('images/sample2.jpg')">
+            </div>
+-->
+            <div id=headerfilms>
+                <div class=headerfilm>
+                
                 </div>
-        
             </div>
         </header>
         
-        
-        <div id=minifilms>
+        <div class=section>
+            
+            <h1>Now Showing</h1>
 
-            <div class=minifilm id=film1 style="background-image: url('images/sample.jpg')">
+            <div id=minifilms>
 
-            </div>
+                <div class=minifilm id=film1 onclick="showTextModal();" style="background-image: url('images/sample.jpg')">
 
-            <div class=minifilm id=film2 style="background-image: url('images/sample2.jpg')">
-            </div>
+                </div>
 
-            <div class=minifilm id=film3 style="background-image: url('images/sample.jpg')">    
+                <div class=minifilm id=film2 onclick="showTextModal();" style="background-image: url('images/sample2.jpg')">
+                </div>
+
+                <div class=minifilm id=film3 onclick="showTextModal();" style="background-image: url('images/sample.jpg')">    
+                </div>
+
+                <div class=minifilm id=film4 onclick="showTextModal();" style="background-image: url('images/sample.jpg')">    
+                </div>
+                
+                <div class=minifilm id=film5 onclick="showTextModal();" style="background-image: url('images/sample.jpg')">    
+                </div>
             </div>
 
         </div>
-
+        
+       
         <div id=calendarinfo>
             
             <div id=calendar>
@@ -73,15 +94,15 @@
                     <div class=day><p> 3 </p></div>
                     <div class=day><p> 4 </p></div>
                     <div class=day><p> 5 </p></div>
-                    <div class=day><p> 6 </p></div>
+                    <div class="day eventful" onclick="showDayInfo(0);"><p> 6 </p></div>
                     <div class=day><p> 7 </p></div>
                     <div class=day><p> 8 </p></div>
                     <div class=day><p> 9 </p></div>
-                    <div class=day><p> 10 </p></div>
+                    <div class="day eventful" onclick="showDayInfo(1);"><p> 10 </p></div>
                     <div class=day><p> 11 </p></div>
                     <div class=day><p> 12 </p></div>
                     <div class=day><p> 13 </p></div>
-                    <div class=day><p> 14 </p></div>
+                    <div class="day eventful" onclick="showDayInfo(2);"><p> 14 </p></div>
                     <div class=day><p> 15 </p></div>
                     <div class=day><p> 16 </p></div>
                     <div class=day><p> 17 </p></div>
@@ -91,19 +112,27 @@
                     <div class=day><p> 21 </p></div>
                     <div class=day><p> 22 </p></div>
                     <div class=day><p> 23 </p></div>
-                    <div class=day><p> 24 </p></div>
+                    <div class="day eventful" onclick="showDayInfo(3);"><p> 24 </p></div>
                     <div class=day><p> 25 </p></div>
                     <div class=day><p> 26 </p></div>
                     <div class=day><p> 27 </p></div>
                     <div class=day><p> 28 </p></div>
                     <div class=day><p> 29 </p></div>
                     <div class=day><p> 30 </p></div>
-                    <div class="day eventful" onmouseover="showDayInfo();" onmouseout="hideDayInfo();"><p> 31 </p></div>
+                    <div class=day><p> 31 </p></div>
                 </div>
             </div>
             
+<!--
+            <div id=dayinstruct>
+                <p>Click on a day to see details</p>
+            </div>
+-->
+            
             <div id=dayinfo>
-                <p>asdasdasdasdsad</p>
+                <h3>Events</h3>
+                <a><p id=dayinfoname>asdasdasdasdsad</p></a>
+                <a id=dayinfolink href=""><p id=dayinfodesc>qwerty</p></a>
             </div>
             
         </div>
