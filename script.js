@@ -64,6 +64,38 @@ function hideClingyNav() {
     document.getElementById("nav").style.top = "-200%";
 }
 
+// SECTION NAVIGATION 
+
+document.onkeydown = checkKey;
+
+var currentSectionIndex = -1;
+var sections = document.getElementsByClassName("section");
+
+function checkKey(e) {
+    
+    e = e || window.event;
+
+    if (e.keyCode == '38') {
+        goToSection(-1);
+    }
+    else if (e.keyCode == '40') {
+        goToSection(1);
+    }
+
+}
+
+function goToSection(i) {
+    
+    currentSectionIndex += i;
+    
+    if(currentSectionIndex < 0)
+        currentSectionIndex = sections.length-1;
+    else if(currentSectionIndex >= sections.length)
+        currentSectionIndex = 0;
+    
+    navToSectionClass(sections[currentSectionIndex]);
+}
+
 // NAVIGATION
 
 var navHeight = 90;
@@ -87,6 +119,10 @@ function navToSectionClass(element) {
 }
 
 function navTo(element) {
+    
+    clearInterval(this);
+    
+    console.log(element);
     
     $('html, body').animate({
         scrollTop: $(element.getAttribute("href")).offset().top - navHeight
@@ -170,39 +206,7 @@ function hideDayInfo() {
 
 function changeDirImg(element, imgname) {
     
-    console.log("Changing pic of " + element);
+//    console.log("Changing pic of " + element);
     
     element.src = "/images/" + imgname;
-}
-
-// SECTION NAVIGATION 
-
-document.onkeydown = checkKey;
-
-var currentSectionIndex = -1;
-var sections = document.getElementsByClassName("section");
-
-function checkKey(e) {
-    
-    e = e || window.event;
-
-    if (e.keyCode == '38') {
-        goToSection(-1);
-    }
-    else if (e.keyCode == '40') {
-        goToSection(1);
-    }
-
-}
-
-function goToSection(i) {
-    
-    currentSectionIndex += i;
-    
-    if(currentSectionIndex < 0)
-        currentSectionIndex = sections.length-1;
-    else if(currentSectionIndex >= sections.length)
-        currentSectionIndex = 0;
-    
-    navToSectionClass(sections[currentSectionIndex]);
 }
