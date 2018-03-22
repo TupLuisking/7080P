@@ -317,6 +317,52 @@ p {
     padding-bottom: 50px;
 }
 
+#footercontent {
+    
+    margin: 10px;
+    
+    display: flex;
+}
+
+#footerlogo {
+    
+    background: url("/images/birdnull.jpg");
+    background-size: cover;
+    
+    height: 100px;
+    width: 100px;
+    
+    margin-right: 20px;
+}
+
+#footerabout {
+    
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    
+    margin-right: 20px;
+}
+
+#footerabout a {
+    
+    text-decoration: none;
+    color: white;
+}
+
+#footersocial img {
+    
+    height: 50px;
+    width: 50px;
+}
+
+#footercopyright {
+    
+    flex-grow: 1;
+    
+    text-align: right;
+}
+
 /* HOMEPAGE */
 
 #homepage {

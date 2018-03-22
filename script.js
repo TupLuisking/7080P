@@ -20,12 +20,13 @@ function setHighlight() {
         items = document.getElementsByClassName("navmini");
     }
     
-    console.log(items);
-    
-    for(var i = 0; i < items.length; i++) {
-            
-        items[i].style.fontWeight = "bolder";
-        items[i].style.fontSize = "1.5em";
+    if(items.length > 0) {
+        
+        for(var i = 0; i < items.length; i++) {
+
+            items[i].style.fontWeight = "bolder";
+            items[i].style.fontSize = "1.5em";
+        }   
     }
 }
 
@@ -33,7 +34,7 @@ $(window).scroll(function(){
                  
     var wScroll = $(this).scrollTop();
     var height = $(document).height();
-    var navend = $('#navend').offset().top - 45;
+    var navend = $('#navend').offset().top - 25;
     
 //    var scrollindicator = document.getElementById("scrollindicator");
 //
@@ -60,12 +61,12 @@ function showClingyNav() {
 
 function hideClingyNav() {
     
-    document.getElementById("nav").style.top = "-2000px";
+    document.getElementById("nav").style.top = "-200%";
 }
 
 // NAVIGATION
 
-var navHeight = 110;
+var navHeight = 90;
 
 function navToSection(id) {
     
@@ -73,6 +74,15 @@ function navToSection(id) {
     
     $('html, body').animate({
         scrollTop: $("#" + id).offset().top - navHeight
+    }, 750);
+}
+
+function navToSectionClass(element) {
+    
+    console.log("bruh");
+    
+    $('html, body').animate({
+        scrollTop: $(element).offset().top - navHeight
     }, 750);
 }
 
@@ -175,4 +185,36 @@ function changeDirImg(element, imgname) {
     console.log("Changing pic of " + element);
     
     element.src = "/images/" + imgname;
+}
+
+// SECTION NAVIGATION 
+
+document.onkeydown = checkKey;
+
+var currentSectionIndex = -1;
+var sections = document.getElementsByClassName("section");
+
+function checkKey(e) {
+    
+    e = e || window.event;
+
+    if (e.keyCode == '38') {
+        goToSection(-1);
+    }
+    else if (e.keyCode == '40') {
+        goToSection(1);
+    }
+
+}
+
+function goToSection(i) {
+    
+    currentSectionIndex += i;
+    
+    if(currentSectionIndex < 0)
+        currentSectionIndex = sections.length-1;
+    else if(currentSectionIndex >= sections.length)
+        currentSectionIndex = 0;
+    
+    navToSectionClass(sections[currentSectionIndex]);
 }
