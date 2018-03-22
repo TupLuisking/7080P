@@ -48,8 +48,8 @@ $(window).scroll(function(){
         hideClingyNav();
     }
     
-    console.log("scroll: " + wScroll);
-    console.log("navend: " + navend);
+//    console.log("scroll: " + wScroll);
+//    console.log("navend: " + navend);
 });
 
 // CLINGY NAV 
@@ -88,20 +88,8 @@ function navToSectionClass(element) {
 
 function navTo(element) {
     
-    clearInterval(this);
-    
-    var href = element.getAttribute("href");
-    var hrefsplit = href.split("#");
-    
-    console.log(hrefsplit);
-    
-    
-//    $('html, body').animate({
-//        scrollTop: $(element.getAttribute("href")).offset().top - navHeight
-//    }, 750);
-    
     $('html, body').animate({
-        scrollTop: $(window.location.hash).offset().top - navHeight
+        scrollTop: $(element.getAttribute("href")).offset().top - navHeight
     }, 750);
 }
 
