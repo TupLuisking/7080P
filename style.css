@@ -390,7 +390,7 @@ p {
 
 header {
     
-    height: 60vh;
+    height: 40vw;
     
     background-size: 110% auto;
     background-position: center;
@@ -402,6 +402,50 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    
+    position: relative;
+}
+
+#headerfilms {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    position: absolute;
+    
+    top: 50%;
+    left: 50%;
+    
+    transform: translate(-50%, -50%);
+}
+
+.headerfilm {
+    
+    height: 24vw;
+    width: 16vw;
+    
+    margin: 0 15px 0 15px;
+    
+    overflow: hidden;
+    
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.headerfilm a {
+    
+    height: 100%;
+}
+
+.headerfilm img {
+    
+    width: auto;
+    height: 100%;
 }
 
 /*
@@ -433,9 +477,8 @@ header .slideshow:hover {
 
 #minifilms {
     
-    margin: 0 40px 0 40px;
+    margin: 20px 40px 0 40px;
     
-    margin-top: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 20vw;
