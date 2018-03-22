@@ -532,19 +532,21 @@ header .slideshow {
     
     transform: translateX(-50%);
     
-    max-width: 1000px;
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    
     position: relative;
+    
+    padding-left: 25px;
+    padding-right: 25px;
+    
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 10px;
+    align-items: center;
 }
 
 #calendar {
     
-    margin-top: 25px;
+    align-self: center;
+    
     margin-left: 20px;
     padding: 10px;
     
@@ -555,10 +557,18 @@ header .slideshow {
 
 #dayinstruct {
     
-    transform: translateX(25%);
-    right: 25%;
-    width: 200px;
+    grid-column-start: 2;
+    
+    font-size: 2vw;
+    
+    width: 100%;
+    height: 100%;
+    z-index: -1;
     position: absolute;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #daylabels {
@@ -573,13 +583,13 @@ header .slideshow {
     margin-top: 5px;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-gap: 5px;
+    grid-gap: 7.5px;
 }
 
 .day {
     
-    width: 30px;
-    height: 30px;
+    width: 4vw;
+    height: 4vw;
     cursor: default;
     background: #222222;
     
@@ -607,9 +617,7 @@ header .slideshow {
     z-index: 1;
     
     background: #666666;
-    margin: 25px;
-    
-    height: 250px;
+    height: 95%;
     width: 100%;
     
     opacity: 0;
