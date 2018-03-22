@@ -576,14 +576,7 @@ header .slideshow {
 
 #calendarinfo {
     
-    left: 50%;
-    
-    transform: translateX(-50%);
-    
     position: relative;
-    
-    padding-left: 25px;
-    padding-right: 25px;
     
     display: grid;
     grid-template-columns: auto 1fr;
@@ -595,9 +588,9 @@ header .slideshow {
     
     align-self: center;
     
-    margin-left: 20px;
     padding: 10px;
     
+    margin-left: 25px;
     background: #333333;
     
     border-radius: 5%;
@@ -605,14 +598,20 @@ header .slideshow {
 
 #dayinstruct {
     
+    margin-right: 25px;
+    
     grid-column-start: 2;
     
     font-size: 2vw;
     
-    width: 100%;
-    height: 100%;
     z-index: -1;
+    
     position: absolute;
+    
+    top: 50%;
+    left: 50%;
+    
+    transform: translate(-50%, -50%);
     
     display: flex;
     flex-direction: column;
@@ -666,13 +665,11 @@ header .slideshow {
     
     background: #666666;
     height: 95%;
-    width: 100%;
     
     opacity: 0;
+    margin-right: 25px;
     
     transition: 0.25s;
-    
-    transform-origin: left center;
 }
 
 #dayinfo h3 {

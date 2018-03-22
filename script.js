@@ -144,7 +144,7 @@ var filmNames = [
     "9+10"];
 var filmDescs = [
     "It's a black version of Pink Panther",
-    "I't a pink version of Black Panther",  
+    "It's a pink version of Black Panther",  
     "Got big gay",
     "TWENY-WAN"];
 
