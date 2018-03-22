@@ -240,6 +240,10 @@ p {
     
     list-style: none;
     width: 100px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 #originalnav li a {
@@ -292,8 +296,9 @@ p {
     width: 100px;
     
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
