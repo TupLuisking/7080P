@@ -126,7 +126,7 @@ p {
 
 .section {
     
-    padding-top: 20px;
+    padding-top: 10px;
     padding-bottom: 20px;
 }
 
@@ -134,7 +134,7 @@ p {
 
 #originalnavbar {
     
-    padding: 20px;
+    padding-top: 20px;
 }
 
 #navtop {
@@ -155,6 +155,7 @@ p {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
+    justify-content: flex-end;
     
     text-align: right;
 }
@@ -198,6 +199,7 @@ p {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    justify-content: flex-end;
     
 }
 
@@ -246,7 +248,7 @@ p {
     align-items: center;
     
     width: 100%;
-    height: 75px;
+    height: 69px;
     padding: 0px;
     
     margin-bottom: 0px;
@@ -288,7 +290,7 @@ p {
     position: fixed;
     top: -200%;
     width: 100%;
-    height: 75px;
+    height: 60px;
 
     border-bottom: 1px solid white;
     
@@ -503,13 +505,47 @@ header .slideshow:hover {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    
-    transition: 0.25s;
 }
 
-.minifilm:hover {
+#minifilminfo {
     
-    opacity: 0.75;
+    background: #333333;
+    
+    height: 200px;
+/*    max-height: 0;*/
+    
+    overflow: hidden;
+    
+    transition: 0.5s;
+    
+    border: 3px solid #efefef;
+    
+    position: relative;
+    
+}
+
+#minifilminfoinner {
+    
+    padding: 25px;
+    
+    text-align: left;
+    
+    position: relative;
+}
+
+#minifilmarrow {
+    
+    position: absolute;
+    
+    width: 25px;
+    height: 25px;
+    
+    background: #efefef;
+    
+    top: 0;
+    left: 0;
+    
+    transform: translate(-50%, -50%) rotateZ(45deg);
 }
 
 #film1 {
@@ -1070,6 +1106,11 @@ header .slideshow {
 
     border-radius: 2.5%;
     padding: 20px;
+}
+
+.minifestpanel h1 {
+    
+    margin: 0px;
 }
 
 .minifestpanelbg p {

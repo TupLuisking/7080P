@@ -64,20 +64,28 @@
 
             <div id=minifilms>
 
-                <div class=minifilm id=film1 onclick="showTextModal();" style="background-image: url('/images/sample.jpg')">
+                <div class=minifilm id=film1 onclick="showNowShowingInfo(0);" style="background-image: url('/images/sample.jpg')">
 
                 </div>
 
-                <div class=minifilm id=film2 onclick="showTextModal();" style="background-image: url('/images/sample2.jpg')">
+                <div class=minifilm id=film2 onclick="showNowShowingInfo(1);" style="background-image: url('/images/sample2.jpg')">
                 </div>
 
-                <div class=minifilm id=film3 onclick="showTextModal();" style="background-image: url('/images/sample.jpg')">    
+                <div class=minifilm id=film3 onclick="showNowShowingInfo(2);" style="background-image: url('/images/sample.jpg')">    
                 </div>
 
-                <div class=minifilm id=film4 onclick="showTextModal();" style="background-image: url('/images/sample2.jpg')">    
+                <div class=minifilm id=film4 onclick="showNowShowingInfo(3);" style="background-image: url('/images/sample2.jpg')">    
                 </div>
                 
-                <div class=minifilm id=film5 onclick="showTextModal();" style="background-image: url('/images/sample.jpg')">    
+                <div class=minifilm id=film5 onclick="showNowShowingInfo(4);" style="background-image: url('/images/sample.jpg')">    
+                </div>
+            </div>
+            
+            <div id=minifilminfo>
+                <div id=minifilmarrow></div>
+                <div id=minifilminfoinner>
+                    <h2 id=minifilminfoname>film name</h2>
+                    <p id=minifilminfodets>info</p>
                 </div>
             </div>
 

@@ -9,6 +9,12 @@ window.onload = function() {
 
 function setHighlight() {
     
+    console.log(document.getElementById("film1").offsetLeft);
+    console.log(document.getElementById("film2").offsetLeft);
+    console.log(document.getElementById("film3").offsetLeft);
+    console.log(document.getElementById("film4").offsetLeft);
+    console.log(document.getElementById("film5").offsetLeft);
+    
     var id = document.body.id.trim();
     var items;
     
@@ -170,6 +176,60 @@ function navTo(element, sectionNumber) {
 //    if(x.length > 0)
 //        x[slideIndex-1].style.display = "block";
 //}
+
+// NOW SHOWING INFO
+
+var nowShowingIndex = -1;
+var nowShowingDiv = document.getElementById("minifilminfo");
+var nowShowingName = document.getElementById("minifilminfoname");  
+var nowShowingDets = document.getElementById("minifilminfodets");   
+var nsarrow = document.getElementById("minifilmarrow");
+var minifilms = document.getElementsByClassName("minifilm");
+
+var nsnames = [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+];
+
+var nsdetails = [
+    "Hello :)",
+    "Hello :)",
+    "Hello :)",
+    "Hello :)",
+    "Hello :)"
+];
+
+function showNowShowingInfo(i) {
+    
+    console.log("SHOWING NOW SHOWING");
+    
+    if(nowShowingIndex == i)
+        nowShowingIndex = -1;
+    else
+        nowShowingIndex = i;
+    
+    for(var x = 0; x < minifilms.length; x++)
+        minifilms[x].style.border = "none";
+    
+    if(nowShowingIndex != -1) {
+        
+        nowShowingName.innerHTML = nsnames[i];
+        nowShowingDets.innerHTML = nsdetails[i];
+        
+        nsarrow.style.display = "block";
+        nsarrow.style.left = (minifilms[i].offsetLeft + minifilms[i].offsetWidth/2) + "px";
+        minifilms[i].style.border = "2px solid #efefef";
+        
+        nowShowingDiv.style.maxHeight = "200px";
+    } else {
+        
+        nsarrow.style.display = "none";
+        nowShowingDiv.style.maxHeight = "0";
+    }
+}
 
 // CALENDAR
 
