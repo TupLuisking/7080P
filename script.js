@@ -194,14 +194,14 @@ function showNowShowingInfo(i) {
         
         nowShowingDiv.style.borderWidth = "3px";
         nowShowingDiv.style.borderColor = "#efefef";
-        nowShowingDiv.style.maxHeight = "200px";
+        nowShowingDiv.style.height = "40vw";
     } else {
         
         nsarrow.style.display = "none";
         
         nowShowingDiv.style.borderWidth = "0px";
         nowShowingDiv.style.borderColor = "rgba(255,255,255,0)";
-        nowShowingDiv.style.maxHeight = "0";
+        nowShowingDiv.style.height = "0";
     }
 }
 
