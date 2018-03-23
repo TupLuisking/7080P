@@ -129,6 +129,18 @@ function navTo(element) {
     }, 750);
 }
 
+function navTo(element, sectionNumber) {
+    
+    currentSectionIndex = sectionNumber;
+    console.log("current section number: " + currentSectionIndex);
+    
+    clearInterval(this);
+    
+    $('html, body').animate({
+        scrollTop: $(element.getAttribute("href")).offset().top - navHeight
+    }, 750);
+}
+
 // SLIDES
 
 //var slideIndex = 1;

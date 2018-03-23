@@ -13,7 +13,6 @@ html {
 body {
     
     margin: 0px;
-    padding-top: 20px;
     
     width: 100%;
     
@@ -132,6 +131,11 @@ p {
 }
 
 /* ORIGINAL NAVBAR */
+
+#originalnavbar {
+    
+    padding: 20px;
+}
 
 #navtop {
     
@@ -841,7 +845,6 @@ header .slideshow {
 
 #dirstory {
     
-    
     padding: 20px;
     
     display: grid;
@@ -895,9 +898,110 @@ header .slideshow {
 
 /* INDIV FILMS */
 
-#ifilms, #ifilms #nav {
+#ifilms {
     
-    background: #060707;
+/*    background: #060707;*/
+}
+
+#ifilms #originalnavbar, #ifilms #nav {
+    
+    background: rgba(0,0,0,0.69);
+}
+
+#filmbg {
+    
+    z-index: -1;
+    
+    position: fixed;
+    
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    
+    background-size: cover;
+    background-position: center;
+}
+
+#filmheader {
+    
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#filmpc {
+    
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px 0 20px;
+}
+
+#filmp {
+    
+    height: 300px;
+    width: 200px;
+    
+    overflow: hidden;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#filmp img {
+    
+    height: 100%;
+    width: auto;
+}
+
+#filmc {
+    
+    margin-top: 10px;
+    
+    text-align: justify;
+    width: 200px;
+    
+    font-size: 0.8em;
+}
+
+#filmndt {
+    
+    text-align: justify;
+    
+    margin-right: 20px;
+}
+
+#filmdt {
+    
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#filmt {
+    
+    margin-left: 10px;
+    
+    text-align: center;
+    height: 100px;
+    width: 100px;
+}
+
+#filmt img {
+    
+    height: 100%;
+    width: auto;
+}
+
+#filmcta {
+    
+    padding: 0 20px 0 20px;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    grid-gap: 20px;
+    
+    text-align: justify;
 }
 
 /* MINIFESTS */
