@@ -820,6 +820,9 @@ header .slideshow {
 
 .directorimage {
     
+    height: 27vw;
+    width: 18vw;
+    
     overflow: hidden;
 }
 
@@ -920,12 +923,14 @@ header .slideshow {
 
 #dirillustration {
     
-    height: 36vw;
-    width: 24vw;
-    overflow: hidden;
-    
     display: flex;
     justify-content: center;
+    align-items: center;
+    
+    overflow: hidden;
+    
+    height: 39vh;
+    width: 26vh;
 }
 
 #dirillustration img {
@@ -1094,7 +1099,7 @@ header .slideshow {
 
 .minifestpanel {
     
-    padding: 20px 40px 20px 40px;
+    padding: 30px 50px 20px 50px;
 }
 
 .minifestpanelbg {
@@ -1103,19 +1108,51 @@ header .slideshow {
     background-size: cover;
     
     height: 40vw;
-
-    border-radius: 2.5%;
     padding: 20px;
+    
+    display: flex;
+    flex-direction: column;
 }
 
 .minifestpanel h1 {
     
-    margin: 0px;
+    margin: 0;
 }
 
 .minifestpanelbg p {
     
-    font-size: 0.75em;
+    font-size: 1em;
+}
+
+.minifestfilms {
+    
+    flex-grow: 1;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.minifestfilms .minifestfilm {
+    
+    height: 21vw;
+    width: 14vw;
+    
+    margin: 0 2vw 0 2vw;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    overflow: hidden;
+}
+
+.minifestfilm a, .minifestfilm img {
+    
+    height: 100%;
+    widtH: auto;
 }
 
 /*
