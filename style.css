@@ -145,7 +145,7 @@ p {
     grid-template-areas: 
         "navleft logo navright";
     
-    grid-gap: 50px;
+    grid-gap: 25px;
 }
 
 #navleft {
@@ -177,7 +177,10 @@ p {
     
     overflow: hidden;
     
-    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #logo img {
@@ -192,22 +195,47 @@ p {
     grid-area: navright;
     
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+
+#navright a {
+    
+    color: white;
+}
+
+#navright #navsocials {
+    
+    display: flex;
     flex-direction: row;
+    
+    margin-top: 7.5px;
+}
+
+#navsocial {
+    
+    width: 50px;
+    height: 50px;
+    
+    margin-right: 7.5px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-.navrighticon {
+#navsocial a {
     
-    border-radius: 50%;
-    
-    height: 100px;
-    width: 100px;
-    overflow: hidden;
+    height: 100%;
 }
 
-.navrighticon img {
+#navsocial img {
     
-    widtH: 100%;
+    height: 100%;
+    width: auto;
 }
 
 #originalnav {
@@ -219,6 +247,7 @@ p {
     
     width: 100%;
     height: 75px;
+    padding: 0px;
     
     margin-bottom: 0px;
 }
@@ -264,6 +293,7 @@ p {
     border-bottom: 1px solid white;
     
     margin: 0px;
+    padding: 0px;
     list-style: none;
     
     display: flex;
@@ -933,7 +963,7 @@ header .slideshow {
     
     display: flex;
     flex-direction: column;
-    margin: 0 20px 0 20px;
+    margin: 0 10px 0 20px;
 }
 
 #filmp {
@@ -965,7 +995,7 @@ header .slideshow {
 }
 
 #filmndt {
-    
+    margin-top: px;
     text-align: justify;
     
     margin-right: 20px;
@@ -977,9 +1007,24 @@ header .slideshow {
     grid-template-columns: auto auto;
 }
 
+#filmdetails, #filmn, #filmd {
+    
+    padding: 10px;
+}
+
+#filmn {
+    
+    font-size: 1.5em;
+}
+
+#filmd {
+    
+    padding: 10px;
+}
+
 #filmt {
     
-    margin-left: 10px;
+    margin: 10px 0 10px 0;
     
     text-align: center;
     height: 100px;
@@ -1006,14 +1051,30 @@ header .slideshow {
 
 /* MINIFESTS */
 
-#minifests {
+#minifests, #minifests #nav {
     
     background: #f7a289;
 }
 
-#minifests #nav {
+.minifestpanel {
+    
+    padding: 20px 40px 20px 40px;
+}
 
-    background: #f7a289;
+.minifestpanelbg {
+    
+    background-position: center;
+    background-size: cover;
+    
+    height: 40vw;
+
+    border-radius: 2.5%;
+    padding: 20px;
+}
+
+.minifestpanelbg p {
+    
+    font-size: 0.75em;
 }
 
 /*
