@@ -21,6 +21,11 @@ body {
     text-align: center;
 }
 
+div {
+    
+    background-repeat: no-repeat;
+}
+
 ::-webkit-scrollbar {
     
     width: 0px;
@@ -761,6 +766,12 @@ header .slideshow {
     background: #df3e3f;
 }
 
+#directors .navdir {
+    
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
 #directorsection {
     
     padding-left: 7.5vw;
@@ -849,6 +860,9 @@ header .slideshow {
     height: 35vw;
     
     position: relative;
+    
+    background-size: cover;
+    background-position: center;
 }
 
 #dirnav {
@@ -866,7 +880,7 @@ header .slideshow {
 
 #dirnav a {
     
-    font-size: 1.25em;
+    font-size: 1em;
     margin: 10px;
     
     color: white;
@@ -1097,6 +1111,12 @@ header .slideshow {
     background: #f7a289;
 }
 
+#minifests .navmini {
+    
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
 .minifestpanel {
     
     padding: 30px 50px 20px 50px;
@@ -1153,6 +1173,19 @@ header .slideshow {
     
     height: 100%;
     widtH: auto;
+}
+
+/* MERCH */
+
+#merch, #merch #nav {
+    
+    background: #ef8cba;
+}
+
+#merch .navmerch {
+    
+    font-size: 1.25em;
+    font-weight: bolder;
 }
 
 /*

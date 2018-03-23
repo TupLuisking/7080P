@@ -3,31 +3,6 @@ console.log("Script Initialized");
 window.onload = function() {
     
     console.log("WINDOW LOADED");
-    
-    setTimeout(setHighlight, 50);
-}
-
-function setHighlight() {
-    
-    var id = document.body.id.trim();
-    var items;
-    
-    if(id === "directors") {
-        
-        items = document.getElementsByClassName("navdir");
-    } else if(id === "minifests") {
-        
-        items = document.getElementsByClassName("navmini");
-    }
-    
-    if(items.length > 0) {
-        
-        for(var i = 0; i < items.length; i++) {
-
-            items[i].style.fontWeight = "bolder";
-            items[i].style.fontSize = "1.5em";
-        }   
-    }
 }
 
 $(window).scroll(function(){
