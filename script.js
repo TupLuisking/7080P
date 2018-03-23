@@ -9,12 +9,6 @@ window.onload = function() {
 
 function setHighlight() {
     
-    console.log(document.getElementById("film1").offsetLeft);
-    console.log(document.getElementById("film2").offsetLeft);
-    console.log(document.getElementById("film3").offsetLeft);
-    console.log(document.getElementById("film4").offsetLeft);
-    console.log(document.getElementById("film5").offsetLeft);
-    
     var id = document.body.id.trim();
     var items;
     
@@ -221,6 +215,7 @@ function showNowShowingInfo(i) {
         
         nsarrow.style.display = "block";
         nsarrow.style.left = (minifilms[i].offsetLeft + minifilms[i].offsetWidth/2) + "px";
+        minifilms[i].style.border = "3px solid #efefef";
         
         nowShowingDiv.style.borderWidth = "3px";
         nowShowingDiv.style.borderColor = "#efefef";
