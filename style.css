@@ -818,7 +818,7 @@ header .slideshow {
     padding-top: 80px;
     
     transition: 0.25s;
-    min-width: 175px;
+    min-width: 0;
 /*    width: 15vw;*/
     height: 0;
     width: 0;
