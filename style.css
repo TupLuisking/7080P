@@ -343,7 +343,6 @@ p {
     
     border-top: 1px solid white;
     
-    margin-top: 50px;
     padding-top: 10px;
     
     padding-bottom: 50px;
@@ -669,7 +668,7 @@ header .slideshow {
     margin-left: 25px;
     background: #333333;
     
-    border-radius: 5%;
+    border-radius: 10px;
 }
 
 #dayinstruct {
@@ -720,7 +719,7 @@ header .slideshow {
     flex-direction: column;
     justify-content: center;
     
-    border-radius: 10%;
+    border-radius: 10;
     
     transition: 0.25s;
 }
@@ -736,6 +735,8 @@ header .slideshow {
 }
 
 #dayinfo {
+    
+    border-radius: 10px;
     
     background: #666666;
     height: 95%;
