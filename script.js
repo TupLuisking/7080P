@@ -23,15 +23,23 @@ $(window).scroll(function(){
         if(wScroll > navend) {
 
             showClingyNav();
-            aboutnavbar.style.width = "15vw";
-            aboutnavbar.style.minWidth = "175px";
-            aboutnavbar.style.height = "auto";
+            
+            if(aboutnavbar != null) {
+                
+                aboutnavbar.style.width = "15vw";
+                aboutnavbar.style.minWidth = "175px";
+                aboutnavbar.style.height = "auto";
+            }
         } else {
 
             hideClingyNav();
-            aboutnavbar.style.width = "0";
-            aboutnavbar.style.minWidth = "0";
-            aboutnavbar.style.height = "0";
+            
+            if(aboutnavbar != null) {
+                
+                aboutnavbar.style.width = "0";
+                aboutnavbar.style.minWidth = "0";
+                aboutnavbar.style.height = "0";
+            }
         }
     }
     
@@ -85,7 +93,7 @@ function goToSection(i) {
 
 // NAVIGATION
 
-var navHeight = 90;
+var navHeight = 69;
 
 function navToSection(id) {
     
