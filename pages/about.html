@@ -14,34 +14,163 @@
     
     <body id="about">
         
-        <div id="navbar"></div>
+        <div id="navbar">
         
+            <div id=originalnavbar>
+                <div id=navtop> 
+
+                    <div id=navleft>
+                        <a onclick="navTo(this)" 
+                           href="#">About</a>
+                        <a onclick="navTo(this)" 
+                           href="#faqs">FAQs</a>
+                        <a onclick="navTo(this)" 
+                           href="#membership">Membership</a>
+                        <a onclick="navTo(this)" 
+                           href="#partners">Partners</a>
+                    </div>
+                    <div id=logo>
+                        <a href="/index.html"><img src="/images/bird.jpg"></a>
+                    </div>
+                    <div id=navright>
+                        <a onclick="navTo(this)" href="/pages/about.html">Partners</a>
+                        <a onclick="navTo(this)" href="/pages/about.html">Contact</a>
+                        <div id=navsocials>
+                            <div id=navsocial>
+                                <a>
+                                    <img src="/images/logo2.png">
+                                </a>
+                            </div>
+                            <div id=navsocial>
+                                <a>
+                                    <img src="/images/logo2.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <ul id=originalnav>
+                        <li><a class=navdir onclick="navTo(this)" href="/pages/directors.html">Directors</a></li>
+                        <li><a class=navmini onclick="navTo(this)" href="/pages/minifests.html">Minifests</a></li>
+                        <li><a class=navcom onclick="navTo(this)" href="#">Community</a></li>
+                        <li><a class=navmerch onclick="navTo(this)"  href="/pages/merch.html">Merch</a></li>
+                    </ul>
+                </div>
+
+                <div id=navend style="height:0"></div>
+            </div>
+
+
+            <div>
+                <ul id=nav>
+                    <li><a class=navdir onclick="navTo(this)" href="/pages/directors.html">Directors</a></li>
+                    <li><a class=navmini onclick="navTo(this)" href="/pages/minifests.html">Minifests</a></li>
+                    <li><a class=navcom onclick="navTo(this)" href="#">Community</a></li>
+                    <li><a class=navmerch onclick="navTo(this)" href="/pages/merch.html">Merch</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        
+<!--
         <script>
         $(function(){
            $("#navbar").load("/navbar.html"); 
         });
         </script>
-        
-        <h1>
-            About
-        </h1>
-        
-        <div style="height:1000px"></div>
-        
-        <div id=about1 class=section>
-        
-            <h2>asdasdads</h2>
-            <p>asdasd</p>
+-->
+        <div id=aboutcontent>
+            
+            <div id=aboutnavbar>
+                <div id=aboutnavcontainer>
+                    <a onclick="navTo(this)" 
+                       href="#navbar">About</a>
+                    <a onclick="navTo(this)" 
+                       href="#faqs">FAQs</a>
+                    <a onclick="navTo(this)" 
+                       href="#membership">Membership</a>
+                    <a onclick="navTo(this)" 
+                       href="#partners">Partners</a>
+                </div>
+            </div>
+
+            <div id=aboutsections>
+
+                <div class=section id=aboutdesc>        
+                    <h1>Section</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, in debet audiam consetetur duo, et nec lorem sanctus. Vel no dicit scribentur. Mel in aliquid deserunt, maluisset aliquando et pro, qui ut etiam vulputate. Aperiri aliquam laboramus ius ea, pro nisl sale vocibus ne.
+                        Ei elitr quodsi delenit per. Vis option vivendo ad. Est ut essent tibique. Has habeo dicit te. Pro ut sanctus debitis theophrastus, sumo graeci quaeque ut vix, mundi nominavi cotidieque no eam.
+                    </p>
+                </div>
+
+                <div class=section id=faqs>        
+                    <h1>Section</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, in debet audiam consetetur duo, et nec lorem sanctus. Vel no dicit scribentur. Mel in aliquid deserunt, maluisset aliquando et pro, qui ut etiam vulputate. Aperiri aliquam laboramus ius ea, pro nisl sale vocibus ne.
+                        Ei elitr quodsi delenit per. Vis option vivendo ad. Est ut essent tibique. Has habeo dicit te. Pro ut sanctus debitis theophrastus, sumo graeci quaeque ut vix, mundi nominavi cotidieque no eam.
+                    </p>
+                </div>
+
+                <div class=section id=membership>        
+                    <h1>Section</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, in debet audiam consetetur duo, et nec lorem sanctus. Vel no dicit scribentur. Mel in aliquid deserunt, maluisset aliquando et pro, qui ut etiam vulputate. Aperiri aliquam laboramus ius ea, pro nisl sale vocibus ne.
+                        Ei elitr quodsi delenit per. Vis option vivendo ad. Est ut essent tibique. Has habeo dicit te. Pro ut sanctus debitis theophrastus, sumo graeci quaeque ut vix, mundi nominavi cotidieque no eam.
+                    </p>
+                </div>
+
+                <div class=section id=partners>        
+                    <h1>Section</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, in debet audiam consetetur duo, et nec lorem sanctus. Vel no dicit scribentur. Mel in aliquid deserunt, maluisset aliquando et pro, qui ut etiam vulputate. Aperiri aliquam laboramus ius ea, pro nisl sale vocibus ne.
+                        Ei elitr quodsi delenit per. Vis option vivendo ad. Est ut essent tibique. Has habeo dicit te. Pro ut sanctus debitis theophrastus, sumo graeci quaeque ut vix, mundi nominavi cotidieque no eam.
+                    </p>
+                </div>
+
+            </div>
             
         </div>
         
-        <div class=section>
+        <div id=footer>
         
-            <h2>asdasdads</h2>
-            <p>asdasd</p>
-            
+            <div id=footercontent>
+
+                <div id=footerlogo></div>
+
+                <div id=footerabout>
+                    <a onclick="navTo(this)" 
+                       href="#">About</a>
+                    <a onclick="navTo(this)" 
+                       href="#faqs">FAQs</a>
+                    <a onclick="navTo(this)" 
+                       href="#membership">Membership</a>
+                    <a onclick="navTo(this)" 
+                       href="#partners">Partners</a>
+                </div>
+
+                <div id=footersocial>
+                    <a><img src="/images/logo2.png"></a>
+                    <a><img src="/images/logo2.png"></a>
+                    <a><img src="/images/logo2.png"></a>
+                </div>
+
+                <div id=footercopyright>
+                    <p>Copyright stuff goes here</p>
+                </div>
+
+            </div>
+        
         </div>
         
+<!--
+        <script>
+            $(function(){
+               $("#footer").load("/footer.html"); 
+            });
+        </script>
+-->
         
         <script src="\script.js"></script>
         

@@ -11,16 +11,28 @@ $(window).scroll(function(){
     var height = $(document).height();
     var navend = $('#navend').offset().top - 25;
     
+    var aboutnavbar = document.getElementById("aboutnavbar");
+    
 //    var scrollindicator = document.getElementById("scrollindicator");
 //
 //    scrollindicator.style.transform = "translateY(" + ((wScroll/height)*200) + "vh)";
-//    
-    if(wScroll > navend) {
-
-        showClingyNav();
-    } else {
+//  
+    
+    if(navend != null) {
         
-        hideClingyNav();
+        if(wScroll > navend) {
+
+            showClingyNav();
+            aboutnavbar.style.width = "15vw";
+            aboutnavbar.style.minWidth = "175px";
+            aboutnavbar.style.height = "auto";
+        } else {
+
+            hideClingyNav();
+            aboutnavbar.style.width = "0";
+            aboutnavbar.style.minWidth = "0";
+            aboutnavbar.style.height = "0";
+        }
     }
     
 //    console.log("scroll: " + wScroll);

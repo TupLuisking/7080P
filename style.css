@@ -776,10 +776,96 @@ header .slideshow {
 
 /* ABOUT */
 
-#about {
+#about, #about #nav, #about #footer, #about #footerabout a {
     
     background-color: #FFF;
     color: #060707;
+}
+
+#about #nav, #about #footer, #about #navbar {
+    
+    border-color: #060707;
+}
+
+#about {
+    
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+#aboutcontent {
+    
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#aboutnavbar {
+    
+    background: #fff;
+    
+    padding-top: 80px;
+    
+    transition: 0.25s;
+    min-width: 175px;
+/*    width: 15vw;*/
+    height: 0;
+    width: 0;
+    
+    overflow: hidden;
+    
+    top:0;
+    
+    text-align: right;
+}
+
+#aboutnavcontainer {
+    
+    position: fixed;
+
+    min-width: inherit;
+    width: inherit;
+    height: inherit;
+    
+    overflow: hidden;
+    
+    top: 100px;
+    
+    display: flex;
+    flex-direction: column;
+    
+    transition: inherit;
+    
+    border-right: 1px solid #060707;
+}
+
+#aboutnavbar a {
+    
+    font-size: 1.25em;
+    padding-right: 20px;
+    
+    text-decoration: none;
+    color: #060707;
+}
+
+#aboutsections {
+    
+    transition: 0.5s;
+    padding: 20px;
+    
+    align-self: flex-end;
+}
+
+#about .section {
+    
+    text-align: justify;
+    
+    padding: 20px;
 }
 
 /* DIRECTORS */
@@ -1219,6 +1305,21 @@ header .slideshow {
 .stickerset {
     
     display: flex;
+    flex-direction: column;
+}
+
+.stickerset h2 {
+    
+    text-align: center;
+    
+    font-size: 4vw;
+    
+    margin-bottom: 25px;
+}
+
+.stickerpics {
+    
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-content: flex-start;
@@ -1226,16 +1327,7 @@ header .slideshow {
 
 .stickerfilm {
     
-    margin: 0 25px 0 25px;
-}
-
-.stickerfilm h2 {
-    
-    width: 100%;
-    
-    font-size: 2em;
-    
-    margin-bottom: 10px;
+    margin: 0 4vw 0 0;
 }
 
 .stickerimg {
@@ -1258,8 +1350,10 @@ header .slideshow {
 }
 
 .stickers {
+/*
 
     margin-right: 25px;
+*/
 }
 
 .stickersinner {
