@@ -139,7 +139,7 @@ p {
 
 #originalnavbar {
     
-    padding-top: 20px;
+    padding-top: 50px;
 }
 
 #navtop {
@@ -1312,7 +1312,10 @@ header .slideshow {
 
 #instructions {
     
+    margin: 25px; 0 25px 0;
     padding: 25px 0 25px 0;
+    
+    font-size: 1.25em;
 }
 
 .stickerset {
