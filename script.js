@@ -43,6 +43,16 @@ $(window).scroll(function(){
         }
     }
     
+    var commposts = document.getElementsByClassName("commpost");
+    
+    for(var i = 0; i < commposts.length; i++) {
+        
+        if(wScroll >= commposts[i].offsetTop - 575) {
+            
+            commposts[i].style.opacity = "1";
+        }
+    }
+    
 //    console.log("scroll: " + wScroll);
 //    console.log("navend: " + navend);
 });

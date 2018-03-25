@@ -1297,6 +1297,62 @@ header .slideshow {
     height: 100%;
 }
 
+/* COMMUNITY */
+
+#community, #community #nav {
+    
+    background: #a8dac7;
+}
+
+#commrad {
+    
+    padding: 0 15vw 0 15vw;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    grid-gap: 5vw;
+}
+
+.commradi {
+    
+    font-size: 7.5vw;
+    
+    background: rgba(0,0,0,0.25);
+}
+
+.commradi input {
+    
+    
+}
+
+#commposts {
+    
+    padding: 7.5vw;
+    padding-top: 0;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    grid-gap: 7.5vw;
+}
+
+#commposts img {
+    
+    width: 100%;
+}
+
+.commpost {
+    
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.commpost:hover {
+    
+    opacity: 1;
+}
+
 /* MERCH */
 
 #merch, #merch #nav {
