@@ -51,22 +51,6 @@ p {
     padding: 0px;
 }
 
-.zoomhover {
-    
-    background-repeat: none;
-    background-size: auto 115%;
-    background-position: center;
-    background-repeat: no-repeat;
-    
-    transition: 0.25s;
-    transition-timing-function: ease-in-out;
-}
-
-.zoomhover:hover {
-    
-    background-size: auto 100%;
-}
-
 /* MODALS */
 
 .overlay {
@@ -706,6 +690,8 @@ header .slideshow {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-gap: 7.5px;
+    
+    font-size: 1vw;
 }
 
 .day {
@@ -890,25 +876,27 @@ header .slideshow {
 
 #directorsection {
     
-    padding-left: 7.5vw;
-    padding-right: 7.5vw;
-    
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    
-    align-items: center;
-    justify-items: center;
-}
-
-.directorpanel {
-    
     margin-top: 50px;
     margin-bottom: 50px;
     
+    padding-left: 7.5vw;
+    padding-right: 7.5vw;
+    
+    margin-top: 50px;
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: center;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    grid-gap: 7.5vw;
+    
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+.directorpanel {
     
     position: relative;
     
@@ -925,43 +913,77 @@ header .slideshow {
 .directorpanel .directorname {
     
     position: absolute;
-    bottom: 10px;
+    left: 0;
+    bottom: 1vw;
     
     background: black;
-/*
     
     max-width: 0;
     overflow-x: hidden;
-*/
     
-    max-width: 80%;
     transition: 0.25s;
-    
-    transform-origin: left center;
-    transform: scaleX(0);
-    
-    font-size: 1.5vw;   
 }
 
 .directorpanel:hover .directorname {
     
-    transform: scaleX(1);
+    max-width: 80%;
 }
 
 .directorimage {
     
-    height: 27vw;
-    width: 18vw;
+    position: relative;
+    
+    height: 30vw;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.directorimage a {
+    
+    height: 100%;
+    width: 100%;
+}
+
+.directorimage img {
+    
+    height: 100%;
+    width: auto;
+    
+    transition: 0.25s;
+    
+    transform: scale(1.1);
+    
+}
+
+.directorpanel:hover img {
+    
+    transform: scale(1);
+}
+
+/*
+.directorimage {
     
     overflow: hidden;
 }
 
 .directorimage img {
+    
+    height: 100%;
+}
+
+.directorimage a {
+    
+    height: 100%;
+}
+
+.directorimage img {
 
     height: 100%;
-    width: auto;
     
-    transform-origin: center;
+    transform-origin: center center;
     transform: scale(1.15);
     
     transition: 0.25s;
@@ -971,6 +993,7 @@ header .slideshow {
     
     transform: scale(1);
 }
+*/
 
 /* INDIV DIRECTORS */
 
@@ -1351,13 +1374,6 @@ header .slideshow {
     width: 100%;
 }
 
-#commposts p {
-    
-    width: 100%;
-    
-    word-wrap: break-word;
-}
-
 .commpost {
     
     transition: 0.5s;
@@ -1365,11 +1381,6 @@ header .slideshow {
 }
 
 .commpost:hover {
-    
-    opacity: 1;
-}
-
-.commpost:nth-child(1), .commpost:nth-child(2), .commpost:nth-child(3) {
     
     opacity: 1;
 }
@@ -1531,4 +1542,11 @@ header .slideshow {
     
     font-family: "Body Text";
     src: url("fonts/Roboto Mono.ttf");
+}
+
+#myvideo {
+    
+    margin-bottom: 40px;
+
+    width: 75%;
 }
