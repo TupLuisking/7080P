@@ -893,11 +893,6 @@ header .slideshow {
     padding-left: 7.5vw;
     padding-right: 7.5vw;
     
-    margin-top: 50px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
@@ -933,16 +928,24 @@ header .slideshow {
     bottom: 10px;
     
     background: black;
+/*
     
     max-width: 0;
     overflow-x: hidden;
+*/
     
+    max-width: 80%;
     transition: 0.25s;
+    
+    transform-origin: left center;
+    transform: scaleX(0);
+    
+    font-size: 1.5vw;   
 }
 
 .directorpanel:hover .directorname {
     
-    max-width: 100%;
+    transform: scaleX(1);
 }
 
 .directorimage {
@@ -1348,6 +1351,13 @@ header .slideshow {
     width: 100%;
 }
 
+#commposts p {
+    
+    width: 100%;
+    
+    word-wrap: break-word;
+}
+
 .commpost {
     
     transition: 0.5s;
@@ -1355,6 +1365,11 @@ header .slideshow {
 }
 
 .commpost:hover {
+    
+    opacity: 1;
+}
+
+.commpost:nth-child(1), .commpost:nth-child(2), .commpost:nth-child(3) {
     
     opacity: 1;
 }
