@@ -1304,6 +1304,12 @@ header .slideshow {
     background: #a8dac7;
 }
 
+#community .navcom {
+    
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
 #commrad {
     
     padding: 0 15vw 0 15vw;
