@@ -189,6 +189,7 @@ p {
     padding-top: 50px;
     
     background: #060707;
+    color: white;
 }
 
 #navtop {
@@ -352,6 +353,7 @@ p {
     border-bottom: 1px solid white;
     
     background: #060707;
+    color: white;
     
     margin: 0px;
     padding: 0px;
@@ -872,9 +874,14 @@ header .slideshow {
     transition: 0.25s;
 }
 
-.eventful {
+.eventfulm {
     
-    background: #777777;
+    background:  #fcb040;
+}
+
+.eventfuls {
+    
+    background:  #a8dac7;
 }
 
 .day:hover {
@@ -888,7 +895,7 @@ header .slideshow {
     
     height: 95%;
     
-    opacity: 0;
+/*    opacity: 0;*/
     margin-right: 5vw;
     
     transition: 0.25s;
@@ -916,11 +923,6 @@ header .slideshow {
     text-align: left;
     padding-bottom: 5px;
     padding-top: 5px;
-}
-
-#dayinfo #dayinfolink {
-    
-    color: white;
 }
 
 /* ABOUT */
