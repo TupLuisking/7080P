@@ -238,10 +238,10 @@ function showNowShowingInfo(i) {
 // CALENDAR
 
 var dateDates = [
-    "March 6",
-    "March 11",
-    "March 14",
-    "March 24"
+    "6 Maynila sa mga Kuko ng Liwanag",
+    "11 Batch '81",
+    "14 Kung Mangarap Ka't Magising",
+    "24 Kakabakaba Ka Ba?"
 ];
 
 var dateColors = [
@@ -298,7 +298,6 @@ function showDayInfo(i) {
         dayinfotime.innerHTML = dayTimes[i];
         dayinfovenue.innerHTML = dayVenues[i];
         dayinfoentry.innerHTML = dayEntries[i];
-        
     }
     
 }
