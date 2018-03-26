@@ -237,11 +237,19 @@ function showNowShowingInfo(i) {
 
 // CALENDAR
 
+var dateColors = [
+    "#a8dac7"
+    "#fcb040"
+    "#a8dac7"
+    "#fcb040"
+];
+
 var filmNames = [
     "Black Panther",
     "Pink Panther",
     "Your Mum",
     "9+10"];
+
 var filmDescs = [
     "It's a black version of Pink Panther",
     "It's a pink version of Black Panther",  
@@ -262,7 +270,6 @@ function showDayInfo(i) {
         
         currentIndex = i;
         document.getElementById("dayinfoname").innerHTML = filmNames[currentIndex];
-        document.getElementById("dayinfodesc").innerHTML = filmDescs[currentIndex];
 
         var dayInfo = document.getElementById("dayinfo");
         dayInfo.style.opacity = "1";

@@ -791,9 +791,11 @@ header .slideshow {
     
     position: relative;
     
+    margin: 0 5vw 0 5vw;
+    
     display: grid;
     grid-template-columns: auto 1fr;
-    grid-gap: 10px;
+    grid-gap: 15px;
     align-items: center;
 }
 
@@ -803,35 +805,11 @@ header .slideshow {
     
     padding: 10px;
     
-    margin-left: 5vw;
-    
     border-radius: 10px;
     
     font-family: "Names";
     
     border: 1px solid #060707;
-}
-
-#dayinstruct {
-    
-    margin-right: 25px;
-    
-    grid-column-start: 2;
-    
-    font-size: 2vw;
-    
-    z-index: -1;
-    
-    position: absolute;
-    
-    top: 50%;
-    left: 50%;
-    
-    transform: translate(-50%, -50%);
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 #daylabels {
@@ -884,19 +862,33 @@ header .slideshow {
     background:  #a8dac7;
 }
 
-.day:hover {
+#dayright {
     
-    background: #666666;
+    
+    
+    height: 100%;
+    
+    text-align: left;
 }
+
+#dayinstruct {
+    
+    padding: 10px;
+    
+    font-family: "Names";
+    font-size: 2vw;
+}
+
 
 #dayinfo {
     
+    position: relative;
+    
+    z-index: 1;
+    
     border-radius: 10px;
     
-    height: 95%;
-    
 /*    opacity: 0;*/
-    margin-right: 5vw;
     
     transition: 0.25s;
 }
