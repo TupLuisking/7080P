@@ -282,7 +282,25 @@ function hideDayInfo() {
 
 function changeDirImg(element, imgname) {
     
-//    console.log("Changing pic of " + element);
+    console.log("Changing pic of " + element);
     
     element.src = "/images/" + imgname;
+}
+
+// SHOW MODAL
+
+function showImageModal(element) {
+
+    var imagemodal = document.getElementById("imagemodal");
+    var imagemodalimg = document.getElementById("imgmodalimg");
+    
+    var srcsplit = element.src.split("/");
+    
+    changeDirImg(imagemodalimg, srcsplit[srcsplit.length - 1]);
+    imagemodal.style.transform = "translateY(0)";
+}
+
+function hideImageModal() {
+    
+    imagemodal.style.transform = "translateY(-100vh)";
 }

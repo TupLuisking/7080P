@@ -1178,15 +1178,18 @@ header .slideshow {
 
 #filmheader {
     
+    padding: 25px;
+    
     display: grid;
     grid-template-columns: auto auto;
+    
+    grid-gap: 1vw;
 }
 
 #filmpc {
     
     display: flex;
     flex-direction: column;
-    margin: 0 10px 0 20px;
 }
 
 #filmp {
@@ -1220,14 +1223,14 @@ header .slideshow {
 #filmndt {
     margin-top: px;
     text-align: justify;
-    
-    margin-right: 20px;
 }
 
 #filmdt {
     
     display: grid;
     grid-template-columns: auto auto;
+    
+    grid-gap: 1vw;
 }
 
 #filmdetails, #filmn, #filmd {
@@ -1262,12 +1265,13 @@ header .slideshow {
 
 #filmcta {
     
-    padding: 0 20px 0 20px;
+    padding: 25px;
+    padding-top: 0;
     
     display: grid;
     grid-template-columns: 1fr 1fr;
     
-    grid-gap: 20px;
+    grid-gap: 3vw;
     
     text-align: justify;
 }
@@ -1516,7 +1520,7 @@ header .slideshow {
 .sticker img {
     
     width: 100%;
-}
+}   
 
 /*
 .section {
@@ -1570,9 +1574,31 @@ header .slideshow {
     src: url("fonts/Roboto Mono.ttf");
 }
 
-#myvideo {
+.modal {
     
-    margin-bottom: 40px;
-
-    width: 75%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    
+    z-index: 10;
+    
+    background: rgba(0,0,0,0.5);
+    
+    transition: 0.25s;
+    
+    transform: translateY(-100vh);
 }
+
+#imagemodal img {
+    
+    height: 69vh;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    transform: translate(-50%, -50%);
+}
+
