@@ -216,14 +216,10 @@ p {
 
 #navleft a {
     
+    font-size: 2vw;
     color: inherit;
-    padding-top: 2px;
-    padding-bottom: 2px;
-}
-
-#navleft p {
-    
-    cursor: pointer;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
 }
 
 #logo {
@@ -236,6 +232,8 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
+    border: 1px solid white;
 }
 
 #logo img {
@@ -263,7 +261,10 @@ p {
 
 #navright a {
     
-    color: white;
+    font-size: 2vw;
+    color: inherit;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
 }
 
 #navright #navsocials {
@@ -276,8 +277,8 @@ p {
 
 #navsocial {
     
-    width: 50px;
-    height: 50px;
+    width: 3vw;
+    height: 3vw;
     
     margin-right: 7.5px;
     
@@ -402,6 +403,8 @@ p {
     padding-bottom: 50px;
     
     background: #060707;
+    
+    font-size: 1.5vw;
 }
 
 #footercontent {
@@ -419,7 +422,7 @@ p {
     height: 100px;
     width: 100px;
     
-    margin-right: 20px;
+    margin-right: 3vw;
 }
 
 #footerabout {
@@ -428,26 +431,64 @@ p {
     flex-direction: column;
     text-align: left;
     
-    margin-right: 20px;
+    padding-right: 6vw;
+    
+    margin-right: 6vw;
+    
+    border-right: 1px solid white;
 }
 
 #footerabout a {
     
     text-decoration: none;
     color: white;
+
+    margin-bottom: 5px;
 }
 
 #footersocial img {
     
-    height: 50px;
-    width: 50px;
+    height: 2vw;
+    width: 2vw;
 }
 
-#footercopyright {
+#footernav {
+    
+    display: flex;
+    flex-direction: column;
+    
+    text-align: left;
+    
+    font-size: 1.75vw;
+}
+
+#footernav a {
+    
+    margin-bottom: 5px;
+    color: white;
+    font-family: "Main Header";
+    text-decoration: none;
+}
+
+#footerright {
     
     flex-grow: 1;
     
     text-align: right;
+}
+
+#footerloc {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#footerright p {
+    
+    margin-bottom: 5px;
+    
+    font-size: 1.5vw;
 }
 
 /* HOMEPAGE */
@@ -974,7 +1015,7 @@ header .slideshow {
     margin: 0 3vw 0 1vw;
 }
 
-/* ABOUT 
+/* ABOUT */
 
 #about {
     
