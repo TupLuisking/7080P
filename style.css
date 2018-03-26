@@ -581,7 +581,9 @@ header .slideshow:hover {
     top: 0;
     left: 0;
     
-    z-index: 1;
+    z-index: 3;
+    
+    transition: 0.25s;
     
     transform: translate(-50%, -50%) rotateZ(45deg);
 }
