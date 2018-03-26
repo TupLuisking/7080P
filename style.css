@@ -187,6 +187,8 @@ p {
 #originalnavbar {
     
     padding-top: 50px;
+    
+    background: #060707;
 }
 
 #navtop {
@@ -349,6 +351,8 @@ p {
 
     border-bottom: 1px solid white;
     
+    background: #060707;
+    
     margin: 0px;
     padding: 0px;
     list-style: none;
@@ -394,6 +398,8 @@ p {
     padding-top: 10px;
     
     padding-bottom: 50px;
+    
+    background: #060707;
 }
 
 #footercontent {
@@ -444,7 +450,7 @@ p {
 
 /* HOMEPAGE */
 
-#homepage, #homepage #nav  {
+#homepage {
     
     background: #060707;
 }
@@ -919,24 +925,10 @@ header .slideshow {
 
 /* ABOUT */
 
-#about, #about #nav, #about #footer, #about #footerabout a {
+#about {
     
     background-color: #FFF;
     color: #060707;
-}
-
-#about #navbar #originalnavbar #navtop #navright a {
-    
-    color: #060707;   
-}
-
-#about #nav, #about #footer, #about #navbar {
-    
-    border-color: #060707;
-}
-
-#about {
-    
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -1018,7 +1010,7 @@ header .slideshow {
 
 /* DIRECTORS */
 
-#directors, #directors #nav  {
+#directors {
     
     background: #df3e3f;
 }
@@ -1282,11 +1274,6 @@ header .slideshow {
 
 #ifilms {
     
-/*    background: #060707;*/
-}
-
-#ifilms #originalnavbar, #ifilms #nav {
-    
     background: rgba(0,0,0,0.69);
 }
 
@@ -1407,7 +1394,7 @@ header .slideshow {
 
 /* MINIFESTS */
 
-#minifests, #minifests #nav {
+#minifests {
     
     background: #f7a289;
 }
@@ -1484,7 +1471,7 @@ header .slideshow {
 
 /* COMMUNITY */
 
-#community, #community #nav {
+#community {
     
     background: #a8dac7;
 }
@@ -1524,29 +1511,38 @@ header .slideshow {
     
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
     
     grid-gap: 7.5vw;
 }
 
-#commposts img {
+.commpost {
     
     width: 100%;
-}
-
-.commpost {
     
     transition: 0.5s;
     opacity: 0;
 }
 
-.commpost:hover {
+.commpost:nth-child(1), .commpost:nth-child(2), .commpost:nth-child(3) {
     
     opacity: 1;
 }
 
+.commpost img {
+    
+    width: 100%;
+}
+
+.commpost p {
+    
+    word-break: break-all;
+    width: 100%;
+}
+
 /* MERCH */
 
-#merch, #merch #nav {
+#merch {
     
     background: #ef8cba;
 }
@@ -1619,7 +1615,7 @@ header .slideshow {
 */
 }
 
-.stickersinner {
+.stickers {
     
     display: grid;
     grid-template-columns: 1fr 1fr;
