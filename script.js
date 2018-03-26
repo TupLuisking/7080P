@@ -237,10 +237,17 @@ function showNowShowingInfo(i) {
 
 // CALENDAR
 
+var dateDates = [
+    "March 6",
+    "March 11",
+    "March 14",
+    "March 24"
+];
+
 var dateColors = [
-    "#a8dac7"
-    "#fcb040"
-    "#a8dac7"
+    "#a8dac7",
+    "#fcb040",
+    "#a8dac7",
     "#fcb040"
 ];
 
@@ -248,13 +255,15 @@ var filmNames = [
     "Black Panther",
     "Pink Panther",
     "Your Mum",
-    "9+10"];
+    "9+10"
+];
 
 var filmDescs = [
     "It's a black version of Pink Panther",
     "It's a pink version of Black Panther",  
     "Got big gay",
-    "TWENY-WAN"];
+    "TWENY-WAN"
+];
 
 var currentIndex = -1;
 
@@ -272,7 +281,10 @@ function showDayInfo(i) {
         document.getElementById("dayinfoname").innerHTML = filmNames[currentIndex];
 
         var dayInfo = document.getElementById("dayinfo");
+        var dayinfodate = document.getElementById("dayinfodate");
         dayInfo.style.opacity = "1";
+        dayinfodate.innerHTML = dateDates[i];
+        dayinfodate.style.background = dateColors[i];
     }
     
 }

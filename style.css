@@ -864,8 +864,6 @@ header .slideshow {
 
 #dayright {
     
-    
-    
     height: 100%;
     
     text-align: left;
@@ -886,8 +884,6 @@ header .slideshow {
     
     z-index: 1;
     
-    border-radius: 10px;
-    
 /*    opacity: 0;*/
     
     transition: 0.25s;
@@ -897,9 +893,11 @@ header .slideshow {
     
     text-align: left;
     
-    
-    margin: 0px;
+    margin-top: 0;
+    margin-bottom: 10px;
     padding: 10px;
+    
+    font-size: 2vw;
 }
 
 #dayinfo p {
@@ -915,6 +913,41 @@ header .slideshow {
     text-align: left;
     padding-bottom: 5px;
     padding-top: 5px;
+}
+
+#dayinfobottom {
+    
+    display: flex;
+    flex-direction: row;
+}
+
+#dayfb {
+    
+    height: 5vw;
+    width: 5vw;
+}
+
+#dayinfolist {
+    
+    display: flex;
+    flex-direction: column;
+    
+    font-size: 2vw;
+}
+
+.daylabel {
+    
+    font-weight: bold;
+}
+
+.dayanswer {
+    
+    transform: translateX(2vw);
+}
+
+#dayreserve {
+    
+    margin-top: 10px;
 }
 
 /* ABOUT */
