@@ -216,10 +216,10 @@ p {
 
 #navleft a {
     
-    font-size: 2vw;
+    font-size: 0.8em;
     color: inherit;
-    padding-top: 0.5vw;
-    padding-bottom: 0.5vw;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 
 #logo {
@@ -261,10 +261,10 @@ p {
 
 #navright a {
     
-    font-size: 2vw;
+    font-size: 0.8em;
     color: inherit;
-    padding-top: 0.5vw;
-    padding-bottom: 0.5vw;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 
 #navright #navsocials {
@@ -404,7 +404,7 @@ p {
     
     background: #060707;
     
-    font-size: 1.5vw;
+    font-size: 1.8vh;
 }
 
 #footercontent {
@@ -431,9 +431,9 @@ p {
     flex-direction: column;
     text-align: left;
     
-    padding-right: 6vw;
+    padding-right: 4vh;
     
-    margin-right: 6vw;
+    margin-right: 4vh;
     
     border-right: 1px solid white;
 }
@@ -459,7 +459,7 @@ p {
     
     text-align: left;
     
-    font-size: 1.75vw;
+    font-size: 2vh;
 }
 
 #footernav a {
@@ -487,8 +487,6 @@ p {
 #footerright p {
     
     margin-bottom: 5px;
-    
-    font-size: 1.5vw;
 }
 
 /* HOMEPAGE */
@@ -574,7 +572,7 @@ header {
     font-family: "Names";
     text-align: left;
     
-    font-size: 3vw;
+    font-size: 2.75vw;
     
     margin-bottom: 1vw;
 }
@@ -640,7 +638,7 @@ header .slideshow:hover {
 
 #minifilms {
     
-    margin: 0 15vw 5vw; 15vw;
+    margin: 2.5vw 15vw 5vw; 15vw;
    
     display: flex;
     flex-direction: row;
