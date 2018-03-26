@@ -520,7 +520,7 @@ header .slideshow:hover {
 #minifilminfo {
     
     background: #333333;
-
+        
     height: 0;
     
     overflow: hidden;
@@ -535,16 +535,38 @@ header .slideshow:hover {
     top: 5px;
     
     position: relative;
-    
 }
 
 #minifilminfoinner {
     
-    padding: 25px;
-    
     text-align: left;
     
     position: relative;
+    
+    z-index: 2;
+
+    height: 100%;
+    
+    color: black;
+}
+
+#minifilminfoinner h2, #minifilminfoinner p{
+    
+    padding: 10px;
+}
+
+#minifilminfoinner #nsvideo {
+    
+    position: absolute;
+    
+    top: 50%;
+    left: 50%;
+    
+    transform: translate(-50%, -50%);
+    
+    width: 100%;
+    
+    z-index: -1;
 }
 
 #minifilmarrow {
@@ -558,6 +580,8 @@ header .slideshow:hover {
     
     top: 0;
     left: 0;
+    
+    z-index: 1;
     
     transform: translate(-50%, -50%) rotateZ(45deg);
 }
