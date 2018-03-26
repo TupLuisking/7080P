@@ -23,6 +23,12 @@
         });
         </script>
         
+        <div class=sectionheader>
+            <h1>NOW PRESENTING</h1>
+            <p style="background: #fcb040">70/80P Minifests</p>
+        </div>
+
+        
         <header class="section" style="background-image: url('/images/sample.jpg')">
             
 <!--
@@ -41,78 +47,159 @@
 
             </div>
 -->
+            
+            <div id=headerleft>
+                <h1>MARCH LINEUP</h1>
+            </div>
+            
             <div id=headerfilms>
                 
                 <div class=headerfilm>
-                    <a href=""><img src="/images/birdnull.jpg"></a>
+                    <div class=headerfilmimg>
+                        <img src="/images/birdnull.jpg">
+                    </div>
+                    <h2><a 
+                           class=name
+                           href="#"
+                           >
+                            Moral
+                        </a>
+                    </h2>
+                    <p>
+                        March 13 (TUE) <br>
+                        7:30 PM
+                    </p>
                 </div>
                 
                 <div class=headerfilm>
-                    <a href=""><img src="/images/birdnull.jpg"></a>
+                    <div class=headerfilmimg>
+                        <img src="/images/birdnull.jpg">
+                    </div>
+                    <h2><a 
+                           class=name
+                           href="#"
+                           >
+                            Moral
+                        </a>
+                    </h2>
+                    <p>
+                        March 16 (FRI) <br>
+                        10:00 PM
+                    </p>
                 </div>
-                                
+                
                 <div class=headerfilm>
-                    <a href=""><img src="/images/birdnull.jpg"></a>
+                    <div class=headerfilmimg>
+                        <img src="/images/birdnull.jpg">
+                    </div>
+                    <h2><a 
+                           class=name
+                           href="#"
+                           >
+                            Moral
+                        </a>
+                    </h2>
+                    <p>
+                        March 23 (FRI) <br>
+                        2:30 PM
+                    </p>
                 </div>
                 
             </div>
+            
+            <div id=headerright>
+                <p id=headerrightlogo>
+                    70/80 <br>
+                    PRJCT
+                </p>
+                <p>
+                    P200 per ticket <br>
+                    All screenings in<br>Cinema Centenario
+                </p>
+            </div>
+            
         </header>
         
-        <div class=section id=nowshowing>
+        <div class=section id=nowshowings>
             
-            <h1>Now Showing</h1>
-
-            <div id=minifilms>
-
-                <div class=minifilm id=film1 onclick="showNowShowingInfo(0);" style="background-image: url('/images/sample.jpg')">
-
-                </div>
-
-                <div class=minifilm id=film2 onclick="showNowShowingInfo(1);" style="background-image: url('/images/sample2.jpg')">
-                </div>
-
-                <div class=minifilm id=film3 onclick="showNowShowingInfo(2);" style="background-image: url('/images/sample.jpg')">    
-                </div>
-
-                <div class=minifilm id=film4 onclick="showNowShowingInfo(3);" style="background-image: url('/images/sample2.jpg')">    
-                </div>
-                
-                <div class=minifilm id=film5 onclick="showNowShowingInfo(4);" style="background-image: url('/images/sample.jpg')">    
-                </div>
-            </div>
-            
-            <div id=minifilminfo>
-                <div id=minifilmarrow></div>
-                <div id=minifilminfoinner>
-                    <h2 id=minifilminfoname>film name</h2>
-                    <p id=minifilminfodets>info</p>
-                    <video autoplay loop muted id=nsvideo>
-                        <source src="/videos/sample.mp4" type="video/mp4">
-                    </video>
-                </div>
+            <div class=sectionheader>
+                <h1>OTHERS THIS MONTH</h1>
+                <p style="background: #fcb040">70/80P Supports</p>
             </div>
 
+            <div class=section id=nowshowing>
+
+
+                <div id=minifilms>
+
+                    <div class=minifilm>
+                        <img src="/images/birdnull.jpg">
+                        <a class=name><p>Maynila sa mga Kuko ng Liwanag</p></a>
+                    </div>
+
+                    <div class=minifilm>
+                        <img src="/images/birdnull.jpg">
+                        <a class=name><p>Batch '81</p></a>
+                    </div>
+                    
+                    <div class=minifilm>
+                        <img src="/images/birdnull.jpg">
+                        <a class=name><p>Kung Mangarap Ka't Magising</p></a>
+                    </div>
+                    
+                    <div class=minifilm>
+                        <img src="/images/birdnull.jpg">
+                        <a class=name><p>Kakabakaba Ka Ba?</p></a>
+                    </div>
+
+                </div>
+
+<!--
+                <div id=minifilminfo>
+                    <div id=minifilmarrow></div>
+                    <div id=minifilminfoinner>
+                        <h2 id=minifilminfoname>film name</h2>
+                        <p id=minifilminfodets>info</p>
+    
+                        <video autoplay loop muted id=nsvideo>
+                            <source src="/videos/sample.mp4" type="video/mp4">
+                        </video>
+    
+                    </div>
+                </div>
+-->
+
+            </div>
         </div>
         
-        <div class=section>
+        <div class=section id=calendarsection>
             
-            <h1>Events</h1>
-            
+            <div class=sectionheader>
+                <h1>OUR CALENDAR</h1>
+                <p></p>
+            </div>
+
             <div class=section id=calendarinfo>
 
                 <div id=calendar>
 
                     <div>March</div>
                     <div id=daylabels>
-                        <div>S</div>
                         <div>M</div>
                         <div>T</div>
                         <div>W</div>
                         <div>Th</div>
                         <div>F</div>
                         <div>Sa</div>
+                        <div>Sn</div>
                     </div>
                     <div id=days>
+                        <div class=day><p>   </p></div>
+                        <div class=day><p>   </p></div>
+                        <div class=day><p>   </p></div>
+                        <div class=day><p>   </p></div>
+                        <div class=day><p>   </p></div>
+                        <div class=day><p>   </p></div>
                         <div class=day><p> 1 </p></div>
                         <div class=day><p> 2 </p></div>
                         <div class=day><p> 3 </p></div>

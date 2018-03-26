@@ -20,7 +20,7 @@ $(window).scroll(function(){
     
     if(navend != null) {
         
-        if(wScroll > navend) {
+        if(wScroll >= navend) {
 
             showClingyNav();
             
@@ -61,12 +61,12 @@ $(window).scroll(function(){
 
 function showClingyNav() {
     
-    document.getElementById("nav").style.top = "0";
+    document.getElementById("nav").style.transform = "translateY(0)";
 }
 
 function hideClingyNav() {
     
-    document.getElementById("nav").style.top = "-200%";
+    document.getElementById("nav").style.transform = "translateY(-100%)";
 }
 
 // SECTION NAVIGATION 

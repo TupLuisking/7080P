@@ -51,6 +51,42 @@ p {
     padding: 0px;
 }
 
+.name {
+    
+    color: white;
+    text-decoration: none;
+    
+    position: relative;
+}
+
+.name:hover {
+    
+    color: white;
+}
+
+.name:before {
+    
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    
+    background: white;
+    visibility: hidden;
+    
+    transition: 0.3s;
+    transform-origin: left center;
+    transform: scaleX(0);
+}
+
+.name:hover:before {
+    
+    visibility: visible;
+    transform: scaleX(1);
+}
+
 /* MODALS */
 
 .overlay {
@@ -117,6 +153,33 @@ p {
     
     padding-top: 10px;
     padding-bottom: 20px;
+    
+}
+
+.sectionheader {
+    
+    padding-top: 2vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-bottom: 1vw;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sectionheader h1 {
+    
+    font-size: 2vw;
+}
+
+.sectionheader p {
+    
+    font-size: 1.25vw;
+    
+    color: black;
+    padding: 0.75vw;
 }
 
 /* ORIGINAL NAVBAR */
@@ -280,7 +343,7 @@ p {
     z-index: 1;
     
     position: fixed;
-    top: -200%;
+    top: 0;
     width: 100%;
     height: 60px;
 
@@ -294,8 +357,9 @@ p {
     flex-direction: row;
     justify-content: space-around;
     
-    transition-property: all;
-    transition-duration: 0.25s;
+    transition-duration: 0.5s;
+    
+    transform: translateY( -100%);
 }
 
 #nav li {
@@ -394,18 +458,26 @@ header {
     
     height: 40vw;
     
-    background-size: 110% auto;
-    background-position: center;
-    background-repeat: no-repeat;
+    padding: 5vw;
     
     background-size: cover;
-    background-attachment: fixed;
+    background-position: center;
     
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    display: grid;
+    grid-template-columns: 1.5fr 3.5fr 1fr;
+    
+    grid-gap: 7vw;
     
     position: relative;
+}
+
+#headerleft {
+    
+    font-size: 1.5vw;
+    
+    padding-top: 2.5vw;
+    
+    text-align: left;
 }
 
 #headerfilms {
@@ -413,21 +485,15 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: flex-end;
     
-    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     
-    top: 50%;
-    left: 50%;
-    
-    transform: translate(-50%, -50%);
+    grid-gap: 4vw;
 }
 
 .headerfilm {
-    
-    height: 24vw;
-    width: 16vw;
-    
-    margin: 0 15px 0 15px;
     
     overflow: hidden;
     
@@ -436,18 +502,57 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 
-.headerfilm a {
+.headerfilmimg {
+
+    width: inherit;
     
-    height: 100%;
+    overflow: hidden;
+    
+    margin-bottom: 2vw;
 }
 
 .headerfilm img {
     
-    width: auto;
-    height: 100%;
+    width: 100%;
+}
+
+.headerfilm h2 {
+    
+    width: 100%;
+    
+    font-family: "Names";
+    text-align: left;
+    
+    font-size: 3vw;
+    
+    margin-bottom: 1vw;
+}
+
+.headerfilm p {
+    
+    width: 100%;
+    text-align: left;
+    
+    font-size: 1.25vw;
+}
+
+#headerright {
+    
+    text-align: left;
+    
+    padding-top: 5vw;
+    
+    font-size: 1.125vw;
+}
+
+#headerright #headerrightlogo {
+    
+    border-left: 1vw solid white;
+    
+    padding-left: 1.5vw;
+    margin-bottom: 3vw;
 }
 
 /*
@@ -479,16 +584,19 @@ header .slideshow:hover {
 }
 */
 
+#nowshowings, #nowshowing {
+    
+    padding: 0;
+}
+
 #minifilms {
     
-    margin: 20px 40px 0 40px;
-    
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 20vw;
-    grid-template-areas:
-        "film1 film2 film3 film4 film5";
-    grid-gap: 15px;
+    margin: 0 15vw 5vw; 15vw;
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: flex-start;
 }
 
 #nowshowing h1 {
@@ -498,23 +606,30 @@ header .slideshow:hover {
 
 .minifilm {
     
-    height: 21vw;
-    width: 14vw;
-    
-    justify-self: center;
-    align-self: center;
-    
-    cursor: pointer;
+    height: auto;
+    width: 15vw;
     
     overflow: hidden;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.minifilm img {
+    
+    width: 80%;
+    margin-bottom: 1.5vw;
+}
+
+.minifilm p {
+    
+    font-family: "Names";
+    font-size: 1.5vw;
 }
 
 #minifilminfo {
@@ -658,6 +773,12 @@ header .slideshow {
 
 /* CALENDAR */
 
+#calendarsection {
+    
+    background: white;
+    color: #060707;
+}
+
 #calendarinfo {
     
     position: relative;
@@ -674,10 +795,13 @@ header .slideshow {
     
     padding: 10px;
     
-    margin-left: 25px;
-    background: #333333;
+    margin-left: 5vw;
     
     border-radius: 10px;
+    
+    font-family: "Names";
+    
+    border: 1px solid #060707;
 }
 
 #dayinstruct {
@@ -707,7 +831,15 @@ header .slideshow {
     margin-top: 10px;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
+    grid-gap: 7.5px;
 }
+
+
+#daylabels div {
+    
+    border-bottom: 1.5px solid rgba(0,0,0,0.25);
+}
+
 
 #days {
     
@@ -716,7 +848,7 @@ header .slideshow {
     grid-template-columns: repeat(7, 1fr);
     grid-gap: 7.5px;
     
-    font-size: 1vw;
+    font-size: 1.75vw;
 }
 
 .day {
@@ -724,7 +856,6 @@ header .slideshow {
     width: 4vw;
     height: 4vw;
     cursor: default;
-    background: #222222;
     
     display: flex;
     flex-direction: column;
@@ -749,11 +880,10 @@ header .slideshow {
     
     border-radius: 10px;
     
-    background: #666666;
     height: 95%;
     
     opacity: 0;
-    margin-right: 25px;
+    margin-right: 5vw;
     
     transition: 0.25s;
 }
@@ -1563,8 +1693,8 @@ header .slideshow {
 
 @font-face {
     
-    font-family: "Main Header";
-    src: url("fonts/Turnpike.ttf");
+    font-family: "Names";
+    src: url("fonts/Harbour Bold.ttf");
 }
 
 @font-face {
