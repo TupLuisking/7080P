@@ -251,18 +251,25 @@ var dateColors = [
     "#fcb040"
 ];
 
-var filmNames = [
-    "Black Panther",
-    "Pink Panther",
-    "Your Mum",
-    "9+10"
+var dayTimes = [
+    "10:30 PM",
+    "7:30 PM",
+    "2:30 PM",
+    "6:00 PM"
 ];
 
-var filmDescs = [
-    "It's a black version of Pink Panther",
-    "It's a pink version of Black Panther",  
-    "Got big gay",
-    "TWENY-WAN"
+var dayVenues = [
+    "Cinema Centenario",
+    "Cinema Centenario",
+    "Cinema Centenario",
+    "Cinema Centenario"
+];
+
+var dayEntries = [
+    "PHP200 per ticket",
+    "PHP200 per ticket",
+    "PHP200 per ticket",
+    "PHP200 per ticket"
 ];
 
 var currentIndex = -1;
@@ -278,13 +285,20 @@ function showDayInfo(i) {
     } else {
         
         currentIndex = i;
-        document.getElementById("dayinfoname").innerHTML = filmNames[currentIndex];
 
         var dayInfo = document.getElementById("dayinfo");
         var dayinfodate = document.getElementById("dayinfodate");
+        var dayinfotime = document.getElementById("dayinfotime");
+        var dayinfovenue = document.getElementById("dayinfovenue");
+        var dayinfoentry = document.getElementById("dayinfoentry");
         dayInfo.style.opacity = "1";
         dayinfodate.innerHTML = dateDates[i];
         dayinfodate.style.background = dateColors[i];
+        
+        dayinfotime.innerHTML = dayTimes[i];
+        dayinfovenue.innerHTML = dayVenues[i];
+        dayinfoentry.innerHTML = dayEntries[i];
+        
     }
     
 }
