@@ -3,6 +3,15 @@ console.log("Script Initialized");
 window.onload = function() {
     
     console.log("WINDOW LOADED");
+    
+    var basetop = 350;
+    var aboutnavbar = document.getElementById("aboutnavcontainer");
+    var abouthref = window.location.href.split("#")[1];
+    
+    if(abouthref != null) {
+        
+        aboutnavbar.style.top = 75+ "px";   
+    }
 }
 
 $(window).scroll(function(){
@@ -10,8 +19,6 @@ $(window).scroll(function(){
     var wScroll = $(this).scrollTop();
     var height = $(document).height();
     var navend = $('#navend').offset().top - 25;
-    
-    var aboutnavbar = document.getElementById("aboutnavcontainer");
     
 //    var scrollindicator = document.getElementById("scrollindicator");
 //
@@ -53,15 +60,26 @@ $(window).scroll(function(){
         }
     }
     
-    var basetop = 375;
+    adjustAboutNav(navend, wScroll);
+    
+//    console.log("scroll: " + wScroll);
+//    console.log("navend: " + navend);
+});
+
+function adjustAboutNav(navend, wScroll) {
+    
+    var basetop = 350;
     var scrolltop;
+    
+    var aboutnavbar = document.getElementById("aboutnavcontainer");
     
     if(wScroll < navend) {
         
-        aboutnavbar.style.top = (basetop - wScroll) + "px";    
+        scrolltop = basetop - wScroll;
+        aboutnavbar.style.top = (scrolltop)+ "px";    
     } else {
         
-//        aboutnavbar.style.top = (basetop - wScroll) + "px";
+        aboutnavbar.style.top = 75 + "px";
     }
     
     if(aboutnavbar != null) {
@@ -80,14 +98,12 @@ $(window).scroll(function(){
         for(var i = 0; i < anavitems.length; i++) {
             
             anavitems[i].style.color = "#060707";
+            
+            if(i == currentsectionindex)
+                anavitems[currentsectionindex].style.color = "#fcb040";
         }
-        
-        anavitems[currentsectionindex].style.color = "#fcb040";
     }
-    
-//    console.log("scroll: " + wScroll);
-//    console.log("navend: " + navend);
-});
+}
 
 // CLINGY NAV 
 

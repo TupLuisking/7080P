@@ -1082,7 +1082,7 @@ header .slideshow {
     
     overflow: hidden;
     
-    top: 375px;
+    top: 350px;
     
     display: flex;
     flex-direction: column;
@@ -1120,6 +1120,11 @@ header .slideshow {
     
     height: 15px;
     width: 15px;
+}
+
+.invert {
+    
+    filter: invert(100%);
 }
 
 #aboutnavbar a {
