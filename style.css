@@ -1052,6 +1052,14 @@ header .slideshow {
     align-content: center;
 }
 
+#about h1 {
+    
+    font-family: "Names";
+    margin-right: 100px;
+    
+    text-align: left;
+}
+
 #about .navabout {
     
     text-decoration: underline;
@@ -1223,15 +1231,17 @@ header .slideshow {
     
     background: black;
     
-    max-width: 0;
+    max-width: 80%;
     overflow-x: hidden;
     
     transition: 0.25s;
+    transform-origin: left center;
+    transform: scaleX(0);
 }
 
 .directorpanel:hover .directorname {
     
-    max-width: 80%;
+    transform: scaleX(1);
 }
 
 .directorimage {
