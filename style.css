@@ -1711,6 +1711,7 @@ header .slideshow {
 #postcontent {
     
     padding: 25px;
+    padding-bottom: 0;
     
     display: grid;
     grid-template-columns: auto 150px;
@@ -1720,7 +1721,8 @@ header .slideshow {
 
 #postcontentleft p {
     
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #postcontentleft {
@@ -1750,6 +1752,7 @@ header .slideshow {
 
 #postimage img {
     
+    padding: 10px 0 10px 0;
     width: 100%;
 }
 
@@ -1761,6 +1764,12 @@ header .slideshow {
     grid-template-columns: 1fr 1fr 1fr;
 
     grid-gap: 25px;
+}
+
+.otherpost a {
+    
+    color: white;
+    text-decoration: none;
 }
 
 #postbottom img {
@@ -1783,7 +1792,7 @@ header .slideshow {
 
 #instructions {
     
-    margin: 25px; 0 25px 0;
+    margin: 0 0 0 0;
     padding: 25px 0 25px 0;
     
     font-size: 1.25em;
