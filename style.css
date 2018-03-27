@@ -1718,9 +1718,16 @@ header .slideshow {
     grid-gap: 25px;
 }
 
+#postcontentleft p {
+    
+    padding: 10px;
+}
+
 #postcontentleft {
     
     background: rgba(0,0,0,0.25);
+    text-align: left;
+    padding: 25px;
 }
 
 #postcontentright {
@@ -1731,9 +1738,35 @@ header .slideshow {
     justify-content: flex-start;
 }
 
+#postcontentright p {
+    
+    margin-bottom: 20px;
+}
+
 #postcontentright img {
     height: auto;
     width: 100%;
+}
+
+#postimage img {
+    
+    width: 100%;
+}
+
+#postbottom {
+
+    padding: 0 25px 50px 25px;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    grid-gap: 25px;
+}
+
+#postbottom img {
+    
+    width: 100%;
+    
 }
 
 /* MERCH */
