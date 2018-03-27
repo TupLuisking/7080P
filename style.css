@@ -1887,6 +1887,49 @@ header .slideshow {
 #modulecolumns {
     
     height: 40vw;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    padding: 25px 4vw 25px 4vw;
+    grid-gap: 4vw;
+}
+
+.modulecolumn {
+    
+    background: rgba(0,0,0,0.25);
+}
+
+#modulegq {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#modulegq #gqleft {
+    
+    padding: 25px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#modulegq h2 {
+    
+    width: 75%;
+    font-size: 5vw;
+}
+
+#gqs {
+    
+    padding: 25px;
+}
+
+#modulegq p {
+    
+    margin: 5px 0 5px 0;
 }
 
 /*
