@@ -1867,9 +1867,11 @@ header .slideshow {
     transform: translateY(-100%);
     
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     align-items: center;
     justify-content: center;
+    
+    padding: 5vw;
 }
 
 #toccontent a {
@@ -1933,6 +1935,8 @@ header .slideshow {
 .modulecolumn {
     
     background: rgba(0,0,0,0.25);
+    
+    padding: 10px;
 }
 
 #modulegq {
@@ -1965,6 +1969,11 @@ header .slideshow {
 #modulegq p {
     
     margin: 5px 0 5px 0;
+}
+
+#moduleqt {
+    
+    height: 40vw;
 }
 
 .lookat {

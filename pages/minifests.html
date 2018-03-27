@@ -22,7 +22,24 @@
         });
         </script>
         
-        <div class="minifestpanel">
+        <div id=toc onclick="showTOC();">&#9776;</div>
+        
+        <div id=toccontent onclick="hideTOC();">
+            <a onclick="navTo(this);hideTOC();" 
+               href="#month">
+                MONTH 1
+            </a>
+            <a onclick="navTo(this);hideTOC();" 
+               href="#month">
+                MONTH 2
+            </a>
+            <a onclick="navTo(this);hideTOC();" 
+               href="#month">
+                MONTH 3
+            </a>
+        </div>
+        
+        <div class="minifestpanel" id=month>
             <div class=minifestpanelbg style="background-image: url('/images/sample.jpg')">
             
                 <h1>

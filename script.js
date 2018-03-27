@@ -54,7 +54,7 @@ $(window).scroll(function(){
     
     for(var i = 0; i < commposts.length; i++) {
         
-        if(wScroll >= commposts[i].offsetTop - 575) {
+        if(wScroll >= commposts[i].offsetTop - 650) {
             
             commposts[i].style.opacity = "1";
         }
