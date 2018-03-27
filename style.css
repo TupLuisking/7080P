@@ -1133,8 +1133,9 @@ header .slideshow {
 
     display: flex;
     flex-direction: row;
+    align-items: center;
 
-    font-size: 0.8em;
+    font-size: 0.55em;
 }
 
 .aboutcontacticon {
@@ -1173,6 +1174,19 @@ header .slideshow {
     text-align: justify;
     
     padding: 20px;
+}
+
+#partnersrow {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#partnersrow img {
+    
+    height: 20vw;
+    width: 20vw;
 }
 
 /* DIRECTORS */
