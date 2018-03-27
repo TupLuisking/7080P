@@ -402,18 +402,16 @@ p {
     
     border-top: 1px solid white;
     
-    padding-top: 10px;
-    
     padding-bottom: 50px;
     
     background: #060707;
     
-    font-size: 1.8vh;
+    font-size: 0.75em;
 }
 
 #footercontent {
     
-    margin: 10px;
+    margin: 15px;
     
     display: flex;
 }
@@ -463,7 +461,7 @@ p {
     
     text-align: left;
     
-    font-size: 2vh;
+    font-size: 1.15em;
 }
 
 #footernav a {
@@ -1187,6 +1185,8 @@ header .slideshow {
     
     height: 20vw;
     width: 20vw;
+    
+    margin-right: 5px;
 }
 
 /* DIRECTORS */
