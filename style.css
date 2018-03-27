@@ -1479,6 +1479,7 @@ header .slideshow {
 #filmheader {
     
     padding: 25px;
+    padding-top: 100px;
     
     display: grid;
     grid-template-columns: auto auto;
