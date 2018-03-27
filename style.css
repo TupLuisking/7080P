@@ -64,7 +64,7 @@ p {
     color: white;
 }
 
-.name:before {
+.name:before, .minifilm .name:before, .headerfilm .name:before {
     
     content: "";
     position: absolute;
@@ -81,7 +81,7 @@ p {
     transform: scaleX(0);
 }
 
-.name:hover:before {
+.name:hover:before, .minifilm:hover .name:before, .headerfilm:hover .name:before {
     
     visibility: visible;
     transform: scaleX(1);
