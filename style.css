@@ -1590,7 +1590,7 @@ header .slideshow {
 
 .minifestpanel {
     
-    padding: 30px 50px 20px 50px;
+    padding: 50px 50px 50px 50px;
 }
 
 .minifestpanelbg {
@@ -1805,6 +1805,82 @@ header .slideshow {
     
     width: 100%;
 }   
+
+/* MODULE */
+
+#module {
+    
+    background: #f7a289;
+}
+
+#moduleheader {
+    
+    height: 40vw;
+    
+    position: relative;
+    
+    overflow: hidden;
+}
+
+#toc {
+    
+    position: fixed;
+    
+    z-index: 2;
+    
+    top: 320px;
+    right: 20px;
+    
+    cursor: pointer;
+}
+
+#toccontent {
+    
+    background: rgba(0,0,0,0.5);
+    
+    position: fixed;
+    
+    z-index: 5;
+    
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    transition: 0.5s;
+/*    transform: translateY(-100%);*/
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#toccontent a {
+    
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+}
+
+#moduleheader video {
+    
+    background: rgba(0,0,0,0.5);
+    
+    width: 100%;
+    
+    position: absolute;
+    
+    top: 50%;
+    left: 50%;
+    
+    transform: translate(-50%, -50%);
+}
+
+#moduleprinted {
+    
+    height: 40vw;
+}
 
 /*
 .section {

@@ -61,6 +61,7 @@ $(window).scroll(function(){
     }
     
     adjustAboutNav(navend, wScroll);
+    adjustTOC(navend, wScroll);
     
 //    console.log("scroll: " + wScroll);
 //    console.log("navend: " + navend);
@@ -73,13 +74,16 @@ function adjustAboutNav(navend, wScroll) {
     
     var aboutnavbar = document.getElementById("aboutnavcontainer");
     
+    if(aboutnavbar == null)
+        return;
+    
     if(wScroll < navend) {
         
         scrolltop = basetop - wScroll;
         aboutnavbar.style.top = (scrolltop)+ "px";    
     } else {
         
-        aboutnavbar.style.top = 75 + "px";
+        aboutnavbar.style.top = "75px";
     }
     
     if(aboutnavbar != null) {
@@ -101,6 +105,22 @@ function adjustAboutNav(navend, wScroll) {
             
             if(i == currentsectionindex)
                 anavitems[currentsectionindex].style.color = "#fcb040";
+        }
+    }
+}
+
+function adjustTOC(navend, wScroll) {
+    
+    var toc = document.getElementById("toc");
+    
+    if(toc != null) {
+        
+        if(wScroll < navend) {
+            
+            toc.style.top = (320 - wScroll) + "px";       
+        } else {
+            
+            toc.style.top = "75px";
         }
     }
 }
@@ -393,4 +413,21 @@ function showImageModal(element) {
 function hideImageModal() {
     
     imagemodal.style.transform = "translateY(-100vh)";
+}
+
+// TOC
+
+function showTOC() {
+    
+    var toc = document.getElementById("toccontent");
+    
+    toc.style.transform = "translateY(0)";
+}
+
+function hideTOC() {
+    
+    
+    var toc = document.getElementById("toccontent");
+    
+    toc.style.transform = "translateY(-100%)";
 }

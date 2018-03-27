@@ -12,15 +12,45 @@
         <script src="\scripts\jquery-3.3.1.min.js"></script>
     </head>
     
-    <body id="merch">
+    <body id="module">
         
-        <div id="navbar"></div>
+        <div id="navbar">
+        
+        </div>
         
         <script>
         $(function(){
            $("#navbar").load("/navbar.html"); 
         });
         </script>
+        
+        
+        <div id=toc onclick="showTOC();">&#9776;</div>
+        
+        <div id=toccontent onclick="hideTOC();">
+            <a onclick="navTo(this);hideTOC();" 
+               href="#dirheader">
+                Section 1
+            </a>
+            <a onclick="navTo(this);hideTOC();" 
+               href="#dirheader">
+                Section 2
+            </a>
+            <a onclick="navTo(this);hideTOC();" 
+               href="#dirheader">
+                Section 3
+            </a>
+        </div>
+        
+        <div id=moduleheader>
+            <video autoplay muted loop>
+<!--                <source src="/videos/sample.mp4" type="video/mp4">-->
+            </video>
+        </div>
+        
+        <div id=moduleprinted>
+            
+        </div>
         
 <!--        DIRECTOR STUFF -->
         
@@ -83,6 +113,10 @@
         </div>
         
 <!--        DIRECTOR STUFF END -->
+        
+        <div id=modulescolumns></div>
+        
+        <div id=modulecolumns></div>
         
         <div id=footer></div>
         
