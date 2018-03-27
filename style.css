@@ -1713,10 +1713,9 @@ header .slideshow {
     padding: 25px;
     
     display: grid;
-    grid-template-columns: auto 200px;
+    grid-template-columns: auto 150px;
     
     grid-gap: 25px;
-    
 }
 
 #postcontentleft {
