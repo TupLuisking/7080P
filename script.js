@@ -11,7 +11,7 @@ $(window).scroll(function(){
     var height = $(document).height();
     var navend = $('#navend').offset().top - 25;
     
-    var aboutnavbar = document.getElementById("aboutnavbar");
+    var aboutnavbar = document.getElementById("aboutnavcontainer");
     
 //    var scrollindicator = document.getElementById("scrollindicator");
 //
@@ -24,22 +24,22 @@ $(window).scroll(function(){
 
             showClingyNav();
             
-            if(aboutnavbar != null) {
-                
-                aboutnavbar.style.width = "15vw";
-                aboutnavbar.style.minWidth = "175px";
-                aboutnavbar.style.height = "auto";
-            }
+//            if(aboutnavbar != null) {
+//                
+//                aboutnavbar.style.width = "15vw";
+//                aboutnavbar.style.minWidth = "175px";
+//                aboutnavbar.style.height = "auto";
+//            }
         } else {
 
             hideClingyNav();
             
-            if(aboutnavbar != null) {
-                
-                aboutnavbar.style.width = "0";
-                aboutnavbar.style.minWidth = "0";
-                aboutnavbar.style.height = "0";
-            }
+//            if(aboutnavbar != null) {
+//                
+//                aboutnavbar.style.width = "0";
+//                aboutnavbar.style.minWidth = "0";
+//                aboutnavbar.style.height = "0";
+//            }
         }
     }
     
@@ -51,6 +51,38 @@ $(window).scroll(function(){
             
             commposts[i].style.opacity = "1";
         }
+    }
+    
+    var basetop = 375;
+    var scrolltop;
+    
+    if(wScroll < navend) {
+        
+        aboutnavbar.style.top = (basetop - wScroll) + "px";    
+    } else {
+        
+//        aboutnavbar.style.top = (basetop - wScroll) + "px";
+    }
+    
+    if(aboutnavbar != null) {
+        
+        var sections = document.getElementsByClassName("section");
+        var currentsectionindex = 0;
+        
+        for(var i = 0; i < sections.length; i++) {
+            
+            if(wScroll > sections[i].offsetTop)
+                currentsectionindex = i;
+        }
+        
+        var anavitems = document.getElementsByClassName("anavitem");
+        
+        for(var i = 0; i < anavitems.length; i++) {
+            
+            anavitems[i].style.color = "#060707";
+        }
+        
+        anavitems[currentsectionindex].style.color = "#fcb040";
     }
     
 //    console.log("scroll: " + wScroll);

@@ -220,6 +220,8 @@ p {
     color: inherit;
     padding-top: 2px;
     padding-bottom: 2px;
+    
+    text-decoration: none;
 }
 
 #logo {
@@ -265,6 +267,8 @@ p {
     color: inherit;
     padding-top: 2px;
     padding-bottom: 2px;
+    
+    text-decoration: none;
 }
 
 #navright #navsocials {
@@ -496,6 +500,12 @@ p {
     background: #060707;
 }
 
+#homepage .navhome {
+    
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
 #slides {
     
     position: relative;
@@ -592,13 +602,14 @@ header {
     padding-top: 5vw;
     
     font-size: 1.125vw;
+    
+    overflow: hidden;
 }
 
-#headerright #headerrightlogo {
+#headerright img {
     
-    border-left: 1vw solid white;
+    height: 4vw;
     
-    padding-left: 1.5vw;
     margin-bottom: 3vw;
 }
 
@@ -1024,6 +1035,12 @@ header .slideshow {
     align-content: center;
 }
 
+#about .navabout {
+    
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
 #aboutcontent {
     
     position: relative;
@@ -1041,20 +1058,21 @@ header .slideshow {
     
     padding-top: 80px;
     
-    transition: 0.25s;
-    min-width: 0;
+    min-width: 175px;
 /*    width: 15vw;*/
-    height: 0;
-    width: 0;
+    height: auto;
+    width: 15vw;
     
     overflow: hidden;
     
     top:0;
     
-    text-align: right;
+    text-align: left;
 }
 
 #aboutnavcontainer {
+    
+    padding-left: 25px;
     
     position: fixed;
 
@@ -1064,14 +1082,44 @@ header .slideshow {
     
     overflow: hidden;
     
-    top: 100px;
+    top: 375px;
     
     display: flex;
     flex-direction: column;
     
     transition-property: height;
     
-    border-right: 1px solid #060707;
+/*    border-right: 1px solid #060707;*/
+    
+    font-family: "Main Header";
+    font-size: 0.75em;
+}
+
+#aboutnavbar h3 {
+    
+    margin: 2px;
+}
+
+.aboutcontact {
+    
+    margin: 0;
+    margin-bottom: 2px;
+    
+    font-family: "Body Text";
+
+    display: flex;
+    flex-direction: row;
+
+    font-size: 0.8em;
+}
+
+.aboutcontacticon {
+    
+    margin-left: 5px;
+    margin-right: 5px;
+    
+    height: 15px;
+    width: 15px;
 }
 
 #aboutnavbar a {
@@ -1570,28 +1618,6 @@ header .slideshow {
     
     font-size: 1.5em;
     font-weight: bolder;
-}
-
-#commrad {
-    
-    padding: 0 15vw 0 15vw;
-    
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    
-    grid-gap: 5vw;
-}
-
-.commradi {
-    
-    font-size: 7.5vw;
-    
-    background: rgba(0,0,0,0.25);
-}
-
-.commradi input {
-    
-    
 }
 
 #commposts {

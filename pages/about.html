@@ -62,12 +62,12 @@
 
             <div>
                 <ul id=nav>
-                    <li><a class=navdir onclick="navTo(this)" href="/index.html">Home</a></li>
+                    <li><a class=navhome onclick="navTo(this)" href="/index.html">Home</a></li>
                     <li><a class=navdir onclick="navTo(this)" href="/pages/directors.html">Directors</a></li>
                     <li><a class=navmini onclick="navTo(this)" href="/pages/minifests.html">Minifests</a></li>
                     <li><a class=navcom onclick="navTo(this)" href="/pages/community.html">Community</a></li>
                     <li><a class=navmerch onclick="navTo(this)" href="/pages/merch.html">Merch</a></li>
-                    <li><a class=navdir onclick="navTo(this)" href="#navbar">About</a></li>
+                    <li><a class=navabout onclick="navTo(this)" href="#navbar">About</a></li>
                 </ul>
             </div>
             
@@ -84,14 +84,28 @@
             
             <div id=aboutnavbar>
                 <div id=aboutnavcontainer>
-                    <a onclick="navTo(this)" 
-                       href="#navbar">About</a>
-                    <a onclick="navTo(this)" 
+                    <a class=anavitem onclick="navTo(this)" 
+                       href="#navbar" style="color:#fcb040;">About</a>
+                    <a class=anavitem onclick="navTo(this)" 
                        href="#faqs">FAQs</a>
-                    <a onclick="navTo(this)" 
+                    <a class=anavitem onclick="navTo(this)" 
                        href="#membership">Membership</a>
-                    <a onclick="navTo(this)" 
+                    <a class=anavitem onclick="navTo(this)" 
                        href="#partners">Partners</a>
+                    <br>
+                    <h3>contact</h3>
+                    <div class=aboutcontact>
+                        <img class=aboutcontacticon src="/images/logo2.png">
+                        <p>7080P.project@gmail.com</p>
+                    </div>
+                    <div class=aboutcontact>
+                        <img class=aboutcontacticon src="/images/logo2.png">
+                        <p>twitter.com/7080P</p>
+                    </div>
+                    <div class=aboutcontact>
+                        <img class=aboutcontacticon src="/images/logo2.png">
+                        <p>fb.com/7080P</p>
+                    </div>
                 </div>
             </div>
 

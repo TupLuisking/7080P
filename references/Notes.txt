@@ -3,11 +3,10 @@ Finalize:
 - Director page
 
 Clarify:
+- About page nav
 - Module page
 - TOC + Navbar conflict
 - About side navbar
-- Footer format
-- Original navbar format
 - Post?
 - Community?
 - Image modal format
