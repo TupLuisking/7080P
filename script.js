@@ -286,10 +286,17 @@ function showNowShowingInfo(i) {
 // CALENDAR
 
 var dateDates = [
-    "6 Maynila sa mga Kuko ng Liwanag",
-    "11 Batch '81",
-    "14 Kung Mangarap Ka't Magising",
-    "24 Kakabakaba Ka Ba?"
+    "6",
+    "11",
+    "14",
+    "24"
+];
+
+var dateTitles = [
+    "Maynila sa mga Kuko ng Liwanag",
+    "Batch '81",
+    "Kung Mangarap Ka't Magising",
+    "Kakabakaba Ka Ba?"
 ];
 
 var dateColors = [
@@ -335,13 +342,16 @@ function showDayInfo(i) {
         currentIndex = i;
 
         var dayInfo = document.getElementById("dayinfo");
-        var dayinfodate = document.getElementById("dayinfodate");
+        var dayinfoday = document.getElementById("dayinfoday");
+        var dayinfofilm = document.getElementById("dayinfofilm");
         var dayinfotime = document.getElementById("dayinfotime");
         var dayinfovenue = document.getElementById("dayinfovenue");
         var dayinfoentry = document.getElementById("dayinfoentry");
         dayInfo.style.opacity = "1";
-        dayinfodate.innerHTML = dateDates[i];
-        dayinfodate.style.background = dateColors[i];
+        dayinfoday.innerHTML = dateDates[i];
+        dayinfoday.style.background = dateColors[i];
+        dayinfofilm.innerHTML = dateTitles[i];
+        dayinfofilm.style.background = dateColors[i];
         
         dayinfotime.innerHTML = dayTimes[i];
         dayinfovenue.innerHTML = dayVenues[i];

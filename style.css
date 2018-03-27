@@ -972,10 +972,28 @@ header .slideshow {
     flex-direction: row;
 }
 
+#daynumber {
+    
+    display: flex;
+    flex-direction: column;
+}
+
+#daynumber, #dayinfofilm {
+    
+    font-size: 2vw;
+    font-family: "Names";
+}
+
+#daynumber p, #dayinfofilm {
+    
+    width: auto;
+    padding: 10px;
+}
+
 #dayfb {
     
-    height: 5vw;
-    width: 5vw;
+    height: 6vw;
+    width: 6vw;
 }
 
 #dayinfolist {
