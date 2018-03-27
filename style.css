@@ -1701,6 +1701,42 @@ header .slideshow {
     width: 100%;
 }
 
+/* INDIVIDUAL POST */
+
+#ipost {
+    
+    background: #a8dac7;
+}
+
+#postcontent {
+    
+    padding: 25px;
+    
+    display: grid;
+    grid-template-columns: auto 200px;
+    
+    grid-gap: 25px;
+    
+}
+
+#postcontentleft {
+    
+    background: rgba(0,0,0,0.25);
+}
+
+#postcontentright {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#postcontentright img {
+    height: auto;
+    width: 100%;
+}
+
 /* MERCH */
 
 #merch {
