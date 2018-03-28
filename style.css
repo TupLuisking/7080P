@@ -1253,24 +1253,19 @@ header .slideshow {
     margin-top: 50px;
     margin-bottom: 50px;
     
-    padding-left: 7.5vw;
-    padding-right: 7.5vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
     
-    margin-top: 50px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    
-    grid-gap: 7.5vw;
-    
-    justify-items: stretch;
-    align-items: stretch;
 }
 
 .directorpanel {
+    
+    margin: 25px;
+    
+    width: 22vw;
     
     position: relative;
     
@@ -1282,6 +1277,8 @@ header .slideshow {
 .directorpanel p {
     
     padding: 2.5px;
+    
+    font-size: 2vw;
 }
 
 .directorpanel .directorname {
