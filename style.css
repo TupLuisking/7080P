@@ -325,6 +325,11 @@ p {
     transform: translateX(-50%);
 }
 
+#originalnav p {
+    
+    font-family: "Body Text";
+}
+
 #originalnav li {
     
     list-style: none;
