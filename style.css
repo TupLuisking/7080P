@@ -1383,22 +1383,28 @@ header .slideshow {
 
 #dirheader {
     
-    height: 35vw;
+    height: 60vw;
     
     position: relative;
     
     background-size: cover;
     background-position: center;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 
 #dirnav {
+    
+    font-family: "Names";
     
     display: flex;
     flex-direction: row;
     justify-content: center;
     
     position: absolute;
-    top: 0;
+    top: 25px;
     left: 50%;
     
     transform: translateX(-50%);
@@ -1406,28 +1412,71 @@ header .slideshow {
 
 #dirnav a {
     
-    font-size: 1em;
-    margin: 10px;
+    font-size: 2vw;
+    margin-left: 20px;
+    margin-right: 20px;
     
     color: white;
     text-decoration: none;
+    
+    white-space: nowrap;
+}
+
+#dirheaderinfo {
+    
+    height: 100%;
+    width: 40%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+/*    align-items: flex-start;*/
+    
+    text-align: left;
+}
+
+#dirheaderinfo p {
+    
+    padding: 5px;
+    width: 75%;
+}
+
+#idirfirstname, #idirlastname {
+    
+    font-family: "Main Header";
+}
+
+#idirdate {
+    
+    font-family: "Dates";
+}
+
+#idirheading, #idirpar {
+    
+    
+}
+
+#idirheading {
+    
+    font-style: italic;
+    font-weight: bold;
 }
 
 #dirfilms {
     
     display: flex;
     
-    position: absolute;
-    
     bottom: 0;
     right: 0;
     
-    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .dirfilm {
     
-    margin-left: 15px;
+    margin-left: 10px;
+    margin-right: 5px;
     
     widtH: 10vw;
     height: 15vw;
@@ -1445,11 +1494,14 @@ header .slideshow {
 
 #dirinstruct {
     
+    width: 15vw;
     position: absolute;
-    margin: 10px;
+    margin: 30px;
     
     bottom: 0;
     left: 0;
+    
+    text-align: left;
 }
 
 #dirstory {
