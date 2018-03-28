@@ -415,6 +415,11 @@ p {
     font-size: 0.75em;
 }
 
+.navdir, .navhome, .navmini, .navcom, .navmerch, .navabout {
+    
+    position: relative;
+}
+
 /* FOOTER */
 
 #footer {
@@ -519,8 +524,15 @@ p {
     background: #060707;
 }
 
-#homepage .navhome {
+#homepage .navhome:before {
     
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1.5px;
+    bottom: -3px;
+    
+    background: white;
     text-decoration: underline;
 }
 
@@ -1079,8 +1091,15 @@ header .slideshow {
     text-align: left;
 }
 
-#about .navabout {
+#about .navabout:before {
     
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1.5px;
+    bottom: -3px;
+    
+    background: white;
     text-decoration: underline;
 }
 
@@ -1217,8 +1236,15 @@ header .slideshow {
     background: #df3e3f;
 }
 
-#directors .navdir {
+#directors .navdir:before {
     
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1.5px;
+    bottom: -3px;
+    
+    background: #df3e3f;
     text-decoration: underline;
 }
 
@@ -1248,14 +1274,14 @@ header .slideshow {
     
     position: relative;
     
-    background: black;
+    background: rgba(0,0,0,0.125);
     
     overflow: hidden;
 }
 
 .directorpanel p {
     
-    padding: 5px;
+    padding: 2.5px;
 }
 
 .directorpanel .directorname {
@@ -1263,8 +1289,6 @@ header .slideshow {
     position: absolute;
     left: 0;
     bottom: 1vw;
-    
-    background: black;
     
     max-width: 80%;
     overflow-x: hidden;
@@ -1289,6 +1313,9 @@ header .slideshow {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
 }
 
 .directorimage a {
@@ -1301,16 +1328,26 @@ header .slideshow {
     
     height: 100%;
     width: auto;
-    
-    transition: 0.25s;
-    
-    transform: scale(1.1);
-    
 }
 
-.directorpanel:hover img {
+.dirfirstname, .dirlastname, .dirbottomup, .dirbottomdown {
     
-    transform: scale(1);
+    font-family: "Names";
+}
+
+.dirfirstname, .dirlastname {
+    
+    color: white;
+}
+
+.dirdate, .dirbottomup, .dirbottomdown {
+    
+    color: #060707;
+}
+
+.dirdate {
+    
+    font-family: "Dates";
 }
 
 /*
@@ -1603,8 +1640,15 @@ header .slideshow {
     background: #f7a289;
 }
 
-#minifests .navmini {
+#minifests .navmini:before {
     
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1.5px;
+    bottom: -3px;
+    
+    background: #f7a289;
     text-decoration: underline;
 }
 
@@ -1679,8 +1723,15 @@ header .slideshow {
     background: #a8dac7;
 }
 
-#community .navcom {
+#community .navcom:before {
     
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1.5px;
+    bottom: -3px;
+    
+    background: #a8dac7;
     text-decoration: underline;
 }
 
@@ -1804,8 +1855,15 @@ header .slideshow {
     background: #ef8cba;
 }
 
-#merch .navmerch {
+#merch .navmerch:before {
     
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1.5px;
+    bottom: -3px;
+    
+    background: #ef8cba;
     text-decoration: underline;
 }
 
@@ -2136,6 +2194,12 @@ header .slideshow {
     
     font-family: "Body Text";
     src: url("fonts/Roboto Mono.ttf");
+}
+
+@font-face {
+    
+    font-family: "Dates";
+    src: url("fonts/Akzidenz Grotesk.otf");
 }
 
 .modal {
