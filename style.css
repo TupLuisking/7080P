@@ -1383,7 +1383,7 @@ header .slideshow {
 
 #dirheader {
     
-    height: 60vw;
+    height: 52.5vw;
     
     position: relative;
     
@@ -1404,7 +1404,7 @@ header .slideshow {
     justify-content: center;
     
     position: absolute;
-    top: 25px;
+    top: 20px;
     left: 50%;
     
     transform: translateX(-50%);
@@ -1413,8 +1413,8 @@ header .slideshow {
 #dirnav a {
     
     font-size: 2vw;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     
     color: white;
     text-decoration: none;
@@ -1443,18 +1443,23 @@ header .slideshow {
 #idirfirstname, #idirlastname {
     
     font-family: "Main Header";
-    padding-top: 2px;
+    
+    font-size: 3vw;
 }
 
 #idirdate {
     
     font-family: "Dates";
-    padding: 3px;
+    
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
 
 #idirheading, #idirpar {
     
     padding-top: 2px;
+    
+    font-size: 2vw;
 }
 
 #idirheading {
