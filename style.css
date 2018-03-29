@@ -1595,7 +1595,94 @@ header .slideshow {
 
 #ifilms {
     
-    background: #060707;
+    background: white;
+}
+
+#filmheader {
+    
+    height: 40vw;
+    
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    
+    display: grid;
+    grid-template-columns: 1fr 1.420fr;
+    grid-gap: 50px;
+}
+
+#filmheaderleft, #filmheaderright {
+    
+    height: 100%;
+    
+    background: rgba(0,0,0,0.5);
+    
+    position: relative;
+}
+
+#filmposter {
+    
+    position: absolute;
+    width: 20vw;
+    
+    right: 0;
+    bottom: -30%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#filmdirector {
+    
+    position: absolute;
+    left: 0;
+    top: -12.5%;
+    
+    display: flex;
+    flex-direction: column;
+    
+    width: 12.5vw;
+}
+
+#filmdirector img {
+    
+    width: 100%;
+}
+
+#filmposter img {
+    
+    width: 100%;
+}
+
+#filmheaderright {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    text-align: left;
+}
+
+#filmheaderright p {
+    
+    width: 95%;
+}
+
+#filminfo {
+    
+    padding: 35px 50px 35px 50px;
+    height: 200px;
+    
+    display: grid;
+    grid-template-columns: 1fr 1.420fr;
+    grid-gap: 50px;
+}
+
+#filminfoleft, #filminforight {
+    
+    background: rgba(0,0,0,0.5);
 }
 
 /* MINIFESTS */
