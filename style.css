@@ -1304,12 +1304,9 @@ header .slideshow {
     
     position: relative;
     
-    height: 30vw;
+    height: 20vw;
     
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    overflow: hidden;
     
     margin-top: 2.5px;
     margin-bottom: 2.5px;
@@ -1319,12 +1316,17 @@ header .slideshow {
     
     height: 100%;
     width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .directorimage img {
     
-    height: 100%;
-    width: auto;
+    height: auto;
+    width: 100%;
 }
 
 .dirfirstname, .dirlastname, .dirbottomup, .dirbottomdown {
