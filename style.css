@@ -1953,7 +1953,7 @@ header .slideshow {
 #instructions {
     
     margin: 0 0 0 0;
-    padding: 25px 0 25px 0;
+    padding: 25px;
     
     font-size: 1.25em;
 }
@@ -2037,6 +2037,8 @@ header .slideshow {
     width: 15vw;
     
     overflow: hidden;
+    
+    cursor: pointer;
 }
 
 .sticker img {
@@ -2302,15 +2304,30 @@ header .slideshow {
     transform: translateY(-100vh);
 }
 
-#imagemodal img {
+#imgmodalcontainer {
     
-    height: 69vh;
+    width: 50vh;
     
     position: absolute;
     top: 50%;
     left: 50%;
     
     transform: translate(-50%, -50%);
+}
+
+#imagemodal img {
+    
+    height: auto;
+    width: 100%;
+}
+
+.closemodalbutton {
+    
+    position: absolute;
+    
+    right: 0;
+    top: 0;
+    padding : 10px;
 }
 
 /* EASE OF CHANGING FONTS */
