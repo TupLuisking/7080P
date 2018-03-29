@@ -195,7 +195,7 @@ p {
 #navtop {
     
     display: grid;
-    grid-template-columns: 2fr 175px 2fr;
+    grid-template-columns: 2fr 125px 2fr;
     grid-template-rows: 175px;
     grid-template-areas: 
         "navleft logo navright";
@@ -234,14 +234,14 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
-    border: 1px solid white;
 }
 
 #logo img {
     
     height: auto;
-    width: 100%;
+    width: 98%;
+    
+    border: 1px solid white;
 }
 
 #navright {
@@ -1437,23 +1437,24 @@ header .slideshow {
 
 #dirheaderinfo p {
     
-    padding: 5px;
     width: 75%;
 }
 
 #idirfirstname, #idirlastname {
     
     font-family: "Main Header";
+    padding-top: 2px;
 }
 
 #idirdate {
     
     font-family: "Dates";
+    padding: 3px;
 }
 
 #idirheading, #idirpar {
     
-    
+    padding-top: 2px;
 }
 
 #idirheading {

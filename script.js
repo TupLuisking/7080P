@@ -99,12 +99,19 @@ function adjustAboutNav(navend, wScroll) {
         
         var anavitems = document.getElementsByClassName("anavitem");
         
+        console.log("Current About Section Index: " + currentsectionindex);
+        
         for(var i = 0; i < anavitems.length; i++) {
             
-            anavitems[i].style.color = "#060707";
-            
-            if(i == currentsectionindex)
+            if(i == currentsectionindex) {
+                
+//                console.log(i + ": Orange!");
                 anavitems[currentsectionindex].style.color = "#fcb040";
+            } else {                
+                
+//                console.log(i + ": Black");
+                anavitems[i].style.color = "#060707";
+            }
         }
     }
 }
