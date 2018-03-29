@@ -2327,7 +2327,10 @@ header .slideshow {
     
     right: 0;
     top: 0;
-    padding : 10px;
+    padding: 10px;
+    padding-right: 15px;
+    
+    cursor: pointer;
 }
 
 /* EASE OF CHANGING FONTS */
