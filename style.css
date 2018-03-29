@@ -1457,9 +1457,9 @@ header .slideshow {
 
 #idirheading, #idirpar {
     
-    padding-top: 2px;
+    padding-top: 1.5px;
     
-    font-size: 2vw;
+    font-size: 1.75vw;
 }
 
 #idirheading {
@@ -1476,7 +1476,7 @@ header .slideshow {
     right: 0;
     
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .dirfilm {
@@ -1502,21 +1502,27 @@ header .slideshow {
     
     width: 15vw;
     position: absolute;
-    margin: 30px;
+    margin: 25px;
     
     bottom: 0;
     left: 0;
     
     text-align: left;
+    
+    font-size: 1.75vw;
+    font-family: "Names";
 }
 
 #dirstory {
     
     padding: 20px;
+    padding: 40px 20px 40px 20px;
     
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 15px;
+    
+    color: #060707;
 }
 
 #dirillustration {
@@ -1527,8 +1533,8 @@ header .slideshow {
     
     overflow: hidden;
     
-    height: 39vh;
-    width: 26vh;
+    height: 33vh;
+    width: 22vh;
 }
 
 #dirillustration img {
@@ -1541,16 +1547,24 @@ header .slideshow {
     
     text-align: justify;
     column-count: 3;
+    column-gap: 30px;
+    
+    font-size: 0.75em;
 }
 
 #dirprocessguide {
     
-    padding: 20px;
+    padding: 40px 20px 40px 40px;
     
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 25px;
     text-align: justify;
+    
+    color: black;
+    font-size: 0.75em;
+    
+    background: white;
 }
 
 #dirprocessguide h2 {
@@ -1561,8 +1575,14 @@ header .slideshow {
 
 #dirtrivia {
     
-    padding: 20px;
-    text-align: justify;
+    padding: 40px 20px 40px 20px;
+    
+    text-align: left;
+    
+    color: black;
+    font-size: 0.75em;
+    
+    width: 50%;
 }
 
 /* INDIV FILMS */
@@ -2285,3 +2305,25 @@ header .slideshow {
     transform: translate(-50%, -50%);
 }
 
+/* EASE OF CHANGING FONTS */
+
+.fontTurnpike {
+    
+    font-family: "Main Header";
+}
+
+.fontHarbour {
+    
+    font-family: "Names";
+}
+
+.fontRoboto {
+    
+    font-family: "Body Text";
+}
+
+.special {
+    
+    font-family: "Names";
+    font-size: 1.5em;
+}
