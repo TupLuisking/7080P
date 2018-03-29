@@ -186,8 +186,6 @@ p {
 
 #originalnavbar {
     
-    padding-top: 50px;
-    
     background: #060707;
     color: white;
 }
@@ -1593,127 +1591,11 @@ header .slideshow {
     width: 50%;
 }
 
-/* INDIV FILMS */
+/* INDIVIDUAL FILMS */
 
 #ifilms {
     
-    background: rgba(0,0,0,0.69);
-}
-
-#filmbg {
-    
-    z-index: -1;
-    
-    position: fixed;
-    
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    
-    background-size: cover;
-    background-position: center;
-}
-
-#filmheader {
-    
-    padding: 25px;
-    padding-top: 100px;
-    
-    display: grid;
-    grid-template-columns: auto auto;
-    
-    grid-gap: 1vw;
-}
-
-#filmpc {
-    
-    display: flex;
-    flex-direction: column;
-}
-
-#filmp {
-    
-    height: 300px;
-    width: 200px;
-    
-    overflow: hidden;
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-#filmp img {
-    
-    height: 100%;
-    width: auto;
-}
-
-#filmc {
-    
-    margin-top: 10px;
-    
-    text-align: justify;
-    width: 200px;
-    
-    font-size: 0.8em;
-}
-
-#filmndt {
-    margin-top: px;
-    text-align: justify;
-}
-
-#filmdt {
-    
-    display: grid;
-    grid-template-columns: auto auto;
-    
-    grid-gap: 1vw;
-}
-
-#filmdetails, #filmn, #filmd {
-    
-    padding: 10px;
-}
-
-#filmn {
-    
-    font-size: 1.5em;
-}
-
-#filmd {
-    
-    padding: 10px;
-}
-
-#filmt {
-    
-    margin: 10px 0 10px 0;
-    
-    text-align: center;
-    height: 100px;
-    width: 100px;
-}
-
-#filmt img {
-    
-    height: 100%;
-    width: auto;
-}
-
-#filmcta {
-    
-    padding: 25px;
-    padding-top: 0;
-    
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    
-    grid-gap: 3vw;
-    
-    text-align: justify;
+    background: #060707;
 }
 
 /* MINIFESTS */
@@ -1911,12 +1793,12 @@ header .slideshow {
 
 #postbottom {
 
-    padding: 0 25px 50px 25px;
+    padding: 0 8vw 50px 8vw;
     
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 
-    grid-gap: 25px;
+    grid-gap: 8vw;
 }
 
 .otherpost a {
