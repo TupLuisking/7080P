@@ -1263,9 +1263,11 @@ header .slideshow {
 
 .directorpanel {
     
-    margin: 25px;
+    margin-bottom: 25px;
     
-    width: 22vw;
+    margin: 2vw 4vw 2vw 4vw;
+    
+    width: 18vw;
     
     position: relative;
     
@@ -1276,9 +1278,6 @@ header .slideshow {
 
 .directorpanel p {
     
-    padding: 2.5px;
-    
-    font-size: 2vw;
 }
 
 .directorpanel .directorname {
@@ -1304,12 +1303,7 @@ header .slideshow {
     
     position: relative;
     
-    height: 20vw;
-    
     overflow: hidden;
-    
-    margin-top: 2.5px;
-    margin-bottom: 2.5px;
 }
 
 .directorimage a {
@@ -1329,7 +1323,13 @@ header .slideshow {
     width: 100%;
 }
 
-.dirfirstname, .dirlastname, .dirbottomup, .dirbottomdown {
+.dirfirstname, .dirlastname {
+    
+    font-size: 2vw;
+    padding: 0;
+}
+
+.dirfirstname, .dirlastname, .dirpanelbottom {
     
     font-family: "Names";
 }
@@ -1339,7 +1339,7 @@ header .slideshow {
     color: white;
 }
 
-.dirdate, .dirbottomup, .dirbottomdown {
+.dirdate, .dirpanelbottom {
     
     color: #060707;
 }
@@ -1347,6 +1347,12 @@ header .slideshow {
 .dirdate {
     
     font-family: "Dates";
+    font-size: 2vw;
+}
+
+.dirpanelbottom {
+    
+    font-size: 1.75vw;
 }
 
 /*
