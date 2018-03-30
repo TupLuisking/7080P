@@ -1813,8 +1813,8 @@ header .slideshow {
 #filmvote {
     
     border: 1px solid black;
-    margin-top: 10px;
-    padding: 10px;
+    margin-top: 2vw;
+    padding: 2vw;
 }
 
 #filmvoteheading {
@@ -1844,11 +1844,16 @@ header .slideshow {
     
     transition: 0.5s;
     
-    text-indent: 5px;
+    text-indent: 1vw;
     
     text-align: left;
-    font-size: 2vw;
+    font-size: 1.8vw;
     color: white;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 /*
@@ -1870,16 +1875,17 @@ header .slideshow {
 
 #filmqi {
     
-    margin-top: 25px;
+    margin-top: 3vw;
     
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     
-    grid-gap: 20px;
+    grid-gap: 1vw;
 }
 
 #filmquote {
     
+    font-size: 2vw;
     font-family: "Names";
     text-align: left;
 }
