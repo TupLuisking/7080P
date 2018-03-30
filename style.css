@@ -64,13 +64,13 @@ p {
     color: white;
 }
 
-.name:before, .minifilm .name:before, .headerfilm .name:before {
+.name:before, .filmpanel .name:before, .headerfilm .name:before {
     
     content: "";
     position: absolute;
     width: 100%;
     height: 2px;
-    bottom: 0;
+    bottom: -2px;
     left: 0;
     
     background: white;
@@ -81,7 +81,7 @@ p {
     transform: scaleX(0);
 }
 
-.name:hover:before, .minifilm:hover .name:before, .headerfilm:hover .name:before {
+.name:hover:before, .filmpanel:hover .name:before, .headerfilm:hover .name:before {
     
     visibility: visible;
     transform: scaleX(1);
@@ -1930,7 +1930,7 @@ header .slideshow {
     background-position: center;
     background-size: cover;
     
-    height: 40vw;
+    height: 45vw;
     padding: 20px;
     
     display: flex;
@@ -1938,7 +1938,7 @@ header .slideshow {
     align-items: center;
     justify-content: center;
     
-    border-radius: 15px
+    border-radius: 15px;
 }
 
 .minifestpanel h1 {
@@ -1961,20 +1961,18 @@ header .slideshow {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: start;
+    
+    grid-gap: 4.5vw;
 }
 
-.minifestfilms .minifestfilm {
+.minifestfilm {
     
     width: 12vw;
-    
-    margin: 0 20px 0 20px;
     
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    
-    overflow: hidden;
 }
 
 .minifestfilm a, .minifestfilm img {
@@ -1983,6 +1981,14 @@ header .slideshow {
     width: 100%;
     
     color: white;
+    text-decoration: none;
+}
+
+.minifestfilm p {
+    
+    margin-top: 2vw;
+    width: 100%;
+    word-break: break-all;
 }
 
 #tocminifest {
