@@ -438,3 +438,48 @@ function hideTOC() {
     
     toc.style.transform = "translateY(-100%)";
 }
+
+// FILM VOTING
+
+var filmyes = 10;
+var filmno = 4;
+
+var voted = false;
+
+function showFilmResults(yes, no) {
+    
+    if(voted)
+        return;
+    
+    voted = true;
+    
+    var filmyes = Math.floor(Math.random() * 100) + 1;
+    var filmno = Math.floor(filmyes/(2+Math.floor((Math.random() * 4) + 1)));
+    
+    console.log(filmyes + ":" + filmno);
+    
+    filmyes += yes;
+    filmno += no;
+    
+    var votemeters = document.getElementsByClassName("votemeter");
+
+    var yesmeter = votemeters[0];
+    var nometer = votemeters[1];
+    
+    var yespercent = (filmyes / (filmyes + filmno));
+    var nopercent = 1 - yespercent;
+
+//    console.log(yespercent + ":" + nopercent);
+    
+    yesmeter.style.width = (100*yespercent) + "%";    
+    nometer.style.width = (100*nopercent) + "%";
+    
+    yespercent = Math.floor(yespercent * 100);
+    nopercent = 100-yespercent;
+    
+    yesmeter.innerHTML = yespercent + "%";
+    nometer.innerHTML = nopercent + "%";
+    
+    yesmeter.style.background = "#df3e3f";
+    nometer.style.background = "#df3e3f";
+}

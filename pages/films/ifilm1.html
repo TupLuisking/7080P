@@ -80,14 +80,27 @@
             <div id=filminforight>
                 <div class=filminfoheading>Condiiton & Accesibility</div>
                 <div id=filminfoca>
-                    <ul>
-                        <li>Item 1</li>
-                        <li>Item 2</li>
-                    </ul>
+                    <div class=filmcaitem>
+                        <div class=filmcabullet></div>
+                        <p><span class=filminfoitalic>REMASTERED by _ IN _ .</span></p>
+                    </div>
+
+                    <div class=filmcaitem>
+                        <div class=filmcabullet></div>
+                        <p><span class=filminfoitalic>BUYABLE AND RENTABLE.</span> Watch in Ateneo de Manila University</p>
+                    </div>
                 </div>
                 <div class=filminfoheading>Demand Vote</div>
                 <div id=filmvote>
-                    
+                    <p id=filmvoteheading>Are you interested in us screening this?</p>
+                    <div class=votebar>
+                        <div onclick="showFilmResults(1,0);" class=votemeter></div>
+                        <p class=votelabel>YES</p>
+                    </div>
+                    <div class=votebar>
+                        <div onclick="showFilmResults(0,1);" class=votemeter></div>
+                        <p class=votelabel>NO</p>
+                    </div>
                 </div>
                 <div id=filmquote></div>
             </div>

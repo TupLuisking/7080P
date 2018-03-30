@@ -1776,6 +1776,100 @@ header .slideshow {
     font-weight: bold;
 }
 
+#filminfoca {
+    
+    display: flex;
+    flex-direction: column;
+    
+    text-align: left;
+}
+
+.filmcaitem {
+    
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    
+    margin-bottom: 15px;
+}
+
+.filmcabullet {
+    
+    height: 3vw;
+    width: 3vw;
+    
+    border-radius: 50%;
+    background: #df3e3f;
+    
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.filmcaitem p {
+    
+    font-size: 1.75vw;
+    font-weight: bold;
+}
+
+#filmvote {
+    
+    border: 1px solid black;
+    margin: 15px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+#filmvoteheading {
+    
+    color: #df3e3f;
+    font-family: "Names";
+    font-size: 1.69vw;
+}
+
+.votebar {
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    margin-top: 10px;
+}
+
+.votemeter {
+    
+    height: 4vw;
+    width: 4vw;
+    min-width: 4vw;
+    max-width: 80%;
+    
+    border: 1px solid #df3e3f;
+    
+    transition: 0.5s;
+    
+    text-indent: 5px;
+    
+    text-align: left;
+    font-size: 2vw;
+    color: white;
+}
+
+/*
+.votemeter:hover {
+    
+    width: 80%;
+    background: #df3e3f;
+}
+*/
+
+.votelabel {
+    
+    font-weight: bold;
+    
+    text-align: left;
+    
+    margin-left: 10px;
+}
+
 /* MINIFESTS */
 
 #minifests {
