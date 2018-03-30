@@ -8,7 +8,7 @@ window.onload = function() {
     var aboutnavbar = document.getElementById("aboutnavcontainer");
     var abouthref = window.location.href.split("#")[1];
     
-    if(abouthref != null) {
+    if(abouthref != null && aboutnavbar != null) {
         
         aboutnavbar.style.top = 75+ "px";   
     }
@@ -118,7 +118,7 @@ function adjustAboutNav(navend, wScroll) {
 
 function adjustTOC(navend, wScroll) {
     
-    var toc = document.getElementById("toc");
+    var toc = document.getElementsByClassName("toc")[0];
     
     if(toc != null) {
         
@@ -426,17 +426,16 @@ function hideImageModal() {
 
 function showTOC() {
     
-    var toc = document.getElementById("toccontent");
+    var toc = document.getElementsByClassName("toccontent")[0];
     
-    toc.style.transform = "translateY(0)";
+    toc.style.transform = "scale(1)";
 }
 
 function hideTOC() {
     
+    var toc = document.getElementsByClassName("toccontent")[0];
     
-    var toc = document.getElementById("toccontent");
-    
-    toc.style.transform = "translateY(-100%)";
+    toc.style.transform = "scale(0)";
 }
 
 // FILM VOTING

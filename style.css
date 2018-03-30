@@ -1958,15 +1958,13 @@ header .slideshow {
     
     margin-top: 20px;
     
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;
 }
 
 .minifestfilms .minifestfilm {
     
-    height: 18vw;
     width: 12vw;
     
     margin: 0 20px 0 20px;
@@ -1975,8 +1973,6 @@ header .slideshow {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    
-/*    TRY GRID */
     
     overflow: hidden;
 }
@@ -1987,6 +1983,96 @@ header .slideshow {
     width: 100%;
     
     color: white;
+}
+
+#tocminifest {
+    
+    background: white;
+    
+    position: absolute;
+    
+    z-index: 5;
+    
+    top: 0;
+    right: 0;
+
+    transition: 0.25s;
+    
+    display: flex;
+    flex-flow: column;
+    
+    padding: 2vw;
+    padding-left: 0;
+    padding-right: 6.9vw;
+    
+    transform-origin: right top;
+    transform: scale(0);
+}
+
+#tocminifest .tocclose {
+    
+    margin-right: 0.5vw;
+    color: #f7a289;
+}
+
+#tocmonths, #tocyears {
+    
+    color: black;
+    
+    display: grid;
+    grid-template-columns: 12vw auto;
+    
+    grid-gap: 2vw;
+}
+
+#tocmonths {
+    
+    margin-bottom: 2vw;
+}
+
+#tocmonthstable {
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    
+    grid-gap: 2vw;
+    
+    justify-items: center;
+    align-items: center;
+    
+    padding-left: 1vw;
+}
+
+#tocmonthstable a, #tocyearsrow a {
+    
+    font-size: 1.69vw;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.tocminiheading {
+    
+    text-align: center;
+    
+    font-family: "Names";
+    
+    color: #f7a289;
+    
+    font-size: 2vw;
+    width: 12vw;
+}
+
+#tocyearsrow {
+    
+    display: flex;
+    flex-direction: row;
+}
+
+#tocyearsrow a {
+    
+    padding-left: 1vw;
 }
 
 /* COMMUNITY */
@@ -2266,35 +2352,47 @@ header .slideshow {
     margin: 10px;
 }
 
-#toc {
+.toc {
     
     position: fixed;
     
     z-index: 2;
     
     top: 300px;
-    right: 50px;
-    
-    transform: scaleX(2);
+    right: 30px;
     
     cursor: pointer;
 }
 
-#toccontent {
+.tocsymbol {
     
+    transform-origin: right;
+    transform: scaleX(2);
+}
+
+.tocclose {
+    
+    position: absolute;
+    
+    padding: 1vw;
+    
+    top: 0;
+    right: 0;
+}
+
+.toccontent {
+    
+/*
     background: rgba(0,0,0,0.5);
     
-    position: fixed;
+    position: absolute;
     
     z-index: 5;
     
     top: 0;
-    left: 0;
     right: 0;
-    bottom: 0;
 
-    transition: 0.5s;
-    transform: translateY(-100%);
+    transition: 0.25s;
     
     display: flex;
     flex-flow: column wrap;
@@ -2302,13 +2400,19 @@ header .slideshow {
     justify-content: center;
     
     padding: 5vw;
+    
+    transform-origin: right top;
+    transform: scale(0);
+*/
 }
 
-#toccontent a {
+.toccontent a {
     
+/*
     color: white;
     text-decoration: none;
     margin: 5px;
+*/
 }
 
 #moduleheader {

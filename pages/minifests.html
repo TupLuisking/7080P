@@ -22,22 +22,93 @@
         });
         </script>
         
-        <div id=toc onclick="showTOC();">&#9776;</div>
-        
-        <div id=toccontent onclick="hideTOC();">
-            <a onclick="navTo(this);hideTOC();" 
-               href="#month">
-                MONTH 1
-            </a>
-            <a onclick="navTo(this);hideTOC();" 
-               href="#month">
-                MONTH 2
-            </a>
-            <a onclick="navTo(this);hideTOC();" 
-               href="#month">
-                MONTH 3
-            </a>
+        <div class=toc>
+            <p class=tocsymbol onclick="showTOC();">&#9776;</p>
+            <div class=toccontent id=tocminifest onclick="hideTOC();">
+<!--
+                <a onclick="navTo(this);hideTOC();" 
+                   href="#month">
+                    MONTH 1
+                </a>
+-->
+                <div id=tocmonths>
+                    <p class=tocminiheading>Month</p>
+                    <div id=tocmonthstable>
+                        <a onclick="navTo(this);hideTOC();" 
+                           href="#month">
+                            JAN
+                        </a>
+                        <a onclick="navTo(this);hideTOC();" 
+                           href="#month">
+                            FEB
+                        </a>
+                        <a onclick="navTo(this);hideTOC();" 
+                           href="#month">
+                            MAR
+                        </a>
+                        <a onclick="navTo(this);hideTOC();" 
+                           href="#month">
+                            APR
+                        </a>
+                        <a onclick="navTo(this);hideTOC();" 
+                           href="#month">
+                            MAY
+                        </a>
+                        <a onclick="navTo(this);hideTOC();" 
+                           href="#month">
+                            JUN
+                        </a>
+                        <a onclick="navTo(this);hideTOC();" 
+                           href="#month">
+                            JUL
+                        </a>
+                        <a onclick="navTo(this);hideTOC();" 
+                           href="#month">
+                            AUG
+                        </a>
+                        <a onclick="navTo(this);hideTOC();" 
+                           href="#month">
+                            SEP
+                        </a>
+                        <a onclick="navTo(this);hideTOC();" 
+                           href="#month">
+                            OCT
+                        </a>
+                        <a onclick="navTo(this);hideTOC();" 
+                           href="#month">
+                            NOV
+                        </a>
+                        <a onclick="navTo(this);hideTOC();" 
+                           href="#month">
+                            DEC
+                        </a>
+                    </div>
+                </div>
+                <div id=tocyears>
+                    <p class=tocminiheading>Year</p>
+                    <div id=tocyearsrow>
+                        <a onclick="navTo(this);hideTOC();" 
+                           href="#month">
+                            2018
+                        </a>
+                        <a onclick="navTo(this);hideTOC();" 
+                           href="#month">
+                            2019
+                        </a>
+                        <a onclick="navTo(this);hideTOC();" 
+                           href="#month">
+                            2020
+                        </a>
+                    </div>
+                </div>
+                
+                <div class=tocclose>
+                    &#x2715;
+                </div>
+            </div>
         </div>
+        
+        
         
         <div id=minifestheader>
             <p>asdasd</p>
@@ -65,12 +136,17 @@
                     <div class=minifestfilm>
                         <a href="/pages/modules/imodule.html">
                             <img src="/images/birdnull.jpg">
+                            <p>asdaaasasasasassasasassas</p>
+                            <p>asdaaasasasasassasasassas</p>
+                            <p>asdaaasasasasassasasassas</p>
+                            <p>asdaaasasasasassasasassas</p>
                         </a>
                     </div>
                     
                     <div class=minifestfilm>
                         <a href="/pages/modules/imodule.html">
                             <img src="/images/birdnull.jpg">
+                            <p>asdaaasasasasassasasassas</p>
                         </a>
                     </div>
                     
