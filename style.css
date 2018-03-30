@@ -2000,6 +2000,12 @@ header .slideshow {
     grid-gap: 4.5vw;
 }
 
+.minifestfilms a {
+    
+    color: white;
+    text-decoration: none;
+}
+
 .minifestfilm {
     
     width: 12vw;
@@ -2010,20 +2016,19 @@ header .slideshow {
     align-items: flex-start;
 }
 
-.minifestfilm a, .minifestfilm img {
+.minifestfilm img {
     
     height: auto;
     width: 100%;
-    
-    color: white;
-    text-decoration: none;
 }
 
-.minifestfilm p {
+.minifestfilm .name {
     
     margin-top: 2vw;
     width: 100%;
     word-break: break-all;
+    color: white;
+    text-decoration: none;
 }
 
 #tocminifest {
