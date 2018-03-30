@@ -1914,9 +1914,15 @@ header .slideshow {
     text-decoration: underline;
 }
 
+#minifestheader {
+    
+    margin: 25px;
+    margin-bottom: 50px;
+}
+
 .minifestpanel {
     
-    padding: 50px 50px 50px 50px;
+    padding: 0 50px 50px 50px;
 }
 
 .minifestpanelbg {
@@ -1968,14 +1974,19 @@ header .slideshow {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    
+/*    TRY GRID */
     
     overflow: hidden;
 }
 
 .minifestfilm a, .minifestfilm img {
     
-    height: 100%;
+    height: auto;
+    width: 100%;
+    
+    color: white;
 }
 
 /* COMMUNITY */
@@ -2261,8 +2272,8 @@ header .slideshow {
     
     z-index: 2;
     
-    top: 320px;
-    right: 20px;
+    top: 300px;
+    right: 50px;
     
     transform: scaleX(2);
     

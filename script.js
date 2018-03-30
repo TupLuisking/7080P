@@ -124,10 +124,10 @@ function adjustTOC(navend, wScroll) {
         
         if(wScroll < navend) {
             
-            toc.style.top = (320 - wScroll) + "px";       
+            toc.style.top = (290 - wScroll) + "px";       
         } else {
             
-            toc.style.top = "75px";
+            toc.style.top = "85px";
         }
     }
 }
