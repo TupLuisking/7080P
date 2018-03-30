@@ -685,6 +685,11 @@ header .slideshow:hover {
     align-self: flex-start;
 }
 
+#minifilms a {
+    
+    text-decoration: none;
+}
+
 #nowshowing h1 {
     
     padding: 10px 0 10px 0;
@@ -695,7 +700,6 @@ header .slideshow:hover {
     height: auto;
     width: 15vw;
     
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
