@@ -1930,33 +1930,41 @@ header .slideshow {
     background-position: center;
     background-size: cover;
     
-    height: 45vw;
-    padding: 20px;
+    height: 50vw;
+    padding-left: 7.5vw;
+    padding-right: 7.5vw;
     
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     
-    border-radius: 15px;
-}
-
-.minifestpanel h1 {
-    
-    margin: 0;
-    
-    font-size: 3vw;
-}
-
-.minifestpanelbg p {
-    
-    width: 50%; 
     font-size: 1.5vw;
 }
 
-.minifestfilms {
+.minipanelmonth {
     
-    margin-top: 20px;
+    font-family: "Main Header";
+    font-size: 2vw;
+}
+
+.minipanelheading {
+    
+    font-family: "Main Header";
+    font-size: 4vw;
+    
+    margin: 2vw;
+}
+
+.minipaneldesc {
+    
+    height: 8.5vw;
+    font-size: 1.25vw;
+    
+    line-height: 175%;
+}
+
+.minifestfilms {
     
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
