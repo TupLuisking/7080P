@@ -1916,13 +1916,40 @@ header .slideshow {
 
 #minifestheader {
     
+    width: 37.5vw;
+    
     margin: 25px;
+    margin-left: 50px;
     margin-bottom: 50px;
+    
+    text-align: left;
+}
+
+#mfheading {
+    
+    font-family: "Main Header";
+    font-size: 2vw;
+    
+    margin-bottom: 1vw;
+}
+
+#mfdesc {
+    
+    font-size: 1.5vw;
+    margin-bottom: 0.5vw;
+}
+
+#mfinstruct {
+    
+    font-family: "Names";
+    font-size: 1.5vw;
 }
 
 .minifestpanel {
     
     padding: 0 50px 50px 50px;
+    
+    font-size
 }
 
 .minifestpanelbg {
@@ -2662,4 +2689,14 @@ header .slideshow {
     
     font-family: "Names";
     font-size: 1.5em;
+}
+
+.bold {
+    
+    font-weight: bold;
+}
+
+.italic {
+    
+    font-style: italic;
 }
