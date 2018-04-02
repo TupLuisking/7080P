@@ -1444,6 +1444,39 @@ header .slideshow {
     
     text-align: left;
 }
+ 
+#dirheaderlabels {
+    
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    bottom: 0;
+    
+    width: 35vw;
+    font-family: "Names";
+    
+    display: none;    
+}
+
+#dirheaderlabel {
+    
+    position: absolute;
+    left: 3vw;
+    top: 12vw;
+    
+    text-transform: uppercase;
+    font-size: 2.5vw;
+}
+
+#dirheaderquote {
+    
+    position: absolute;
+    left: 3vw;
+    bottom: 3vw;
+    
+    font-size: 2.25svw;
+}
 
 #dirheaderinfo p {
     
@@ -2481,20 +2514,30 @@ header .slideshow {
     color: white;
 }
 
+#module #dirinstruct, #module #dirnav {
+    
+    display: none;
+}
+
 #moduleheader {
     
-    height: 40vw;
+    height: 50vw;
     
     position: relative;
     
     overflow: hidden;
 }
 
+#module #dirheader #dirheaderlabels {
+    
+    display: block;
+}
+
 #moduleinstruct {
     
     position: absolute;
-    left: 0;
-    bottom: 0;
+    left: 3vw;
+    bottom: 6vw;
         
     margin: 10px;
 }
@@ -2587,8 +2630,8 @@ header .slideshow {
     
     margin: 10px;
     
-    right: 0;
-    bottom: 0;
+    right: 3vw;
+    bottom: 6vw;
     
     font-family: "Names";
     font-size: 1.75vw;
@@ -2604,25 +2647,141 @@ header .slideshow {
 
 #moduleprinted {
     
-    height: 40vw;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-#modulecolumns {
+.printedcolumn {
+    
+    border-right: 1px solid black;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.printedcolumn:nth-child(3) {
+    
+    border: none;
+}
+
+.printedcolumn h2 {
+    
+    font-family: "Dates";
+    text-transform: uppercase;
+    font-size: 2vw;
+    font-weight: bold;
+    
+    margin: 0.25vw;
+}
+
+.printedcolumn p {
+    
+    font-family: "Dates";
+    font-size: 2vw;
+    padding: 0;
+    margin: 0;
+}
+
+#module #dirstory {
+    
+    background: white;
+}
+
+.modulecolumntitle {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    grid-gap: 6vw;
+    padding: 3vw 4vw 0 4vw;
+    
+    text-align: left;
+}
+
+.modulecolumntitle h2 {
+    
+    font-size: 2.5vw;
+    font-family: "Names";
+}
+
+.modulecolumntitle p {
+    
+    font-size: 2vw;
+}
+
+.modulecolumns {
     
     height: 40vw;
     
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     
-    padding: 25px 4vw 25px 4vw;
-    grid-gap: 4vw;
+    padding: 2vw 4vw 2vw 4vw;
 }
 
 .modulecolumn {
     
-    background: rgba(0,0,0,0.25);
-    
     padding: 10px;
+    
+    padding-right: 2vw;
+    padding-left: 2vw;
+    
+    border-right: 1px solid black;
+}
+
+.modulecolumn:nth-child(3) {
+    
+    border: none;
+}
+
+.modulecolumn h2 {
+    
+    font-size: 2vw;
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
+    
+    text-transform: uppercase;
+    font-family: "Dates";
+    font-weight: bold;
+}
+
+.modulecolumn p {
+    
+    text-align: left;
+    font-size: 2vw;
+}
+
+.darkred {
+    
+    color: red;
+    font-family: "Names";
+}
+
+#moduleproduction {
+    
+    color: black;
+}
+
+#moduleproduction h2 {
+    
+    color: white;
+}
+
+#modulereaction {
+    
+    background: white;
+    color: black;
+}
+
+#modulereaction .modulecolumns h2 {
+    
+    color: #f7a289; 
 }
 
 #modulegq {
