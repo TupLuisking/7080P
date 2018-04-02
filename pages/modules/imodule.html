@@ -25,10 +25,42 @@
         </script>
         
         
-        <div class=toc onclick="showTOC();">
-            
-            <p class=tocsymbol>&#9776;</p>
-        
+        <div class=toc>
+            <p class=tocsymbol onclick="showTOC();">&#9776;</p>
+            <div class=toccontent id=tocminifest onclick="hideTOC();">
+<!--
+                <a onclick="navTo(this);hideTOC();" 
+                   href="#month">
+                    MONTH 1
+                </a>
+-->
+                <div id=tocmonths>
+                    <a onclick="navTo(this);hideTOC();" 
+                       href="#month">
+                        The Film
+                    </a>
+                    <a onclick="navTo(this);hideTOC();" 
+                       href="#month">
+                        The Reaction
+                    </a>
+                    <a onclick="navTo(this);hideTOC();" 
+                       href="#month">
+                        The Director
+                    </a>
+                    <a onclick="navTo(this);hideTOC();" 
+                       href="#month">
+                        Your Turn!
+                    </a>
+                    <a onclick="navTo(this);hideTOC();" 
+                       href="#month">
+                        The Prod
+                    </a>
+                </div>
+                
+                <div class=tocclose>
+                    &#x2715;
+                </div>
+            </div>
         </div>
         
 <!--
@@ -49,10 +81,10 @@
 -->
         
         <div class=section id=moduleheader>
-            <video autoplay muted loop>
+            <video muted loop>
                 <source src="/videos/sample.mp4" type="video/mp4">
             </video>
-            <div id=moduledl><a class=name href="#" download>Download this module</a></div>
+            <div id=moduledl><a class=name href="#" download>Download printable pdf</a></div>
             
             <div id=moduleinstruct>
                 

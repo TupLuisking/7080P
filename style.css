@@ -1508,7 +1508,7 @@ header .slideshow {
     height: 100%;
 }
 
-#dirinstruct {
+#dirinstruct, #moduleinstruct {
     
     width: 15vw;
     position: absolute;
@@ -1585,14 +1585,24 @@ header .slideshow {
 
 #dirtrivia {
     
-    padding: 40px 20px 40px 20px;
+    padding: 10vw 0 10vw 0;
     
     text-align: left;
     
     color: black;
     font-size: 0.75em;
     
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+#dirtrivia p {
+    
     width: 50%;
+    
+    text-align: center;
 }
 
 /* INDIVIDUAL FILMS */
@@ -1753,6 +1763,8 @@ header .slideshow {
     
     margin-top: 2vw;
     margin-bottom: 2vw;
+    
+    cursor: pointer;
 }
 
 .filminfoheading {
@@ -1897,6 +1909,49 @@ header .slideshow {
 #filmqi img {
     
     width: 100%;
+}
+
+#filmtrailercontainer {
+    
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    transition: 0.25s;
+    
+    transform: translateY(-100%);
+}
+
+#filmtrailer {
+    
+    position: relative;
+    width: 64vw;
+}
+
+#filmtrailervid {
+    
+    height: 36vw;
+    width: 64vw;
+}
+
+#filmclose {
+    
+    cursor: pointer;
+    position: absolute;
+    top: -7.5vw;
+    right: 0;
+    text-align: right;
+    font-size: 3vw;
+    padding: 2vw;
 }
 
 /* MINIFESTS */
@@ -2384,6 +2439,48 @@ header .slideshow {
     display: none;
 }
 
+#module .toccontent {
+    
+    width: 25vw;
+
+    padding: 2.5vw;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    background: #060707;
+    
+    border: 1px solid white;
+}
+
+#module #tocmonths {
+    
+    width: 100%;
+    height: 100%;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(auto, 3);
+}
+
+#module #tocmonths a {
+    
+    font-weight: normal;
+    font-size: 1.5vw;   
+    font-family: "Dates";
+    
+    text-decoration: none;
+    color: white;
+    text-align: left;
+}
+
+#module .tocclose {
+    
+    color: white;
+}
+
 #moduleheader {
     
     height: 40vw;
@@ -2492,6 +2589,11 @@ header .slideshow {
     
     right: 0;
     bottom: 0;
+    
+    font-family: "Names";
+    font-size: 1.75vw;
+    text-align: right;
+    width: 10vw;
 }
 
 #moduledl a {

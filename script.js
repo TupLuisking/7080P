@@ -482,3 +482,19 @@ function showFilmResults(yes, no) {
     yesmeter.style.background = "#df3e3f";
     nometer.style.background = "#df3e3f";
 }
+
+// FILM TRAILER
+
+function showFilmTrailer(ytlink) {
+    
+    var filmcontainer = document.getElementById("filmtrailercontainer");
+    
+    filmcontainer.style.transform = "translateY(0)";
+}
+
+function hideFilmTrailer() {
+    
+    var filmcontainer = document.getElementById("filmtrailercontainer");
+    
+    filmcontainer.style.transform = "translateY(-100%)";
+}

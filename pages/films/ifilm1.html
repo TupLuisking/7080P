@@ -22,6 +22,18 @@
         });
         </script>
         
+        <div id=filmtrailercontainer onclick="hideFilmTrailer();">
+        
+            <div id=filmtrailer>
+                <div id=filmclose onclick="hideFilmTrailer();">
+                    &#x2715;
+                </div>
+                
+                <iframe id=filmtrailervid src="https://www.youtube.com/embed/32mUJJnoS-U?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                
+            </div>
+        </div>
+            
         <div 
              class=section
              id=filmheader
@@ -51,7 +63,7 @@
              id=filminfo>
         
             <div id=filminfoleft>
-                <div id=filminfotrailer><a>&#9658;Click to watch trailer</a></div>
+                <div onclick="showFilmTrailer('bruh');" id=filminfotrailer>&#9658;Click to watch trailer</div>
                 <div class=filminfoheading>Cast & Crew</div>
                 <div id=filminfocc>
                     
