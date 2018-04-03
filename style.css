@@ -424,16 +424,15 @@ p {
     
     border-top: 1px solid white;
     
-    padding-bottom: 50px;
-    
     background: #060707;
     
-    font-size: 0.75em;
+    position: relative;
+    padding-bottom: 5vw;
 }
 
 #footercontent {
     
-    margin: 15px;
+    margin: 5vw;
     
     display: flex;
 }
@@ -446,7 +445,7 @@ p {
     height: 50px;
     width: 80px;
     
-    margin-right: 3vw;
+    margin-right: 6vw;
 }
 
 #footerabout {
@@ -455,11 +454,12 @@ p {
     flex-direction: column;
     text-align: left;
     
-    padding-right: 4vh;
-    
-    margin-right: 4vh;
+    padding-right: 6vw;
+    margin-right: 6vw;
     
     border-right: 1px solid white;
+    
+    font-size: 1.25vw;
 }
 
 #footerabout a {
@@ -472,8 +472,8 @@ p {
 
 #footersocial img {
     
-    height: 3vh;
-    width: 3vh;
+    height: 2vw;
+    width: 2vw;
 }
 
 #footernav {
@@ -483,7 +483,7 @@ p {
     
     text-align: left;
     
-    font-size: 1.15em;
+    font-size: 1.25vw;
 }
 
 #footernav a {
@@ -501,6 +501,8 @@ p {
     text-align: right;
     
     color: white;
+    
+    font-size: 1.25vw;
 }
 
 #footerloc {
@@ -1129,7 +1131,7 @@ header .slideshow {
     
     overflow: hidden;
     
-    top:0;
+    top: 315px;
     
     text-align: left;
 }
@@ -2272,49 +2274,45 @@ header .slideshow {
 
 #ipost {
     
+    background: white;
+    color: black;
+}
+
+#ipost .navcom:before {
+    
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1.5px;
+    bottom: -3px;
+    
     background: #a8dac7;
+    text-decoration: underline;
 }
 
 #postcontent {
     
-    padding: 25px;
+    padding: 7.5vw;
     padding-bottom: 0;
     
     display: grid;
-    grid-template-columns: auto 150px;
+    grid-template-columns: auto 30vw;
     
-    grid-gap: 25px;
-}
-
-#postcontentleft p {
-    
-    padding-top: 10px;
-    padding-bottom: 10px;
+    grid-gap: 4vw;
 }
 
 #postcontentleft {
     
-    background: rgba(0,0,0,0.25);
+/*    background: rgba(0,0,0,0.25);*/
     text-align: left;
-    padding: 25px;
 }
 
 #postcontentright {
     
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
-}
-
-#postcontentright p {
-    
-    margin-bottom: 20px;
-}
-
-#postcontentright img {
-    height: auto;
-    width: 100%;
 }
 
 #postimage img {
@@ -2325,7 +2323,7 @@ header .slideshow {
 
 #postbottom {
 
-    padding: 0 8vw 50px 8vw;
+    padding: 4vw 4vw 0 4vw;
     
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -2333,16 +2331,88 @@ header .slideshow {
     grid-gap: 8vw;
 }
 
-.otherpost a {
+.otherpostdets {
     
-    color: white;
-    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    
+    word-wrap: break-word;
 }
 
-#postbottom img {
+.otherpostname {
+    
+    font-family: "Names";
+    font-size: 2vw;
+    
+    margin-bottom: 1vw;
+}
+
+.otherpostdate {
+    
+    font-family: "Body Text";
+    font-size: 1.5vw;
+}
+
+.otherpost {
     
     width: 100%;
+}
+
+.otherpost a {
     
+    width: inherit;
+    color: black;
+    text-decoration: none;
+    
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.rightpost a {
+    
+    width: 100%;
+    margin-bottom: 3vw;
+    display: grid;
+    grid-template-columns: 10vw auto;
+    grid-gap: 2vw;
+}
+
+.rightpost img {
+    
+    height: 10vw;
+    width: 10vw;
+    
+    margin-right: 2.5vw;
+}
+
+.otherrightpost p {
+    
+    color: black;
+    text-decoration: none;
+    
+    width: 10vw;
+}
+
+#postbottom {
+    
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.bottompostimg {
+    
+    height: 15vw;
+}
+
+.bottompost p {
+    
+    margin: 0;
+    margin-bottom: 1vw;
 }
 
 /* MERCH */
@@ -2464,7 +2534,19 @@ header .slideshow {
 
 #module {
     
+    background: #f6959a;
+}
+
+#module .navmini:before {
+    
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1.5px;
+    bottom: -3px;
+    
     background: #f7a289;
+    text-decoration: underline;
 }
 
 #module #dirinstruct {
@@ -2526,6 +2608,9 @@ header .slideshow {
     position: relative;
     
     overflow: hidden;
+    
+    background-size: cover;
+    background-position: center;
 }
 
 #module #dirheader #dirheaderlabels {
@@ -2781,57 +2866,108 @@ header .slideshow {
 
 #modulereaction .modulecolumns h2 {
     
-    color: #f7a289; 
+    color: #f6959a; 
 }
 
 #modulegq {
     
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 4vw;
+    padding: 4vw;
 }
 
 #modulegq #gqleft {
     
-    padding: 25px;
+    text-align: left;
     
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    
+    color: black;
+    
+/*    background: rgba(0,0,0,0.25);*/
 }
 
 #modulegq h2 {
     
-    width: 75%;
-    font-size: 5vw;
+    font-size: 1.75vw;
+    font-family: "Main Header";
+}
+
+#modulegq #gqleft p {
+    
+    width: 40%;
+    margin-top: 3vw;
+    font-family: "Dates";
+    font-size: 2vw;
 }
 
 #gqs {
     
-    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    
+    font-family: "Body Text";
+    font-weight: bold;
 }
 
 #modulegq p {
     
     margin: 5px 0 5px 0;
+    font-size: 2vw;
 }
 
 #moduleqt {
     
-    height: 40vw;
+    background: white;
+    color: black;
+}
+
+#moduleqt h2 {
+    
+    font-family: "Names";
+    padding: 7.5vw;
+    color: #f6959a;
 }
 
 .lookat {
     
-    padding: 50px;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    font-size: 4vw;
     
-    font-size: 5vw;
-    text-decoration: underline;
+    background: #f7a289;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
 }
 
-.lookat a {
+.lookat a, .lookat h2 {
     
     color: white;
+    text-decoration: none;
+    
+    position: relative;
+    
+    transform: scaleY(0.75);
+}
+
+.lookat h2:before {
+    
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: -2vw;
+    left: 0;
+    
+    background: white;
 }
 
 /*
@@ -2953,6 +3089,11 @@ header .slideshow {
 .fontRoboto {
     
     font-family: "Body Text";
+}
+
+.fontGrotesk {
+    
+    font-family: "Dates";
 }
 
 .special {

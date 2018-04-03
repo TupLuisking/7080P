@@ -4,13 +4,16 @@ window.onload = function() {
     
     console.log("WINDOW LOADED");
     
-    var basetop = 350;
+    var basetop = 315;
     var aboutnavbar = document.getElementById("aboutnavcontainer");
     var abouthref = window.location.href.split("#")[1];
     
     if(abouthref != null && aboutnavbar != null) {
         
-        aboutnavbar.style.top = 75+ "px";   
+        aboutnavbar.style.top = 75 + "px";   
+    } else if(aboutnavbar != null && abouthref == null) {
+        
+        aboutnavbar.style.top = basetop + "px";
     }
 }
 
@@ -69,7 +72,7 @@ $(window).scroll(function(){
 
 function adjustAboutNav(navend, wScroll) {
     
-    var basetop = 350;
+    var basetop = 315;
     var scrolltop;
     
     var aboutnavbar = document.getElementById("aboutnavcontainer");
