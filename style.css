@@ -3121,28 +3121,118 @@ header .slideshow {
     
     z-index: 10;
     
-    background: rgba(0,0,0,0.5);
+/*    background: rgba(0,0,0,0.5);*/
     
     transition: 0.25s;
     
-    transform: translateY(-100vh);
+/*    transform: translateY(-100vh);*/
 }
 
 #imgmodalcontainer {
     
-    width: 50vh;
+    height: 55vw;
+    width: 76vw;
     
     position: absolute;
     top: 50%;
     left: 50%;
     
+    background: white;
+    
     transform: translate(-50%, -50%);
+    
+    display: grid;
+    grid-template-columns: 1fr 55vw;
+    grid-gap: 3vw;
+    
+    padding: 5vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    
+    border: 1px solid #ef8cba;
 }
 
-#imagemodal img {
+#imgmodalleft, #imgmodalright {
+    
+/*    background: rgba(0,0,0,0.25);*/
+}
+
+#imgmodalleft {
+    
+    text-align: left;
+    font-family: "Names";
+}
+
+#imgmodalleft p, #imgmodalleft a {
+    
+    width: 69%;
+}
+
+#imgmodalname {
+    
+    text-transform: uppercase;
+    
+    font-size: 2vw;
+    
+    margin-bottom: 2vw;
+    
+    color: black;
+}
+
+#imgmodaldl {
+    
+    font-size: 1.75vw;
+    
+    color: #ef8cba;
+    
+    display: inline-block;
+}
+
+#imgmodalimgcont {
+    
+    padding: 1vw;
+    
+    margin-bottom: 1.5vw;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#imgmodalleft img {
     
     height: auto;
     width: 100%;
+    
+    margin: 0;
+}
+
+#imgmodalright {
+    
+    overflow: hidden;
+    
+    border: 1px solid #ef8cba;
+    
+    background: rgba(0,0,0,0.5);
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#imgmodalright img {
+    
+    height: auto;
+    width: 100%;
+    
+/*    transform: scale(2) translateY(calc(50%));*/
+}
+
+#imagemodal .closemodalbutton {
+    
+    color: #ef8cba;
 }
 
 .closemodalbutton {
