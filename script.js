@@ -417,6 +417,10 @@ function showImageModal(element) {
     imgzoomed.src = element.src;
     
     imagemodal.style.transform = "translateY(0)";
+    
+    var imgmodaldl = document.getElementById("imgmodaldl");
+    imgmodaldl.href = element.src;
+    
 }
 
 function hideImageModal() {
