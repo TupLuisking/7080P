@@ -518,12 +518,6 @@ function zoomArea(event) {
         pageY = event.clientY + document.body.scrollTop + document.documentElement.scrollTop;
     }
     
-    console.log(pageX + ":" + pageY);
-    checkImgBounds(image, pageX, pageY);
-}
-
-function checkImgBounds(image, pageX, pageY) {
-    
     var viewportOffset = image.getBoundingClientRect();
     
     var imgx = viewportOffset.left;
@@ -542,4 +536,13 @@ function checkImgBounds(image, pageX, pageY) {
     
     console.log("X%: " + xpercent * 100 + "%");
     console.log("Y%: " + ypercent * 100 + "%");
+    
+    var imgzoomed = document.getElementById("imgzoom");
+    var zoomfactor = 2;
+    
+    imgzoomed.style.transform = "scale(" + zoomfactor + ") " + 
+        "translate(" + 
+        xpercent * -50 + "%, " +
+        ypercent * -50 + "%"
+        + ")";
 }
