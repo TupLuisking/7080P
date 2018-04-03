@@ -2013,8 +2013,8 @@ header .slideshow {
     width: 37.5vw;
     
     margin: 25px;
-    margin-left: 50px;
-    margin-bottom: 50px;
+    margin-left: 6.9vw;
+    margin-bottom: 4vw;
     
     text-align: left;
 }
@@ -2238,6 +2238,7 @@ header .slideshow {
     
     padding: 7.5vw;
     padding-top: 0;
+    padding-bottom: 4vw;
     
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -2251,7 +2252,9 @@ header .slideshow {
     width: 100%;
     
     transition: 0.5s;
-    opacity: 0;
+/*    opacity: 0;*/
+    
+    text-align: left;
 }
 
 .commpost:nth-child(1), .commpost:nth-child(2), .commpost:nth-child(3) {
@@ -2284,16 +2287,30 @@ header .slideshow {
     
     font-family: "Names";
     color: white;
+    
+    font-size: 3vw;
 }
 
 .commpostdets {
     
     font-family: "Names";
+    font-size: 1.75vw;
+    
+    margin-bottom: 1vw;
 }
 
 .commpostdesc {
     
     font-family: "Dates";
+    font-size: 1.75vw;
+    font-weight: bold;
+    
+    margin-top: 1vw;
+}
+
+#community .lookat {
+    
+    background: clear;
 }
 
 /* INDIVIDUAL POST */
@@ -2441,6 +2458,43 @@ header .slideshow {
     margin-bottom: 1vw;
 }
 
+#posttype {
+    
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5vw;
+}
+
+#posttitle {
+    
+    font-family: "Names";
+    color: #a8dac7;
+    font-size: 3vw;
+}
+
+#postdetails {
+    
+    font-family: "Names";
+    font-size: 2vw;
+}
+
+#postshortdesc {
+    
+    font-family: "Body Text";
+    font-size: 1.75vw;
+    font-weight: bold;
+    
+    margin-bottom: 1.5vw;
+}
+
+#postinnercontent {
+    
+    font-family: "Dates";
+    
+    font-size: 2vw;
+    font-weight: bold;
+}
+
 /* MERCH */
 
 #merch {
@@ -2472,41 +2526,24 @@ header .slideshow {
     
     display: flex;
     flex-direction: column;
+    
+    padding: 6.9vw;
+    padding-top: 2vw;
+    padding-bottom: 3vw;
+    
+    background: white;
 }
 
 .stickerset h2 {
     
     text-align: center;
     
-    font-size: 4vw;
+    font-family: "Names";
+    font-size: 2.5vw;
     
-    margin-bottom: 25px;
-}
-
-.stickerpics {
+    margin-bottom: 2vw;
     
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: flex-start;
-}
-
-.stickerfilm {
-    
-    margin: 0 4vw 0 0;
-}
-
-.stickerimg {
-    
-    height: 30vw;
-    width: 20vw;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    overflow: hidden;
+    color: #ef8cba;
 }
 
 .stickerimg img {
@@ -2525,26 +2562,23 @@ header .slideshow {
 .stickers {
     
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-columns: repeat(4, 1fr);
     
-    align-items: start;
+    align-items: end;
     justify-items: center;
     
-    grid-gap: 20px;
+    grid-gap: 4vw;
 }
 
 
 .sticker {
     
-    background: #cd6a97;
+/*    background: #cd6a97;*/
     
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
-    width: 15vw;
     
     overflow: hidden;
     
@@ -2553,8 +2587,29 @@ header .slideshow {
 
 .sticker img {
     
+    height: auto;
     width: 100%;
+    margin-bottom: 1vw;
 }   
+
+.sticker p {
+    
+    width: 100%;
+    word-wrap: break-word;
+    
+    font-size: 1.75vw;
+    
+    color: black;
+}
+
+.sticker .stickername {
+    
+    font-family: "Dates";
+    font-size: 2vw;
+    font-weight: bold;
+    
+    margin-bottom: 0.5vw;
+}
 
 /* MODULE */
 
@@ -2959,14 +3014,16 @@ header .slideshow {
     color: #f6959a;
 }
 
+#module .lookat {
+    
+    background: #f7a289;
+}
+
 .lookat {
     
     padding-top: 5vw;
     padding-bottom: 5vw;
     font-size: 4vw;
-    
-    background: #f7a289;
-    
     display: flex;
     flex-direction: column;
     align-items: center;
