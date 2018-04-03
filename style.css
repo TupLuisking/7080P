@@ -3195,9 +3195,11 @@ header .slideshow {
     margin-bottom: 1.5vw;
     
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
+    
+    border: 1px solid #ef8cba; 
 }
 
 #imgmodalleft img {

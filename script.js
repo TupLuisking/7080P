@@ -411,12 +411,11 @@ function changeDirImg(element, imgname) {
 
 function showImageModal(element) {
 
-    var imagemodal = document.getElementById("imagemodal");
-    var imagemodalimg = document.getElementById("imgmodalimg");
+    var image = document.getElementById("imgmodalimg");
+    var imgzoomed = document.getElementById("imgzoom");
+    image.src = element.src;
+    imgzoomed.src = element.src;
     
-    var srcsplit = element.src.split("/");
-    
-    changeDirImg(imagemodalimg, srcsplit[srcsplit.length - 1]);
     imagemodal.style.transform = "translateY(0)";
 }
 
@@ -509,6 +508,8 @@ function zoomArea(event) {
     event = event || window.event;
     
     var image = document.getElementById("imgmodalimg");
+    var imgzoomed = document.getElementById("imgzoom");
+    imgzoomed.src = image.src;
     
     var pageX = event.clientX;
     var pageY = event.clientY;
@@ -537,7 +538,6 @@ function zoomArea(event) {
     console.log("X%: " + xpercent * 100 + "%");
     console.log("Y%: " + ypercent * 100 + "%");
     
-    var imgzoomed = document.getElementById("imgzoom");
     var zoomfactor = 2;
     
     imgzoomed.style.transform = "scale(" + zoomfactor + ") " + 
