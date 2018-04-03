@@ -3125,7 +3125,7 @@ header .slideshow {
     
     transition: 0.25s;
     
-    transform: translateY(-100vh);
+    transform: translateY(calc(-100vh - 50%));
 }
 
 #imgmodalcontainer {

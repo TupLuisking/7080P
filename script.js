@@ -420,12 +420,11 @@ function showImageModal(element) {
     
     var imgmodaldl = document.getElementById("imgmodaldl");
     imgmodaldl.href = element.src;
-    
 }
 
 function hideImageModal() {
     
-    imagemodal.style.transform = "translateY(-100vh)";
+    imagemodal.style.transform = "translateY(calc(-100vh - 50%))";
 }
 
 // TOC
