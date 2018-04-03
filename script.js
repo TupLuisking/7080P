@@ -501,3 +501,45 @@ function hideFilmTrailer() {
     
     filmcontainer.style.transform = "translateY(-100%)";
 }
+
+// STICKER ZOOM 
+
+function zoomArea(event) {
+    
+    event = event || window.event;
+    
+    var image = document.getElementById("imgmodalimg");
+    
+    var pageX = event.clientX;
+    var pageY = event.clientY;
+    
+    if (pageX === undefined) {
+        pageX = event.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
+        pageY = event.clientY + document.body.scrollTop + document.documentElement.scrollTop;
+    }
+    
+    console.log(pageX + ":" + pageY);
+    checkImgBounds(image, pageX, pageY);
+}
+
+function checkImgBounds(image, pageX, pageY) {
+    
+    var viewportOffset = image.getBoundingClientRect();
+    
+    var imgx = viewportOffset.left;
+    var imgwidth = image.width;
+    var imgy = viewportOffset.top;
+    var imgheight = image.height;
+    
+    console.log("x: " + imgx);
+    console.log("width: "  + imgheight);
+    
+    var xpercent = (pageX - imgx)/imgwidth;
+    xpercent -= 0.5;
+    
+    var ypercent = (pageY - imgy)/imgheight;
+    ypercent -= 0.5;
+    
+    console.log("X%: " + xpercent * 100 + "%");
+    console.log("Y%: " + ypercent * 100 + "%");
+}
