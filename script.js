@@ -404,7 +404,7 @@ function changeDirImg(element, imgname) {
     
     console.log("Changing pic of " + element);
     
-    element.src = "/images/" + imgname;
+    element.src = "images/" + imgname;
 }
 
 // SHOW MODAL
