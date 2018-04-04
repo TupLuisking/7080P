@@ -442,7 +442,7 @@ p {
 
 #footerlogo {
     
-    background: url("images/logos/LogoHWhite.png");
+    background: url("/images/logos/LogoHWhite.png");
     background-size: cover;
     
     height: 50px;
@@ -3058,9 +3058,9 @@ header .slideshow {
 
 .lookat {
     
-    padding-top: 5vw;
-    padding-bottom: 5vw;
-    font-size: 4vw;
+    padding-top: 6.9vw;
+    padding-bottom: 6.9vw;
+    font-size: 3vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -3074,8 +3074,6 @@ header .slideshow {
     text-decoration: none;
     
     position: relative;
-    
-    transform: scaleY(0.75);
 }
 
 .lookat h2:before {
