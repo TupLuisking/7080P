@@ -199,6 +199,8 @@ p {
         "navleft logo navright";
     
     grid-gap: 25px;
+    
+    font-family: "Near Logo";
 }
 
 #navleft {
@@ -210,6 +212,7 @@ p {
     justify-content: center;
     
     text-align: right;
+    
 }
 
 #navleft a {
@@ -460,6 +463,8 @@ p {
     border-right: 1px solid white;
     
     font-size: 1.25vw;
+    
+    font-family: "Near Logo";
 }
 
 #footerabout a {
@@ -1176,8 +1181,8 @@ header .slideshow {
     display: flex;
     flex-direction: row;
     align-items: center;
-
-    font-size: 0.55em;
+    
+    font-size: 0.75em;
 }
 
 .aboutcontacticon {
@@ -1275,7 +1280,7 @@ header .slideshow {
     
     position: relative;
     
-    background: rgba(0,0,0,0.125);
+/*    background: rgba(0,0,0,0.125);*/
     
     overflow: hidden;
 }
@@ -1526,21 +1531,21 @@ header .slideshow {
 
 .dirfilm {
     
-    margin-left: 10px;
-    margin-right: 5px;
+    margin-right: 15px;
     
-    widtH: 10vw;
+    width: 10vw;
     height: 15vw;
-    overflow: hidden;
     
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: flex-end;
 }
 
 .dirfilm img {
     
-    height: 100%;
+    height: auto;
+    width: 100%;
 }
 
 #dirinstruct, #moduleinstruct {
@@ -1674,12 +1679,15 @@ header .slideshow {
     position: absolute;
     
     right: 0;
-    bottom: 0;
+    bottom: -11vw;
     
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
+    height: 32vw;
+    width: 24vw;
 }
 
 #filmdirector {
@@ -1708,12 +1716,8 @@ header .slideshow {
 
 #filmposter img {
     
-    position: absolute;
-    right: 0;
-    bottom: -11vw;
-    
     height: auto;
-    width: 24vw;
+    width: 100%;
 }
 
 #filmheaderright {
@@ -2333,6 +2337,26 @@ header .slideshow {
     text-decoration: underline;
 }
 
+#ipost p::selection {
+    
+    background: #a8dac7;
+}
+
+#ipost p::-moz-selection {
+    
+    background: #a8dac7;
+}
+
+#ipost img::selection {
+    
+    background: #a8dac7;
+}
+
+#ipost img::-moz-selection {
+    
+    background: #a8dac7;
+}
+
 #postcontent {
     
     padding: 7.5vw;
@@ -2450,6 +2474,9 @@ header .slideshow {
 .bottompostimg {
     
     height: 15vw;
+    
+    background-position: center;
+    background-size: cover;
 }
 
 .bottompost p {
@@ -2470,6 +2497,16 @@ header .slideshow {
     font-family: "Names";
     color: #a8dac7;
     font-size: 3vw;
+}
+
+#posttitle p::selection{
+    
+    color: white;
+}
+
+#posttitle p::-moz-selection{
+    
+    color: white;
 }
 
 #postdetails {
@@ -3102,13 +3139,19 @@ header .slideshow {
 @font-face {
     
     font-family: "Body Text";
-    src: url("fonts/Roboto Mono.ttf");
+    src: url("fonts/Akzidenz Grotesk.otf");
 }
 
 @font-face {
     
     font-family: "Dates";
     src: url("fonts/Akzidenz Grotesk.otf");
+}
+
+@font-face {
+    
+    font-family: "Near Logo";
+    src: url("fonts/Roboto Mono.ttf");
 }
 
 .modal {
@@ -3285,6 +3328,39 @@ header .slideshow {
 .italic {
     
     font-style: italic;
+}
+
+.dirfilm, #filmpostercont {
+    
+    position: relative;
+}
+
+.moduleavailright, .moduleavailleft {
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    
+    transform: translate(50%, 0%);
+    
+    font-family: "Dates";
+    font-size: 1.75vw;
+    
+    background: #f7a289;
+    color: black;
+    padding: 0.75vw;
+    
+    white-space: nowrap;
+}
+
+.moduleavailleft {
+    
+    top: 0;
+    left: 0;
+    right: auto;
+    
+    transform: translate(-50%, -25%);
 }
 
 @media only screen and (max-width: 980px) {
