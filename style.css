@@ -439,7 +439,7 @@ p {
 
 #footerlogo {
     
-    background: url("/images/logos/LogoHWhite.png");
+    background: url("images/logos/LogoHWhite.png");
     background-size: cover;
     
     height: 50px;
