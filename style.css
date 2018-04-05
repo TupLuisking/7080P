@@ -1798,7 +1798,7 @@ header .slideshow {
     height: 100%;
     width: 100%;
     
-    background-position: center;
+    background-position: top center;
     background-size: cover;
 }
 
@@ -1812,6 +1812,8 @@ header .slideshow {
     flex-direction: column;
     align-items: center;
     
+    color: white;
+    text-decoration: none;
 }
 
 #filmdirector p {
@@ -3461,6 +3463,7 @@ header .slideshow {
     
     background: #f7a289;
     color: black;
+    text-decoration: none;
     padding: 0.75vw;
     
     white-space: nowrap;

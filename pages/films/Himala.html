@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+   
+    <head>
+        
+        <meta charset="utf-8" />
+        <title>70/80</title>
+        <link href="/style.css" rel="stylesheet" type="text/css" media="screen" />
+        <link rel="icon" href="/images/icons/tabicon.png"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+        <script src="/scripts\jquery-3.3.1.min.js"></script>
+    </head>
+    
+    <body id="directors">
+        
+        <div id="navbar"></div>
+        
+        <script>
+        $(function(){
+           $("#navbar").load("/navbar.html"); 
+        });
+        </script>
+        
+        <div id=filmtrailercontainer onclick="hideFilmTrailer();">
+        
+            <div id=filmtrailer>
+                <div id=filmclose onclick="hideFilmTrailer();">
+                    &#x2715;
+                </div>
+                
+                <iframe id=filmtrailervid src="https://www.youtube.com/embed/3MASgwPvzcQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                
+            </div>
+        </div>
+            
+        <div 
+             class=section
+             id=filmheader
+             style="background-image: url('/images/films/Himala Header.jpg')">
+
+            <div id=filmheaderleft>
+                
+                <a id=filmdirector href="#">
+                    <p>Ishmael Bernal</p>
+                    <img src="/images/films/Bernal%20Illustration.png">
+                </a>
+                <div id=filmposter>
+                    <div id=filmpostercont
+                        style="background-image: url('/images/bird.jpg')"
+                         >
+                        <a class=moduleavailleft href="#">Module Available</a>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div id=filmheaderright>
+                <p id=filmdetails>1982 | Drama</p>
+                <p id=filmtitle>HIMALA</p>
+                <p id=filmheading>Ano nga ba ang himala?</p>
+                <p id=filmdesc>Considered to be one of the country's greatest for good reason, Himala is the story of a woman who seemingly gets the power to heal people. As the film goes on, Ishmael Bernal explores the effects of religion and questions the truths we choose to believe in.</p>
+            </div>
+            
+        </div>
+        
+        <div
+             class=section
+             id=filminfo>
+        
+            <div id=filminfoleft>
+                <div onclick="showFilmTrailer('bruh');" id=filminfotrailer>&#9658;Click to watch trailer</div>
+                <div class=filminfoheading>Cast & Crew</div>
+                <div id=filminfocc>
+                    
+                    <p class=filminfoitalic>
+                        Writer
+                    </p>
+                    <p>Ricky Lee</p>
+                    
+                    <br>
+                    
+                    <p class=filminfoitalic>
+                        Starring
+                    </p>
+                    <p>Nora Aunor . . . Elsa</p>
+                    
+                    <br>
+                    
+                    <p class=filminfoitalic>
+                        Cinematographer
+                    </p>
+                    <p>Sergio Lobo</p>
+                    
+                    <br>
+                    
+                    <p class=filminfoitalic>
+                        Editor
+                    </p>
+                    <p>Ike Jarlego, Jr.</p>
+                    
+                    <br>
+                    
+                    <p class=filminfoitalic>
+                        Music
+                    </p>
+                    <p>Winston Raval</p>
+                    
+                </div>
+            </div>
+            
+            <div id=filminforight>
+                <div class=filminfoheading>Condiiton & Accesibility</div>
+                <div id=filminfoca>
+                    <div class=filmcaitem>
+                        <div class=filmcabullet></div>
+                        <p>RESTORED by ABS-CBN Restoration Project.</p>
+                    </div>
+
+                    <div class=filmcaitem>
+                        <div class=filmcabullet></div>
+                        <p>May be bought locally on DVD or through iTunes</p>
+                    </div>
+                </div>
+                <div class=filminfoheading>Demand Vote</div>
+                <div id=filmvote>
+                    <p id=filmvoteheading>Are you interested in us screening this?</p>
+                    <div class=votebar>
+                        <div onclick="showFilmResults(1,0);" class=votemeter></div>
+                        <p class=votelabel>YES</p>
+                    </div>
+                    <div class=votebar>
+                        <div onclick="showFilmResults(0,1);" class=votemeter></div>
+                        <p class=votelabel>NO</p>
+                    </div>
+                </div>
+                <div id=filmqi>
+                    <p id=filmquote>
+                        "Elsa loves you!"
+                    </p>
+                    <img src="/images/films/Himala%20Illustration.png">
+                </div>
+            </div>
+            
+        </div>
+        
+        <div id=footer></div>
+        
+        <script>
+            $(function(){
+                $("#footer").load("/footer.html"); 
+            });
+        </script>
+        
+        <script src="/script.js"></script>
+        
+    </body>
+    
+</html>
