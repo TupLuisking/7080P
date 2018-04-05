@@ -57,6 +57,10 @@ p {
     text-decoration: none;
     
     position: relative;
+    
+    word-break: break-all;
+    
+    display: inline-block;
 }
 
 .name:hover {
@@ -64,7 +68,7 @@ p {
     color: white;
 }
 
-.name:before, .filmpanel .name:before, .headerfilm .name:before {
+.name:before, .filmpanel .name:before {
     
     content: "";
     position: absolute;
@@ -80,6 +84,7 @@ p {
     transform-origin: left center;
     transform: scaleX(0);
 }
+
 
 .name:hover:before, .filmpanel:hover .name:before, .headerfilm:hover .name:before {
     
@@ -548,7 +553,7 @@ p {
 
 header {
     
-    height: 40vw;
+    height: 45vw;
     
     padding: 5vw;
     
@@ -563,9 +568,52 @@ header {
     position: relative;
 }
 
-#headerleftall {
+#headerfilmleft {
     
+    font-family: "Names";
+    color: #060707;
+}
+
+#headerfilmleft a {
     
+    color: #060707;
+}
+
+#headerfilmleft h2 .name:before {
+    
+    content: "";
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    
+    background: white;
+    
+    transform-origin: left center;
+    
+    background: #060707;
+    transform: scaleX(1);
+}
+
+#headerfilmleft a {
+    
+    margin: 0;
+    padding: 0;
+}
+
+#headerfilmleft p {
+    
+    margin: 0;
+}
+
+#headerbonus {
+    
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: start;
+    grid-gap: 0.5vw;
 }
 
 #headerleft {
@@ -599,7 +647,14 @@ header {
     
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+}
+
+.headerfilm h2 a {
+    
+    font-size: 1.5vw;
+    
+    align-self: flex-start;
 }
 
 .headerfilmimg {
@@ -1248,7 +1303,7 @@ header .slideshow {
 
 #directors {
     
-    background: #df3e3f;
+    background: #f1604c;
 }
 
 #directors .navdir:before {
