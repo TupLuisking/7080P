@@ -58,8 +58,6 @@ p {
     
     position: relative;
     
-    word-break: break-all;
-    
     display: inline-block;
 }
 
@@ -563,9 +561,7 @@ p {
 
 header {
     
-    height: 45vw;
-    
-    padding: 5vw;
+    padding: 4vw;
     
     background-size: cover;
     background-position: center;
@@ -589,14 +585,13 @@ header {
     color: #060707;
 }
 
-#headerfilmleft h2 .name:before {
+#headerfilmleft h2:before {
     
-    content: "";
     content: "";
     position: absolute;
     width: 100%;
-    height: 2px;
-    bottom: -2px;
+    height: 3px;
+    bottom: -6px;
     left: 0;
     
     background: white;
@@ -605,6 +600,12 @@ header {
     
     background: #060707;
     transform: scaleX(1);
+}
+
+#headerfilmleft h2 {
+    
+    padding: 0;
+    margin: 0;
 }
 
 #headerfilmleft a {
@@ -641,12 +642,12 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: flex-end;
+    align-items: flex-start;
     
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     
-    grid-gap: 4vw;
+    grid-gap: 7vw;
 }
 
 .headerfilm {
@@ -681,42 +682,51 @@ header {
     width: 100%;
 }
 
-.headerfilm h2 {
+.headerfilm p {
     
     width: 100%;
     
     font-family: "Names";
+    
+    word-break: keep-all;
+    word-wrap: normal;
+    
     text-align: left;
     
-    font-size: 2.75vw;
+    font-size: 1.5vw;
     
     margin-bottom: 1vw;
 }
 
-.headerfilm p {
+.headerfilm .headerfilmtitle a {
     
-    width: 100%;
-    text-align: left;
+    height: 6.9vw;
     
+    word-wrap: normal;
+}
+
+.headerfilm .headerfilmdate {
+    
+    font-family: "Near Logo";
     font-size: 1.25vw;
 }
 
 #headerright {
     
+    font-family: "Near Logo";
+    
     text-align: left;
     
-    padding-top: 5vw;
+    padding-top: 9vw;
     
-    font-size: 1.125vw;
+    font-size: 1.25vw;
     
     overflow: hidden;
 }
 
-#headerright img {
+#headerright a {
     
-    height: 4vw;
-    
-    margin-bottom: 3vw;
+    text-decoration: underline;
 }
 
 /*
