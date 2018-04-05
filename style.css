@@ -3361,7 +3361,7 @@ header .slideshow {
     transform: translate(-50%, -25%);
 }
 
-@media only screen and (max-width: 980px) {
+@media only screen and (min-width: 981px) {
     
     
 } 
