@@ -3048,7 +3048,7 @@ header .slideshow {
 
 .modulecolumns {
     
-    min-height: 40vw;
+    min-height: 20vw;
     
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -3119,7 +3119,6 @@ header .slideshow {
     
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-gap: 4vw;
     padding: 4vw;
 }
 
