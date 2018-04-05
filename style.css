@@ -632,7 +632,7 @@ header {
     font-size: 1.5vw;
     
     padding-top: 2.5vw;
-    margin-bottom: 2vw;
+    margin-bottom: vw;
     
     text-align: left;
 }
@@ -648,6 +648,8 @@ header {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     
     grid-gap: 7vw;
+    
+    margin-bottom: 2vw;
 }
 
 .headerfilm {
@@ -670,7 +672,8 @@ header {
 
 .headerfilmimg {
 
-    width: inherit;
+    height: 12vw;
+    width: 12vw;
     
     overflow: hidden;
     
@@ -679,7 +682,7 @@ header {
 
 .headerfilm img {
     
-    width: 100%;
+    height: 100%;
 }
 
 .headerfilm p {
@@ -1545,7 +1548,7 @@ header .slideshow {
     width: 35vw;
     font-family: "Names";
     
-/*    display: none;    */
+    display: none;    
 }
 
 #dirheaderlabel {
@@ -1612,8 +1615,8 @@ header .slideshow {
     bottom: 0;
     right: 0;
     
-    margin-top: 10px;
-    margin-bottom: 5px;
+    margin-top: 2vw;
+    margin-bottom: 1vw;
 }
 
 .dirfilm {
@@ -1621,17 +1624,16 @@ header .slideshow {
     margin-right: 15px;
     
     width: 10vw;
-    height: 15vw;
     
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
+    
 }
 
 .dirfilm img {
     
-    height: auto;
     width: 100%;
 }
 
@@ -1660,6 +1662,8 @@ header .slideshow {
     grid-gap: 15px;
     
     color: #060707;
+    
+    font-size: 2.5vw;
 }
 
 #dirillustration {
@@ -1670,8 +1674,10 @@ header .slideshow {
     
     overflow: hidden;
     
-    height: 33vh;
-    width: 22vh;
+    height: 27vw;
+    width: 18vw;
+    
+    margin-right: 2vw;
 }
 
 #dirillustration img {
@@ -1699,7 +1705,7 @@ header .slideshow {
     text-align: justify;
     
     color: black;
-    font-size: 0.75em;
+    font-size: 1.875vw;
     
     background: white;
 }
@@ -3446,12 +3452,12 @@ header .slideshow {
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 1;
+    z-index: 0;
     
-    transform: translate(50%, 0%);
+    transform: translate(50%, -50%);
     
     font-family: "Dates";
-    font-size: 1.75vw;
+    font-size: 1.25vw;
     
     background: #f7a289;
     color: black;

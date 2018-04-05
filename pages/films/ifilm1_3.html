@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+   
+    <head>
+        
+        <meta charset="utf-8" />
+        <title>70/80</title>
+        <link href="/style.css" rel="stylesheet" type="text/css" media="screen" />
+        <link rel="icon" href="/images/icons/tabicon.png"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+        <script src="/scripts\jquery-3.3.1.min.js"></script>
+    </head>
+    
+    <body id="directors">
+        
+        <div id="navbar"></div>
+        
+        <script>
+        $(function(){
+           $("#navbar").load("/navbar.html"); 
+        });
+        </script>
+        
+        <div id=filmtrailercontainer onclick="hideFilmTrailer();">
+        
+            <div id=filmtrailer>
+                <div id=filmclose onclick="hideFilmTrailer();">
+                    &#x2715;
+                </div>
+                
+                <iframe id=filmtrailervid src="https://www.youtube.com/embed/32mUJJnoS-U?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                
+            </div>
+        </div>
+            
+        <div 
+             class=section
+             id=filmheader
+             style="background-image: url('/images/sample.jpg')">
+
+            <div id=filmheaderleft>
+                
+                <div id=filmdirector>
+                    <p>name</p>
+                    <img src="/images/bird.jpg">
+                </div>
+                <div id=filmposter>
+                    <div id=filmpostercont
+                        style="background-image: url('/images/bird.jpg')"
+                         >
+                        <div class=moduleavailleft>Module Available</div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div id=filmheaderright>
+                <p id=filmdetails>1976 | Drama | 95 Min.</p>
+                <p id=filmtitle>INSIANG</p>
+                <p id=filmheading>Neorealism & the Mainstream</p>
+                <p id=filmdesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis vulputate ex. Praesent viverra sem quis ligula consectetur viverra. Vestibulum pharetra neque a justo pellentesque, quis gravida mauris facilisis. Nunc luctus mattis laoreet. </p>
+            </div>
+            
+        </div>
+        
+        <div
+             class=section
+             id=filminfo>
+        
+            <div id=filminfoleft>
+                <div onclick="showFilmTrailer('bruh');" id=filminfotrailer>&#9658;Click to watch trailer</div>
+                <div class=filminfoheading>Cast & Crew</div>
+                <div id=filminfocc>
+                    
+                    <p class=filminfoitalic>
+                        Directed By
+                    </p>
+                    <p>Lino Brocka</p>
+                    
+                    <br>
+                    
+                    <p class=filminfoitalic>
+                        Directed By
+                    </p>
+                    <p>Mario O'Hara and Lamberto Antonio</p>
+                    
+                    <br>
+                    
+                    <p class=filminfoitalic>
+                        Starring
+                    </p>
+                    <p>Hilda Koronel . . . Insiang</p>
+                    
+                </div>
+            </div>
+            
+            <div id=filminforight>
+                <div class=filminfoheading>Condiiton & Accesibility</div>
+                <div id=filminfoca>
+                    <div class=filmcaitem>
+                        <div class=filmcabullet></div>
+                        <p><span class=filminfoitalic>REMASTERED by _ IN _ .</span></p>
+                    </div>
+
+                    <div class=filmcaitem>
+                        <div class=filmcabullet></div>
+                        <p><span class=filminfoitalic>BUYABLE AND RENTABLE.</span> Watch in Ateneo de Manila University</p>
+                    </div>
+                </div>
+                <div class=filminfoheading>Demand Vote</div>
+                <div id=filmvote>
+                    <p id=filmvoteheading>Are you interested in us screening this?</p>
+                    <div class=votebar>
+                        <div onclick="showFilmResults(1,0);" class=votemeter></div>
+                        <p class=votelabel>YES</p>
+                    </div>
+                    <div class=votebar>
+                        <div onclick="showFilmResults(0,1);" class=votemeter></div>
+                        <p class=votelabel>NO</p>
+                    </div>
+                </div>
+                <div id=filmqi>
+                    <p id=filmquote>
+                        "The quote goes here"
+                    </p>
+                    <img src="/images/logo2.png">
+                </div>
+            </div>
+            
+        </div>
+        
+        <div id=footer></div>
+        
+        <script>
+            $(function(){
+                $("#footer").load("/footer.html"); 
+            });
+        </script>
+        
+        <script src="/script.js"></script>
+        
+    </body>
+    
+</html>
