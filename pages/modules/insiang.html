@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+   
+    <head>
+        
+        <meta charset="utf-8" />
+        <title>70/80</title>
+        <link href="/style.css" rel="stylesheet" type="text/css" media="screen" />
+        <link rel="icon" href="/images/icons/tabicon.png"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+        <script src="/scripts\jquery-3.3.1.min.js"></script>
+    </head>
+    
+    <body id="module">
+        
+        <div id="navbar">
+        
+        </div>
+        
+        <script>
+        $(function(){
+           $("#navbar").load("/navbar.html"); 
+        });
+        </script>
+        
+        
+        <div class=toc>
+            <p class=tocsymbol onclick="showTOC();">&#9776;</p>
+            <div class=toccontent id=tocminifest onclick="hideTOC();">
+<!--
+                <a onclick="navTo(this);hideTOC();" 
+                   href="#month">
+                    MONTH 1
+                </a>
+-->
+                <div id=tocmonths>
+                    <a onclick="navTo(this);hideTOC();" 
+                       href="#month">
+                        The Film
+                    </a>
+                    <a onclick="navTo(this);hideTOC();" 
+                       href="#month">
+                        The Reaction
+                    </a>
+                    <a onclick="navTo(this);hideTOC();" 
+                       href="#month">
+                        The Director
+                    </a>
+                    <a onclick="navTo(this);hideTOC();" 
+                       href="#month">
+                        Your Turn!
+                    </a>
+                    <a onclick="navTo(this);hideTOC();" 
+                       href="#month">
+                        The Prod
+                    </a>
+                </div>
+                
+                <div class=tocclose>
+                    &#x2715;
+                </div>
+            </div>
+        </div>
+        
+<!--
+        <div class=toccontent onclick="hideTOC();">
+            <a onclick="navTo(this);hideTOC();" 
+               href="#dirheader">
+                Section 1
+            </a>
+            <a onclick="navTo(this);hideTOC();" 
+               href="#dirheader">
+                Section 2
+            </a>
+            <a onclick="navTo(this);hideTOC();" 
+               href="#dirheader">
+                Section 3
+            </a>
+        </div>
+-->
+        
+        <div class=section id=moduleheader
+             style="background-image: url('/images/sample2.jpg')">
+            
+            <video autoplay muted loop>
+                <source src="/videos/sample.mp4" type="video/mp4">
+            </video>
+            
+            <div id=moduledl><a class=name href="#" download>Download printable pdf</a></div>
+            
+            <div id=moduleinstruct>
+                
+                <p>
+                    Navigate with &#8593; and &#8595; arrow keys
+                </p>
+            
+            </div>
+            
+        </div>
+        
+        <div class=section id=moduleprinted>
+            <div class=printedcolumn>
+                <h2>Director</h2>
+                <p>Lino Brocka</p>
+                <h2>Screenplay</h2>
+                <p>Mario O'Hara</p>
+                <p>Lamberto Antonio</p>
+            </div>
+            <div class=printedcolumn>
+                <h2>Starring</h2>
+                <p>Hilda Koronel (Insiang)</p>
+                <p>Mona Lisa (Tonya)</p>
+                <p>Ruel Vernal (Dado)</p>
+                <p>Rez Cortez (Bebot)</p>
+            </div>
+            <div class=printedcolumn>
+                <h2>Music</h2>
+                <p>Minda Azarcon</p>
+                <h2>Cinematography</h2>
+                <p>Conrado Baltazar</p>
+                <h2>Editor</h2>
+                <p>Augusto Salvador</p>
+            </div>
+        </div>
+        
+<!--        DIRECTOR STUFF -->
+        
+        <div class=section id=dirheader style="background-image: url('/images/directors/Brocka Header.png')">
+            
+            <div id=dirnav>
+                <a onclick="navTo(this, 1)" href="#dirstory">Basic Info</a>
+                <a onclick="navTo(this, 2)" href="#dirprocessguide">Film Career</a>
+                <a onclick="navTo(this, 3)" href="#dirtrivia">Creative Process</a>
+            </div>
+            
+            <div id=dirheaderlabels>
+                <p id=dirheaderlabel>
+                The Director
+                </p>
+                <p id=dirheaderquote>
+                "Quote"
+                </p>
+            </div>
+
+            
+            <div id=dirheaderinfo>
+                
+                <p id=idirfirstname>LINO</p>
+                <p id=idirlastname>BROCKA</p>
+                <p id=idirdate>1939 - 1991</p>
+                <p id=idirheading>Neorealism in the Mainstream</p>
+                <p id=idirpar>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu nunc sit amet purus semper egestas.</p>
+                
+                <div id=dirfilms>
+
+                    <a href="/pages/films/Insiang.html">
+                        <div class=dirfilm>
+                            <img src="/images/directors/Brocka%20-%20Poster%201%20(Insiang).png">
+                        </div>
+                    </a>
+
+                    <a href="/pages/films/MaynilaSaKuko.html">
+                        <div class=dirfilm>
+                            <img src="/images/directors/Brocka%20-%20Poster%202%20(Maynila%20sa%20Mga%20Kuko%20ng%20Liwanag).jpg">
+                            <div class=moduleavailright>Module Available</div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+            
+            <div id=dirinstruct>
+                
+                <p>
+                    Navigate with &#8593; & &#8595; arrow keys
+                </p>
+            
+            </div>
+            
+        </div>
+        
+        <div class=section id=dirstory>
+            <div id=dirillustration><img src="/images/directors/Brocka%20Illustration.png"></div>
+            <div id=dirdesc>
+                <p>
+                    
+                    Extremely prolific (producing up to 6 films in one year), Lino Brocka is probably the most politically-charged Filipino director, taking breaks from lmmaking to literally go out into the street and march, and later on forming the Concerned Artists of the Philippines, a union where directors discuss their social responsibilities to the country as filmmakers.	
+                    <br><br>
+                    He is famously known for choosing to appease both commercial (his so-called “compromise movies”) and independent (“ambitious movies”) tastes, rmly believing that if any social change were to actually be made, it could only be done through penetrating the masa first.		
+                    <br><br>
+                    Brocka was the first director to expose the other side of the Marcos’s dream society through lm, getting flack from Imelda Marcos for Maynila sa Kuko ng Liwanag.
+                    <br><br>
+                    He was also one of the rst few LGBTQ+ directors, and later on was awarded as a National Artist after his death in 1991.
+                    <br><br>
+                    His biggest goal was to “confront people with [life]”, to initiate a social investigation and understand why national problems came about.
+
+                
+                </p>
+            </div>
+        </div>
+        
+<!--        DIRECTOR STUFF END -->
+        
+        <div class="section" id=moduleproduction>
+            
+            <div class=modulecolumntitle>
+                <h2>THE<br>PRODUCTION</h2>  
+                <p><span class=darkred>!!</span> = point of interest</p>
+                <p><span class=darkred>FT</span> = notable film technique</p>
+            </div>
+            
+            <div class=modulecolumns>
+            
+                <div class=modulecolumn>
+                    <h2>Pre-Prod</h2>
+                    <p>
+                        Inspiration: came from a novel by Mario O’Hara, which was turned into a screenplay by Lamberto Antonio<br><br>
+                        O’Hara pitched the script to Brocka upon their first meeting<br><br>
+                        Intention: “I wanted to show the violence of the overcrowded neighborhoods; the loss of human dignity caused by the social environment and the ensuing need for change.” (Brocka)
+                    </p>
+                </div>
+                <div class=modulecolumn>
+                    <h2>Prod</h2>
+                    <p>
+                        Only shot in 21 days - “usually only one take sufficed” <br><br>
+                        <span class="darkred">FT</span>: “Rude awakening” open in the slaughterhouse: abrupt, almost looks like a documentary. What does it mean?<br><br>
+                        <span class="darkred">FT</span>: Cinematographer Conrado Baltazar employs frequent zooms and pans to keep up with the jittery action<br><br>
+                        <span class="darkred">FT</span>: Interiors are shot tightly to look small and claustrophobic to make the viewer feel cramped and suffocated<br><br>
+                        First film to be shot on location in Tondo
+                        Brocka employed actors from his theater troupe and prioritized acting over mise-en-scene (“he knew nothing about lenses”)
+
+                        
+                    </p>
+                </div>
+                <div class=modulecolumn>
+                    <h2>Post-Prod</h2>
+                    <p>
+                        
+                        Scenes are edited to feel slow so that the viewer can savor the moment (whether it be the awkward, dreamlike, or disgusting)<br><br>
+                        Soundtrack is filled with screeches and ambient noise
+                    
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="section" id=modulereaction>
+            
+            <div class=modulecolumntitle>
+                <h2>THE<br>REACTION</h2> 
+            </div>
+            
+            <div class=modulecolumns>
+            
+                <div class=modulecolumn>
+                    <h2>Initial</h2>
+                    <p>
+                        Imelda Marcos and PH religious officials protested it <br><br>
+                        A box office failure (brought Brocka’s production company into bankruptcy), but won in the 1976 MMFF and found its footing through international recognition <br><br>
+                        First Philippine film to be shown at the Cannes Film Festival in 1978
+                    </p>
+                </div>
+                <div class=modulecolumn>
+                    <h2>Present</h2>
+                    <p>
+                    
+                        Restored by Martin Scorsese’s Film Foundation in 2015, along with Brocka’s other film Maynila sa Mga Kuko ng Liwanag<br><br>
+                        Screened in the New York Film Festival and the Museum of Modern Art (MoMA)<br><br>
+                        The second PH film to be part of The Criterion Collection
+
+                        
+                    </p>
+                </div>
+                <div class=modulecolumn>
+                    <h2>On Film</h2>
+                    <p>
+                        Influenced Lav Diaz, arguably today’s most prominent Filipino director, to become a filmmaker
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class=section id=modulegq>
+            <div id=gqleft>
+                <h2>SO NOW THAT YOU'VE SEEN IT, WHAT DO YOU THINK?</h2>
+                <p>Here are some points to ponder on, or discuss with a friend or two!</p>
+            </div>
+            <div id=gqs>
+                <h2 class=gqheading>After</h2>
+                <ul>
+                    <li>Why should we revisit old films?</li> 
+                    
+                    <li>What do old Filipino films bring to the table that a classic from Hollywood or Europe cannot?</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class=section id=moduleqt>
+            
+            <h2>Quote</h2>
+            
+        </div>
+        
+        <div class=lookat>
+            <a href="/pages/minifests.html"><h2>LOOK AT MORE MODULES</h2></a>
+        </div>
+        
+        <div id=footer></div>
+        
+        <script>
+            $(function(){
+                $("#footer").load("/footer.html"); 
+            });
+        </script>
+        
+        <script src="/script.js"></script>
+        
+    </body>
+    
+</html>

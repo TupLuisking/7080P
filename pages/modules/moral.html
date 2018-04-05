@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+   
+    <head>
+        
+        <meta charset="utf-8" />
+        <title>70/80</title>
+        <link href="/style.css" rel="stylesheet" type="text/css" media="screen" />
+        <link rel="icon" href="/images/icons/tabicon.png"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+        <script src="/scripts\jquery-3.3.1.min.js"></script>
+    </head>
+    
+    <body id="module">
+        
+        <div id="navbar">
+        
+        </div>
+        
+        <script>
+        $(function(){
+           $("#navbar").load("/navbar.html"); 
+        });
+        </script>
+        
+        
+        <div class=toc>
+            <p class=tocsymbol onclick="showTOC();">&#9776;</p>
+            <div class=toccontent id=tocminifest onclick="hideTOC();">
+<!--
+                <a onclick="navTo(this);hideTOC();" 
+                   href="#month">
+                    MONTH 1
+                </a>
+-->
+                <div id=tocmonths>
+                    <a onclick="navTo(this);hideTOC();" 
+                       href="#month">
+                        The Film
+                    </a>
+                    <a onclick="navTo(this);hideTOC();" 
+                       href="#month">
+                        The Reaction
+                    </a>
+                    <a onclick="navTo(this);hideTOC();" 
+                       href="#month">
+                        The Director
+                    </a>
+                    <a onclick="navTo(this);hideTOC();" 
+                       href="#month">
+                        Your Turn!
+                    </a>
+                    <a onclick="navTo(this);hideTOC();" 
+                       href="#month">
+                        The Prod
+                    </a>
+                </div>
+                
+                <div class=tocclose>
+                    &#x2715;
+                </div>
+            </div>
+        </div>
+        
+<!--
+        <div class=toccontent onclick="hideTOC();">
+            <a onclick="navTo(this);hideTOC();" 
+               href="#dirheader">
+                Section 1
+            </a>
+            <a onclick="navTo(this);hideTOC();" 
+               href="#dirheader">
+                Section 2
+            </a>
+            <a onclick="navTo(this);hideTOC();" 
+               href="#dirheader">
+                Section 3
+            </a>
+        </div>
+-->
+        
+        <div class=section id=moduleheader
+             style="background-image: url('/images/sample2.jpg')">
+            
+            <video autoplay muted loop>
+                <source src="/videos/sample.mp4" type="video/mp4">
+            </video>
+            
+            <div id=moduledl><a class=name href="#" download>Download printable pdf</a></div>
+            
+            <div id=moduleinstruct>
+                
+                <p>
+                    Navigate with &#8593; and &#8595; arrow keys
+                </p>
+            
+            </div>
+            
+        </div>
+        
+        <div class=section id=moduleprinted>
+            <div class=printedcolumn>
+                <h2>bruh</h2>
+                <p>bruh bruh</p>
+                <h2>bruh</h2>
+                <p>bruh bruh</p>
+                <p>bruh bruh</p>
+            </div>
+            <div class=printedcolumn>
+                <h2>bruh</h2>
+                <p>bruh bruh</p>
+                <p>bruh bruh</p>
+                <p>bruh bruh</p>
+            </div>
+            <div class=printedcolumn>
+                <h2>bruh</h2>
+                <p>bruh bruh</p>
+                <h2>bruh</h2>
+                <p>bruh bruh</p>
+                <h2>bruh</h2>
+                <p>bruh bruh</p>
+            </div>
+        </div>
+        
+<!--        DIRECTOR STUFF -->
+        
+        <div class=section id=dirheader style="background-image: url('/images/sample.jpg')">
+            
+            <div id=dirnav>
+                <a onclick="navTo(this, 1)" href="#dirstory">Basic Info</a>
+                <a onclick="navTo(this, 2)" href="#dirprocessguide">Film Career</a>
+                <a onclick="navTo(this, 3)" href="#dirtrivia">Creative Process</a>
+            </div>
+            
+            <div id=dirheaderinfo>
+                
+                <div id=dirheaderlabels>
+                    <p id=dirheaderlabel>
+                    The<br>Director
+                    </p>
+                    <p id=dirheaderquote>
+                    asdasd
+                    </p>
+                </div>
+                
+                <p id=idirfirstname>First Name</p>
+                <p id=idirlastname>Last Name</p>
+                <p id=idirdate>Date - Date</p>
+                <p id=idirheading>Heading</p>
+                <p id=idirpar>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu nunc sit amet purus semper egestas.</p>
+                
+                <div id=dirfilms>
+
+                    <a href="/pages/films/ifilm1.html"><div class=dirfilm><img src="/images/birdnull.jpg"></div></a>
+
+                    <a href="/pages/films/ifilm1.html"><div class=dirfilm><img src="/images/birdnull.jpg"></div></a>
+
+                </div>
+            </div>
+            
+            <div id=dirinstruct>
+                
+                <p>
+                    Navigate with &#8593; & &#8595; arrow keys
+                </p>
+            
+            </div>
+            
+        </div>
+        
+        <div class=section id=dirstory>
+            <div id=dirillustration><img src="/images/bird.jpg"></div>
+            <div id=dirdesc>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum lectus sed massa elementum, quis convallis lacus congue. Nulla placerat sapien commodo lorem faucibus, et faucibus felis vulputate. Sed faucibus imperdiet consectetur. Nulla iaculis orci sit amet lectus aliquam viverra varius eget nibh! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum lectus sed massa elementum, quis convallis lacus congue. Nulla placerat sapien commodo lorem faucibus, et faucibus felis vulputate. Sed faucibus imperdiet consectetur. Nulla iaculis orci sit amet lectus aliquam viverra varius eget nibh! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum lectus sed massa elementum, quis convallis lacus congue. Nulla placerat sapien commodo lorem faucibus, et faucibus felis vulputate. Sed faucibus imperdiet consectetur. Nulla iaculis orci sit amet lectus aliquam viverra varius eget nibh! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum lectus sed massa elementum, quis convallis lacus congue. Nulla placerat sapien commodo lorem faucibus, et faucibus felis vulputate. Sed faucibus imperdiet consectetur. Nulla iaculis orci sit amet lectus aliquam viverra varius eget nibh!</p>
+            </div>
+        </div>
+        
+<!--        DIRECTOR STUFF END -->
+        
+        <div class="section" id=moduleproduction>
+            
+            <div class=modulecolumntitle>
+                <h2>THE<br>PRODUCTION</h2>  
+                <p><span class=darkred>!!</span> = point of interest</p>
+                <p><span class=darkred>FT</span> = notable film technique</p>
+            </div>
+            
+            <div class=modulecolumns>
+            
+                <div class=modulecolumn>
+                    <h2>asdasd</h2>
+                    <p>asdasdasdasdasdasd</p>
+                </div>
+                <div class=modulecolumn>
+                    <h2>asdasd</h2>
+                    <p>asdasdasdasdasdasd</p>
+                </div>
+                <div class=modulecolumn>
+                    <h2>asdasd</h2>
+                    <p>asdasdasdasdasdasd</p>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="section" id=modulereaction>
+            
+            <div class=modulecolumntitle>
+                <h2>THE<br>REACTION</h2> 
+            </div>
+            
+            <div class=modulecolumns>
+            
+                <div class=modulecolumn>
+                    <h2>asdasd</h2>
+                    <p>asdasdasdasdasdasd</p>
+                </div>
+                <div class=modulecolumn>
+                    <h2>asdasd</h2>
+                    <p>asdasdasdasdasdasd</p>
+                </div>
+                <div class=modulecolumn>
+                    <h2>asdasd</h2>
+                    <p>asdasdasdasdasdasd</p>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class=section id=modulegq>
+            <div id=gqleft>
+                <h2>SO NOW THAT YOU'VE SEEN IT, WHAT DO YOU THINK?</h2>
+                <p>Here are some points to ponder on, or discuss with a friend or two!</p>
+            </div>
+            <div id=gqs>
+                <h2 class=gqheading>After</h2>
+                <ul>
+                    <li>Why should we revisit old films?</li> 
+                    
+                    <li>What do old Filipino films bring to the table that a classic from Hollywood or Europe cannot?</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class=section id=moduleqt>
+            
+            <h2>asdasdasdsd</h2>
+            
+        </div>
+        
+        <div class=lookat>
+            <a href="/pages/minifests.html"><h2>LOOK AT MORE MODULES</h2></a>
+        </div>
+        
+        <div id=footer></div>
+        
+        <script>
+            $(function(){
+                $("#footer").load("/footer.html"); 
+            });
+        </script>
+        
+        <script src="/script.js"></script>
+        
+    </body>
+    
+</html>
