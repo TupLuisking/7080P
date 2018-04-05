@@ -316,30 +316,38 @@ function showNowShowingInfo(i) {
 // CALENDAR
 
 var dateDates = [
-    "6",
-    "11",
+    "3",
+    "8",
     "14",
-    "24"
+    "15",
+    "18",
+    "22"
 ];
 
 var dateTitles = [
-    "Maynila sa mga Kuko ng Liwanag",
-    "Batch '81",
+    "Insiang",
     "Kung Mangarap Ka't Magising",
-    "Kakabakaba Ka Ba?"
+    "Maynila sa Mga Kuko ng Liwanag",
+    "Hindi Nahahati Ang Langit",
+    "Maynila sa Mga Kuko ng Liwanag",
+    "Kung Mangarap Ka't Magising"
 ];
 
 var dateColors = [
     "#a8dac7",
     "#fcb040",
     "#a8dac7",
-    "#fcb040"
+    "#a8dac7",
+    "#fcb040",
+    "#a8dac7"
 ];
 
 var dayTimes = [
-    "10:30 PM",
     "7:30 PM",
-    "2:30 PM",
+    "8:30 PM",
+    "7:30 PM",
+    "6:00 PM",
+    "7:30 PM",
     "6:00 PM"
 ];
 
@@ -384,8 +392,8 @@ function showDayInfo(i) {
         dayinfofilm.style.background = dateColors[i];
         
         dayinfotime.innerHTML = dayTimes[i];
-        dayinfovenue.innerHTML = dayVenues[i];
-        dayinfoentry.innerHTML = dayEntries[i];
+        dayinfovenue.innerHTML = "Cinema Centenario";
+        dayinfoentry.innerHTML = "PHP200 per ticket";
     }
     
 }

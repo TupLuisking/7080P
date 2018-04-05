@@ -1367,6 +1367,10 @@ header .slideshow {
 /*    background: rgba(0,0,0,0.125);*/
     
     overflow: hidden;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .directorpanel p {
@@ -1447,6 +1451,14 @@ header .slideshow {
     
     margin-top: 1vw;
     font-size: 1.75vw;
+}
+
+.dircomingsoon {
+    
+    margin-top: 4vw;
+    width: 50%;
+    font-family: "Names";
+    color: black;
 }
 
 /*
@@ -3130,7 +3142,7 @@ header .slideshow {
     font-family: "Main Header";
 }
 
-#modulegq #gqleft p {
+#modulegq #gqleft  {
     
     width: 40%;
     margin-top: 3vw;
@@ -3146,6 +3158,18 @@ header .slideshow {
     
     font-family: "Body Text";
     font-weight: bold;
+}
+
+#gqs li {
+    
+    font-size: 2vw;
+}
+
+#gqs .gqheading {
+    
+    font-family: "Names";
+    font-size: 3vw;
+    color: white;
 }
 
 #modulegq p {
