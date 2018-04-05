@@ -556,11 +556,16 @@ header {
     background-position: center;
     
     display: grid;
-    grid-template-columns: 1.5fr 3.5fr 1fr;
+    grid-template-columns: 5fr 1fr;
     
     grid-gap: 7vw;
     
     position: relative;
+}
+
+#headerleftall {
+    
+    
 }
 
 #headerleft {
@@ -568,6 +573,7 @@ header {
     font-size: 1.5vw;
     
     padding-top: 2.5vw;
+    margin-bottom: 2vw;
     
     text-align: left;
 }
@@ -580,7 +586,7 @@ header {
     align-items: flex-end;
     
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     
     grid-gap: 4vw;
 }
