@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+   
+    <head>
+        
+        <meta charset="utf-8" />
+        <title>70/80</title>
+        <link href="/style.css" rel="stylesheet" type="text/css" media="screen" />
+        <link rel="icon" href="/images/icons/tabicon.png"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+        <script src="/scripts\jquery-3.3.1.min.js"></script>
+    </head>
+    
+    <body id="directors">
+        
+        <div id="navbar"></div>
+        
+        <script>
+        $(function(){
+           $("#navbar").load("/navbar.html"); 
+        });
+        </script>
+        
+        <div class=section id=dirheader style="background-image: url('/images/sample.jpg')">
+            
+            <div id=dirnav>
+                <a onclick="navTo(this, 1)" href="#dirstory">Basic Info</a>
+                <a onclick="navTo(this, 2)" href="#dirprocessguide">Film Career</a>
+                <a onclick="navTo(this, 3)" href="#dirtrivia">Creative Process</a>
+            </div>
+            
+            <div id=dirheaderlabels>
+                <p id=dirheaderlabel>
+                asdasd
+                </p>
+                <p id=dirheaderquote>
+                asdasd
+                </p>
+            </div>
+
+            
+            <div id=dirheaderinfo>
+                
+                <p id=idirfirstname>First Name</p>
+                <p id=idirlastname>Last Name</p>
+                <p id=idirdate>Date - Date</p>
+                <p id=idirheading>Heading</p>
+                <p id=idirpar>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu nunc sit amet purus semper egestas.</p>
+                
+                <div id=dirfilms>
+
+                    <a href="/pages/films/ifilm1.html">
+                        <div class=dirfilm>
+                            <img src="/images/birdnull.jpg">
+                        </div>
+                    </a>
+
+                    <a href="/pages/films/ifilm1.html">
+                        <div class=dirfilm>
+                            <img src="/images/birdnull.jpg">
+                            <div class=moduleavailright>Module Available</div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+            
+            <div id=dirinstruct>
+                
+                <p>
+                    Navigate with &#8593; & &#8595; arrow keys
+                </p>
+            
+            </div>
+            
+        </div>
+        
+        <div class=section id=dirstory>
+            <div id=dirillustration><img src="/images/bird.jpg"></div>
+            <div id=dirdesc>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum lectus sed massa elementum, quis convallis lacus congue. Nulla placerat sapien commodo lorem faucibus, et faucibus felis vulputate. Sed faucibus imperdiet consectetur. Nulla iaculis orci sit amet lectus aliquam viverra varius eget nibh! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum lectus sed massa elementum, quis convallis lacus congue. Nulla placerat sapien commodo lorem faucibus, et faucibus felis vulputate. Sed faucibus imperdiet consectetur. Nulla iaculis orci sit amet lectus aliquam viverra varius eget nibh! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum lectus sed massa elementum, quis convallis lacus congue. Nulla placerat sapien commodo lorem faucibus, et faucibus felis vulputate. Sed faucibus imperdiet consectetur. Nulla iaculis orci sit amet lectus aliquam viverra varius eget nibh! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum lectus sed massa elementum, quis convallis lacus congue. Nulla placerat sapien commodo lorem faucibus, et faucibus felis vulputate. Sed faucibus imperdiet consectetur. Nulla iaculis orci sit amet lectus aliquam viverra varius eget nibh!</p>
+            </div>
+        </div>
+        
+        <div class=section id=dirprocessguide>
+            
+            <div id=dirprocess>
+                <h2>Creative Porcess</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum lectus sed massa elementum, quis convallis lacus congue. Nulla placerat sapien commodo lorem faucibus, et faucibus felis vulputate. Sed faucibus imperdiet consectetur. Nulla iaculis orci sit amet lectus aliquam viverra varius eget nibh! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum lectus sed massa elementum, quis convallis lacus congue. Nulla placerat sapien commodo lorem faucibus, et faucibus felis vulputate. Sed faucibus imperdiet consectetur. Nulla iaculis orci sit amet lectus aliquam viverra varius eget nibh!</p>
+            </div>
+            
+            <div id=dirguide>
+                <h2>Guide Questions</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum lectus sed massa elementum, quis convallis lacus congue. Nulla placerat sapien commodo lorem faucibus, et faucibus felis vulputate. Sed faucibus imperdiet consectetur. Nulla iaculis orci sit amet lectus aliquam viverra varius eget nibh! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum lectus sed massa elementum, quis convallis lacus congue. Nulla placerat sapien commodo lorem faucibus, et faucibus felis vulputate. Sed faucibus imperdiet consectetur. Nulla iaculis orci sit amet lectus aliquam viverra varius eget nibh!Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum lectus sed massa elementum, quis convallis lacus congue. Nulla placerat sapien commodo lorem faucibus, et faucibus felis vulputate. Sed faucibus imperdiet consectetur. Nulla iaculis orci sit amet lectus aliquam viverra varius eget nibh!</p>
+            </div>
+            
+        </div>
+            
+        <div class=section id=dirtrivia>
+            <p class=special> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum lectus sed massa elementum, quis convallis lacus congue. Nulla placerat sapien commodo lorem faucibus, et faucibus felis vulputate. Sed faucibus imperdiet consectetur.</p>    
+        </div>
+        
+        <div id=footer></div>
+        
+        <script>
+            $(function(){
+                $("#footer").load("/footer.html"); 
+            });
+        </script>
+        
+        <script src="/script.js"></script>
+        
+    </body>
+    
+</html>

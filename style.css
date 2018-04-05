@@ -546,6 +546,16 @@ p {
     text-decoration: underline;
 }
 
+#vanguardfilms {
+    
+    text-align: left;
+    
+    padding: 3vw;
+    padding-left: 10vw;
+    
+    font-size: 1.5vw;
+}
+
 #slides {
     
     position: relative;
