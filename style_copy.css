@@ -1211,7 +1211,7 @@ header .slideshow {
 
 #about .section {
     
-    text-align: justify;
+    text-align: left;
     
     padding: 20px;
 }
@@ -1555,7 +1555,7 @@ header .slideshow {
 
 #dirdesc {
     
-    text-align: justify;
+    text-align: left;
     column-count: 3;
     column-gap: 30px;
     
@@ -1569,7 +1569,7 @@ header .slideshow {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 25px;
-    text-align: justify;
+    text-align: left;
     
     color: black;
     font-size: 0.75em;

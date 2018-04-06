@@ -360,14 +360,14 @@ p {
     
     padding: 0px;
     
-    z-index: 1;
+    z-index: 2;
     
     border-bottom: 1px solid white;
 }
 
 #nav {
 
-    z-index: 1;
+    z-index: 2;
     
     position: fixed;
     top: 0;
@@ -574,6 +574,11 @@ header {
     position: relative;
 }
 
+.headerunderline {
+    
+    color: white;
+}
+
 #headerfilmleft {
     
     font-family: "Names";
@@ -772,7 +777,7 @@ header .slideshow:hover {
    
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-self: flex-start;
 }
 
@@ -1302,7 +1307,7 @@ header .slideshow {
 
 #about .section {
     
-    text-align: justify;
+    text-align: left;
     
     padding: 20px;
 }
@@ -1517,8 +1522,8 @@ header .slideshow {
     flex-direction: row;
     justify-content: center;
     
-    position: absolute;
-    top: 20px;
+    position: fixed;
+    top: 280px;
     left: 50%;
     
     transform: translateX(-50%);
@@ -1637,6 +1642,8 @@ header .slideshow {
     
     width: 10vw;
     
+    position: relative;
+    
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -1700,7 +1707,7 @@ header .slideshow {
 
 #dirdesc {
     
-    text-align: justify;
+    text-align: left;
     column-count: 3;
     column-gap: 30px;
     
@@ -1714,7 +1721,7 @@ header .slideshow {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 25px;
-    text-align: justify;
+    text-align: left;
     
     color: black;
     font-size: 1.875vw;
@@ -2172,8 +2179,6 @@ header .slideshow {
 .minifestpanel {
     
     padding: 0 50px 50px 50px;
-    
-    font-size
 }
 
 .minifestpanelbg {
@@ -2181,9 +2186,10 @@ header .slideshow {
     background-position: center;
     background-size: cover;
     
-    height: 50vw;
     padding-left: 7.5vw;
     padding-right: 7.5vw;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
     
     display: flex;
     flex-direction: column;
@@ -2250,7 +2256,6 @@ header .slideshow {
     
     margin-top: 2vw;
     width: 100%;
-    word-break: break-all;
     color: white;
     text-decoration: none;
 }
@@ -3478,7 +3483,7 @@ header .slideshow {
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 0;
+    z-index: 1;
     
     transform: translate(50%, -50%);
     

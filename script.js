@@ -65,6 +65,7 @@ $(window).scroll(function(){
     
     adjustAboutNav(navend, wScroll);
     adjustTOC(navend, wScroll);
+    adjustDirNav(navend, wScroll);
     
 //    console.log("scroll: " + wScroll);
 //    console.log("navend: " + navend);
@@ -128,6 +129,22 @@ function adjustTOC(navend, wScroll) {
         if(wScroll < navend) {
             
             toc.style.top = (290 - wScroll) + "px";       
+        } else {
+            
+            toc.style.top = "85px";
+        }
+    }
+}
+
+function adjustDirNav(navend, wScroll) {
+    
+    var toc = document.getElementById("dirnav");
+    
+    if(toc != null) {
+        
+        if(wScroll < navend) {
+            
+            toc.style.top = (280 - wScroll) + "px";       
         } else {
             
             toc.style.top = "85px";
@@ -328,7 +345,7 @@ var dateTitles = [
     "Insiang",
     "Kung Mangarap Ka't Magising",
     "Maynila sa Mga Kuko ng Liwanag",
-    "Hindi Nahahati Ang Langit",
+    "Kakabakaba Ka Ba?",
     "Maynila sa Mga Kuko ng Liwanag",
     "Kung Mangarap Ka't Magising"
 ];
@@ -337,7 +354,7 @@ var dateColors = [
     "#a8dac7",
     "#fcb040",
     "#a8dac7",
-    "#a8dac7",
+    "#fcb040",
     "#fcb040",
     "#a8dac7"
 ];
@@ -346,7 +363,7 @@ var dayTimes = [
     "7:30 PM",
     "8:30 PM",
     "7:30 PM",
-    "6:00 PM",
+    "3:30 PM",
     "7:30 PM",
     "6:00 PM"
 ];
