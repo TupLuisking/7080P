@@ -2149,7 +2149,7 @@ header .slideshow {
     
     width: 37.5vw;
     
-    margin: 25px;
+    margin: 4vw;
     margin-left: 6.9vw;
     margin-bottom: 4vw;
     
@@ -2446,6 +2446,38 @@ header .slideshow {
 #community .lookat {
     
     background: clear;
+}
+
+#comcomingsoon {
+    
+    margin: 6vw;
+    
+    min-height: 10vw;
+    
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    
+    grid-gap: 2vw;
+    
+    text-align: left;
+}
+
+#comcomingleft {
+    
+    background: rgba(0,0,0,0.25);
+}
+
+#comcomingright {
+    
+    background: rgba(0,0,0,0.25);
+}
+
+#comcominghighlight {
+    
+    background: white;
+    color: #a8dac7;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
 }
 
 /* INDIVIDUAL POST */
