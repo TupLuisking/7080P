@@ -2457,19 +2457,32 @@ header .slideshow {
     display: grid;
     grid-template-columns: 1fr 2fr;
     
-    grid-gap: 2vw;
+    grid-gap: 5vw;
     
     text-align: left;
 }
 
-#comcomingleft {
+#comcomingleftbottom {
     
-    background: rgba(0,0,0,0.25);
+    margin-top: 2vw;
+    
+    font-family: "Names";
+    font-size: 4vw;
+    text-transform: uppercase;
 }
 
-#comcomingright {
+#comcomingrighttop {
     
-    background: rgba(0,0,0,0.25);
+    font-family: "Main Header";
+    font-size: 3.75vw;
+}
+
+#comcomingrightbottom {
+    
+    margin-top: 1vw;
+    font-family: "Names";
+    
+    width: 55%;
 }
 
 #comcominghighlight {
