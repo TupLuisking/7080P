@@ -1106,6 +1106,7 @@ header .slideshow {
     padding-right: 1vw;
     
     border-right: 1px solid black;
+    border: none;
     
     transition: 0.25s;
 }
@@ -1122,7 +1123,7 @@ header .slideshow {
     
     z-index: 1;
     
-    opacity: 1;
+    opacity: 0;
     
     transition: 0.25s;
 }
