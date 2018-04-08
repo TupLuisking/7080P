@@ -544,14 +544,27 @@ p {
     text-decoration: underline;
 }
 
-#vanguardfilms {
+#nowshowingdesc {
+    
+    width: 17.5vw;
+    
+    display: flex;
+    flex-direction: column;
+    margin-right: 2vw;
     
     text-align: left;
     
-    padding: 3vw;
-    padding-left: 10vw;
+    font-size: 1.25vw;
+    font-family: "Near Logo";
+}
+
+#vanguardfilms {
     
-    font-size: 1.5vw;
+    text-align: left;
+
+    margin-top: 5vw;
+    
+    font-size: 0.8vw;
 }
 
 #slides {
@@ -562,6 +575,8 @@ p {
 header {
     
     padding: 4vw;
+    padding-left: 6vw;
+    padding-right: 6vw;
     
     background-size: cover;
     background-position: center;
@@ -622,6 +637,8 @@ header {
 #headerfilmleft p {
     
     margin: 0;
+    
+    font-weight: normal;
 }
 
 #headerbonus {
@@ -650,11 +667,11 @@ header {
     align-items: flex-start;
     
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1.1fr 1fr 1fr 1fr;
     
     grid-gap: 7vw;
     
-    margin-bottom: 2vw;
+    margin-bottom: 1vw;
 }
 
 .headerfilm {
@@ -666,6 +683,10 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    
+    font-weight: bold;
+    
+    line-height: 2.75vw;
 }
 
 .headerfilm h2 a {
@@ -688,6 +709,8 @@ header {
 .headerfilm img {
     
     height: 100%;
+    
+    mix-blend-mode: multiply;
 }
 
 .headerfilm p {
@@ -708,15 +731,21 @@ header {
 
 .headerfilm .headerfilmtitle a {
     
-    height: 6.9vw;
+    font-size: 1.4vw;
     
+    font-weight: normal;
     word-wrap: normal;
 }
 
 .headerfilm .headerfilmdate {
     
     font-family: "Near Logo";
-    font-size: 1.25vw;
+    font-size: 0.9vw;
+    line-height: 1.69vw;
+    
+    height: 4vw;
+    
+    margin-bottom: 0vw;
 }
 
 #headerright {
@@ -725,11 +754,13 @@ header {
     
     text-align: left;
     
-    padding-top: 9vw;
+    padding-top: 7.5vw;
     
-    font-size: 1.25vw;
+    font-size: 1vw;
     
     overflow: hidden;
+    
+    line-height: 1.75vw;
 }
 
 #headerright a {
@@ -773,11 +804,11 @@ header .slideshow:hover {
 
 #minifilms {
     
-    margin: 2.5vw 15vw 0vw 15vw;
+    margin: 2.5vw 5vw 4vw 5vw;
    
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-self: flex-start;
 }
 
@@ -796,6 +827,9 @@ header .slideshow:hover {
     height: auto;
     width: 15vw;
     
+    margin-right: 1vw;
+    margin-left: 1vw;s
+    
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -804,6 +838,10 @@ header .slideshow:hover {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    
+    position: relative;
+    
+/*    font-weight: bold;*/
 }
 
 .minifilm img {
@@ -965,6 +1003,21 @@ header .slideshow {
     color: #060707;
 }
 
+#calendarsection h1 {
+    
+    margin-bottom: 1vw;
+}
+
+#calendarinstruct {
+    
+    margin-left: 5vw;
+    
+    text-align: left;
+    font-family: "Near Logo";
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
 #calendarinfo {
     
     position: relative;
@@ -972,7 +1025,7 @@ header .slideshow {
     margin: 0 5vw 0 5vw;
     
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: auto 1fr 1fr;
     grid-gap: 15px;
     align-items: center;
 }
@@ -982,8 +1035,6 @@ header .slideshow {
     align-self: center;
     
     padding: 10px;
-    
-    border-radius: 10px;
     
     font-family: "Names";
     
@@ -995,7 +1046,8 @@ header .slideshow {
     margin-top: 10px;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-gap: 7.5px;
+    grid-gap: 1vw;
+    font-size: 1.5vw;
 }
 
 
@@ -1004,28 +1056,31 @@ header .slideshow {
     border-bottom: 1.5px solid rgba(0,0,0,0.25);
 }
 
+#daylabels div, .day {
+    
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+}
 
 #days {
     
     margin-top: 5px;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-gap: 7.5px;
+    grid-gap: 1vw;
     
-    font-size: 1.75vw;
+    font-size: 1.5vw;
 }
 
 .day {
     
-    width: 4vw;
-    height: 4vw;
+    width: 3vw;
+    height: 3vw;
     cursor: default;
     
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
-    border-radius: 10;
     
     transition: 0.25s;
 }
@@ -1040,59 +1095,53 @@ header .slideshow {
     background:  #a8dac7;
 }
 
-#dayright {
+#dayright, #dayright2 {
     
     height: 100%;
     
     text-align: left;
+    
+    position: relative;
+    
+    padding-right: 1vw;
+    
+    border-right: 1px solid black;
+    
+    transition: 0.25s;
 }
 
-#dayinstruct {
+#dayright2 {
     
-    padding: 10px;
-    
-    font-family: "Names";
-    font-size: 2vw;
+    border: none;
 }
 
 
-#dayinfo {
+#dayinfo, #dayinfo2 {
     
     position: relative;
     
     z-index: 1;
     
-    opacity: 0;
+    opacity: 1;
     
     transition: 0.25s;
 }
 
-#dayinfo h3 {
+#dayinfo p, #dayinfo2 p {
     
+    
+    font-size: 1.5vw;
+    font-family: "Near Logo";
     text-align: left;
-    
-    margin-top: 0;
-    margin-bottom: 10px;
-    padding: 10px;
-    
-    font-size: 2vw;
-    
-    font-family: "Names";
+    padding-left: 1vw;
 }
 
-#dayinfo p {
-    
-    text-align: left;
-    padding-left: 10px;
-}
-
-#dayinfo #dayinfoname {
+#dayinfo #dayinfoname, #dayinfo2 #dayinfoname {
     
     color: clear;
     
     text-align: left;
-    padding-bottom: 5px;
-    padding-top: 5px;
+    padding-top: 2vw;
 }
 
 #dayinfobottom {
@@ -1107,40 +1156,30 @@ header .slideshow {
     flex-direction: column;
 }
 
-#daynumber, #dayinfofilm {
+#dayinfo #daynumber #dayinfoday, 
+#dayinfo #dayinfofilm,
+#dayinfo2 #daynumber #dayinfoday2, 
+#dayinfo2 #dayinfofilm2 {
     
-    font-size: 2vw;
+    font-size: 1.75vw;
     font-family: "Names";
 }
 
-#daynumber p, #dayinfofilm {
+#daynumber p, #dayinfofilm, #dayinfofilm2{
     
     width: auto;
-    padding: 10px;
-}
-
-#dayfb {
-    
-    height: 6vw;
-    width: 6vw;
+    padding: 1vw;
 }
 
 #dayinfolist {
     
     display: flex;
     flex-direction: column;
-    
-    font-size: 2vw;
 }
 
-.daylabel {
+.daylabel, .dayanswer, #dayreserve {
     
     font-weight: bold;
-}
-
-.dayanswer {
-    
-    transform: translateX(2vw);
 }
 
 #dayreserve {
@@ -1157,6 +1196,9 @@ header .slideshow {
     padding-left: 7.5vw;
     
     font-size: 1.5vw;
+    
+    font-family: "Near Logo";
+    font-weight: bold;
 }
 
 .daycolor {
@@ -1464,6 +1506,8 @@ header .slideshow {
     width: 50%;
     font-family: "Names";
     color: black;
+    font-size: 2vw;
+    
 }
 
 /*
@@ -1503,6 +1547,8 @@ header .slideshow {
 #dirheader {
     
     height: 52.5vw;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
     
     position: relative;
     
@@ -1527,6 +1573,8 @@ header .slideshow {
     left: 50%;
     
     transform: translateX(-50%);
+    
+    z-index: 1;
 }
 
 #dirnav a {
@@ -1576,6 +1624,8 @@ header .slideshow {
     
     text-transform: uppercase;
     font-size: 2.5vw;
+    
+    text-align: left;
 }
 
 #dirheaderquote {
@@ -1660,7 +1710,8 @@ header .slideshow {
     
     width: 15vw;
     position: absolute;
-    margin: 25px;
+    margin: 4vw;
+    margin-left: 5vw;
     
     bottom: 0;
     left: 0;
@@ -1774,7 +1825,7 @@ header .slideshow {
     
     display: grid;
     grid-template-columns: 1fr 1.420fr;
-    grid-gap: 50px;
+    grid-gap: 7.5vw;
 }
 
 #filmheaderleft, #filmheaderright {
@@ -1887,7 +1938,12 @@ header .slideshow {
 #filmheading, #filmdesc {
     
     font-size: 1.75vw;
-    line-height: 145%;
+    line-height: 3vw;
+}
+
+#filmdesc {
+    
+    padding-bottom: 1.5vw;
 }
 
 #filmheading {
@@ -2234,6 +2290,9 @@ header .slideshow {
     
     color: white;
     text-decoration: none;
+    
+    font-family: "Names";
+    font-size: 1.5vw;
 }
 
 .minifestfilm {
@@ -2254,7 +2313,7 @@ header .slideshow {
 
 .minifestfilm .name {
     
-    margin-top: 2vw;
+    margin-top: 1vw;
     width: 100%;
     color: white;
     text-decoration: none;
@@ -2474,15 +2533,19 @@ header .slideshow {
 #comcomingrighttop {
     
     font-family: "Main Header";
-    font-size: 3.75vw;
+    font-size: 3.4vw;
+    
+    line-height: 5.25vw;
 }
 
 #comcomingrightbottom {
     
     margin-top: 1vw;
-    font-family: "Names";
-    
-    width: 55%;
+    font-family: "Dates";
+    font-weight: bold;
+    font-size: 3vw;
+    line-height: 4.2vw;
+    width: 60%;
 }
 
 #comcominghighlight {
@@ -2844,6 +2907,11 @@ header .slideshow {
     text-decoration: underline;
 }
 
+#module #dirheader {
+    
+    padding-bottom: 7.5vw;
+}
+
 #module #dirinstruct {
     
     display: none;
@@ -2907,11 +2975,37 @@ header .slideshow {
     
     background-size: cover;
     background-position: center;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#moduleheadertitle {
+    
+    position: relative;
+    z-index: 1;
+    
+    margin-top: 10vw;
+    width: 50vw;
+    margin-bottom: 15vw;
+}
+
+#moduleheadertitle img {
+    
+    width: 100%;
 }
 
 #module #dirheader #dirheaderlabels {
     
     display: block;
+}
+
+#module #dirheader #dirheaderlabels #dirheaderquote {
+    
+    display: block;
+    margin-bottom: 7.5vw;
 }
 
 #moduleinstruct {
@@ -3361,8 +3455,8 @@ header .slideshow {
 
 #imgmodalcontainer {
     
-    height: 55vw;
-    width: 76vw;
+    height: 300px;
+    width: 450px;
     
     position: absolute;
     top: 50%;
@@ -3373,12 +3467,12 @@ header .slideshow {
     transform: translate(-50%, -50%);
     
     display: grid;
-    grid-template-columns: 1fr 55vw;
-    grid-gap: 3vw;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 25px;
     
-    padding: 5vw;
-    padding-top: 2vw;
-    padding-bottom: 2vw;
+    padding: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     
     border: 1px solid #ef8cba;
 }
@@ -3403,7 +3497,7 @@ header .slideshow {
     
     text-transform: uppercase;
     
-    font-size: 2vw;
+    font-size: 1em;
     
     margin-bottom: 2vw;
     
@@ -3412,7 +3506,7 @@ header .slideshow {
 
 #imgmodaldl {
     
-    font-size: 1.75vw;
+    font-size: 0.75em;
     
     color: #ef8cba;
     
@@ -3442,6 +3536,8 @@ header .slideshow {
 }
 
 #imgmodalright {
+    
+    height: 300px;
     
     overflow: hidden;
     

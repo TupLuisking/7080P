@@ -332,6 +332,15 @@ function showNowShowingInfo(i) {
 
 // CALENDAR
 
+var dateColors = [
+    "#a8dac7",
+    "#fcb040",
+    "#fcb040",
+    "#fcb040",
+    "#fcb040",
+    "#fcb040"
+];
+
 var dateDates = [
     "3",
     "8",
@@ -343,29 +352,38 @@ var dateDates = [
 
 var dateTitles = [
     "Insiang",
-    "Kung Mangarap Ka't Magising",
+    "Kakabakaba Ka Ba?",
     "Maynila sa Mga Kuko ng Liwanag",
     "Kakabakaba Ka Ba?",
     "Maynila sa Mga Kuko ng Liwanag",
     "Kung Mangarap Ka't Magising"
 ];
 
-var dateColors = [
-    "#a8dac7",
-    "#fcb040",
-    "#a8dac7",
-    "#fcb040",
-    "#fcb040",
-    "#a8dac7"
+var dateTitles2 = [
+    "None",
+    "Kung Mangarap Ka't Magising",
+    "None",
+    "Hindi Nahahati Ang Langit",
+    "Insiang",
+    "None"
 ];
 
 var dayTimes = [
     "7:30 PM",
-    "8:30 PM",
+    "6:00 PM",
     "7:30 PM",
-    "3:30 PM",
+    "6:00 PM",
     "7:30 PM",
     "6:00 PM"
+];
+
+var dayTimes2 = [
+    "None",
+    "8:30 PM",
+    "None",
+    "3:30 PM",
+    "10:00 PM",
+    "None"
 ];
 
 var dayVenues = [
@@ -406,11 +424,25 @@ function showDayInfo(i) {
         dayinfoday.innerHTML = dateDates[i];
         dayinfoday.style.background = dateColors[i];
         dayinfofilm.innerHTML = dateTitles[i];
-        dayinfofilm.style.background = dateColors[i];
         
         dayinfotime.innerHTML = dayTimes[i];
         dayinfovenue.innerHTML = "Cinema Centenario";
         dayinfoentry.innerHTML = "PHP200 per ticket";
+        
+        var dayInfo2 = document.getElementById("dayinfo2");
+        var dayinfofilm2 = document.getElementById("dayinfofilm2");
+        var dayinfotime2 = document.getElementById("dayinfotime2");
+        var dayinfovenue2 = document.getElementById("dayinfovenue2");
+        var dayinfoentry2 = document.getElementById("dayinfoentry2");
+        dayInfo2.style.opacity = "1";
+        dayinfofilm2.innerHTML = dateTitles2[i];
+        
+        dayinfotime2.innerHTML = dayTimes2[i];
+        dayinfovenue2.innerHTML = "Cinema Centenario";
+        dayinfoentry2.innerHTML = "PHP200 per ticket";
+
+        var dayright = document.getElementById("dayright");
+        dayright.style.borderRight = "1px solid black";
     }
     
 }
@@ -420,7 +452,12 @@ function hideDayInfo() {
     console.log("hiding days");
     
     var dayInfo = document.getElementById("dayinfo");
+    var dayInfo2 = document.getElementById("dayinfo2");
     dayInfo.style.opacity = "0";
+    dayInfo2.style.opacity = "0";
+    
+    var dayright = document.getElementById("dayright");
+    dayright.style.borderRight = "none";
 }
 
 // CHANGEIMAGE
