@@ -351,7 +351,7 @@ p {
     
     transition: 0.25s;
     
-    font-size: 0.6em;
+    font-size: 1.25vw;
 }
 
 /* NAVRBAR */
@@ -416,7 +416,7 @@ p {
     text-decoration: none;
     color: inherit;
     
-    font-size: 0.65em;
+    font-size: 1.25vw;
 }
 
 .navdir, .navhome, .navmini, .navcom, .navmerch, .navabout {
