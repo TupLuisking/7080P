@@ -1308,6 +1308,11 @@ header .slideshow {
     font-size: 0.75em;
 }
 
+.anavitem {
+    
+    margin-bottom: 7.5px;
+}
+
 #aboutnavbar h3 {
     
     margin: 2px;
@@ -1353,7 +1358,8 @@ header .slideshow {
 #aboutsections {
     
     transition: 0.5s;
-    padding: 20px;
+    padding: 3vw;
+    padding-right: 7.5vw;
     
     align-self: flex-end;
 }
@@ -1362,7 +1368,12 @@ header .slideshow {
     
     text-align: left;
     
-    padding: 20px;
+    padding: 3vw;
+}
+
+#about .section p {
+    
+    font-size: 2vw;
 }
 
 #partnersrow {
@@ -1378,6 +1389,23 @@ header .slideshow {
     width: 20vw;
     
     margin-right: 5px;
+}
+
+.faq {
+    
+    margin: 2vw 0 2vw 0;
+}
+
+#directory ul {
+    
+    list-style: square;
+}
+
+.directoryname {
+    
+    font-family: "Main header";
+    font-size: 1.75vw;
+    margin-right: 0.5vw;
 }
 
 /* DIRECTORS */

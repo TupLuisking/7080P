@@ -110,7 +110,7 @@ function adjustAboutNav(navend, wScroll) {
             if(i == currentsectionindex) {
                 
 //                console.log(i + ": Orange!");
-                anavitems[currentsectionindex].style.color = "#fcb040";
+                anavitems[currentsectionindex].style.color = "#c8a2cc";
             } else {                
                 
 //                console.log(i + ": Black");
