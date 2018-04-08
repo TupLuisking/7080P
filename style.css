@@ -854,6 +854,8 @@ header .slideshow:hover {
     
     font-family: "Names";
     font-size: 1.5vw;
+    
+    text-align: left;
 }
 
 #minifilminfo {
@@ -1175,6 +1177,9 @@ header .slideshow {
     
     width: auto;
     padding: 1vw;
+    
+    color: black;
+    text-decoration: none;
 }
 
 #dayinfolist {
@@ -3331,7 +3336,6 @@ header .slideshow {
 #moduleqt {
     
     background: white;
-    color: black;
 }
 
 #moduleqt h2 {
@@ -3339,6 +3343,8 @@ header .slideshow {
     font-family: "Names";
     padding: 7.5vw;
     color: #f6959a;
+    
+    font-size: 2.5vw;
 }
 
 #module .lookat {
