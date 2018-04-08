@@ -1631,7 +1631,7 @@ header .slideshow {
     
     position: absolute;
     left: 3vw;
-    top: 17vw;
+    top: 3vw;
     
     text-transform: uppercase;
     font-size: 2.5vw;
@@ -1645,7 +1645,11 @@ header .slideshow {
     left: 3vw;
     bottom: 3vw;
     
-    font-size: 2.25vw;
+    width: 55%;
+    
+    font-size: 1.8vw;
+    
+    text-align: left;
 }
 
 #dirheaderinfo p {
@@ -3273,7 +3277,7 @@ header .slideshow {
 #modulegq {
     
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 2.25fr;
     padding: 4vw;
 }
 
@@ -3292,20 +3296,25 @@ header .slideshow {
 
 #modulegq h2 {
     
-    font-size: 1.75vw;
-    font-family: "Main Header";
+    font-size: 2.5vw;
+    font-family: "AGPBE";
+}
+
+#gqleft p {
+    
+    width: 50%;
 }
 
 #modulegq #gqleft  {
     
-    width: 40%;
-    margin-top: 3vw;
+    width: 90%;
     font-family: "Dates";
     font-size: 2vw;
 }
 
 #gqs {
     
+    margin-left: 0;
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -3314,10 +3323,9 @@ header .slideshow {
     font-weight: bold;
 }
 
-#gqs li {
+#gqs p {
     
-    margin-top: 2vw;
-    font-size: 2vw;
+    margin-top: 3vw;
 }
 
 #gqs .gqheading {
@@ -3329,7 +3337,7 @@ header .slideshow {
 
 #modulegq p {
     
-    margin: 5px 0 5px 0;
+    margin: 1.5vw 0 0 0;
     font-size: 2vw;
 }
 
@@ -3446,6 +3454,18 @@ header .slideshow {
     
     font-family: "Near Logo";
     src: url("fonts/Roboto Mono.ttf");
+}
+
+@font-face {
+    
+    font-family: "AGPB";
+    src: url("fonts/AGPB.otf");
+}
+
+@font-face {
+    
+    font-family: "AGPBE";
+    src: url("fonts/AGPBE.otf");
 }
 
 .modal {
