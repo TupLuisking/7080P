@@ -1030,6 +1030,11 @@ header .slideshow {
     align-items: center;
 }
 
+#calendarmonthname {
+    
+    font-size: 2.5vw;
+}
+
 #calendar {
     
     align-self: center;
