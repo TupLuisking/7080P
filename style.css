@@ -1358,10 +1358,14 @@ header .slideshow {
 #aboutsections {
     
     transition: 0.5s;
-    padding: 3vw;
-    padding-right: 7.5vw;
+    padding: 10px;
     
     align-self: flex-end;
+}
+
+#aboutsections h1 {
+    
+    font-size: 4vw;
 }
 
 #about .section {
