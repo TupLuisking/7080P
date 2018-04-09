@@ -3563,7 +3563,7 @@ header .slideshow {
     
     font-size: 1em;
     
-    margin-bottom: 2vw;
+    margin-bottom: 10px;
     
     color: black;
 }
@@ -3579,9 +3579,9 @@ header .slideshow {
 
 #imgmodalimgcont {
     
-    padding: 1vw;
+    padding: 5px;
     
-    margin-bottom: 1.5vw;
+    margin-bottom: 10px;
     
     display: flex;
     flex-direction: row;

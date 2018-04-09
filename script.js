@@ -638,7 +638,7 @@ function zoomArea(event) {
     
     imgzoomed.style.transform = "scale(" + zoomfactor + ") " + 
         "translate(" + 
-        xpercent * -50 + "%, " +
-        ypercent * -50 + "%"
+        xpercent * -75 + "%, " +
+        ypercent * -75 + "%"
         + ")";
 }
