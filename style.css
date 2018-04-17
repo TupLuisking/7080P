@@ -351,7 +351,7 @@ p {
     
     transition: 0.25s;
     
-    font-size: 1.25vw;
+    font-size: 1vw;
 }
 
 /* NAVRBAR */
@@ -416,7 +416,7 @@ p {
     text-decoration: none;
     color: inherit;
     
-    font-size: 1.25vw;
+    font-size: 1vw;
 }
 
 .navdir, .navhome, .navmini, .navcom, .navmerch, .navabout {
@@ -1324,8 +1324,6 @@ header .slideshow {
     
     overflow: hidden;
     
-    top: 315px;
-    
     text-align: left;
 }
 
@@ -1341,7 +1339,7 @@ header .slideshow {
     
     overflow: hidden;
     
-    top: 350px;
+    top: 250px;
     
     display: flex;
     flex-direction: column;
@@ -3142,7 +3140,7 @@ header .slideshow {
     
     z-index: 2;
     
-    top: 300px;
+    top: 215px;
     right: 30px;
     
     cursor: pointer;

@@ -4,7 +4,7 @@ window.onload = function() {
     
     console.log("WINDOW LOADED");
     
-    var basetop = 315;
+    var basetop = 250;
     var aboutnavbar = document.getElementById("aboutnavcontainer");
     var abouthref = window.location.href.split("#")[1];
     
@@ -73,7 +73,8 @@ $(window).scroll(function(){
 
 function adjustAboutNav(navend, wScroll) {
     
-    var basetop = 315;
+//    var basetop = 315;
+    var basetop = 250;
     var scrolltop;
     
     var aboutnavbar = document.getElementById("aboutnavcontainer");
@@ -84,6 +85,8 @@ function adjustAboutNav(navend, wScroll) {
     if(wScroll < navend) {
         
         scrolltop = basetop - wScroll;
+        
+        console.log(scrolltop);
         aboutnavbar.style.top = (scrolltop)+ "px";    
     } else {
         
@@ -128,7 +131,7 @@ function adjustTOC(navend, wScroll) {
         
         if(wScroll < navend) {
             
-            toc.style.top = (290 - wScroll) + "px";       
+            toc.style.top = (215 - wScroll) + "px";       
         } else {
             
             toc.style.top = "85px";
@@ -333,93 +336,59 @@ function showNowShowingInfo(i) {
 
 // CALENDAR
 
-var dateColors = [
-    "#a8dac7",
-    "#fcb040",
-    "#fcb040",
-    "#fcb040",
-    "#fcb040",
-    "#fcb040"
-];
-
-var dateDates = [
-    "3",
-    "8",
-    "14",
-    "15",
-    "18",
-    "22"
-];
-
-var dateTitles = [
-    "Insiang",
-    "Kakabakaba Ka Ba?",
-    "Maynila sa Mga Kuko ng Liwanag",
-    "Kakabakaba Ka Ba?",
-    "Maynila sa Mga Kuko ng Liwanag",
-    "Kung Mangarap Ka't Magising"
-];
-
-var dateHrefs = [
-    
-    "Insiang",
-    "Kakabakaba",
-    "MaynilaSaKuko",
-    "Kakabakaba",
-    "MaynilaSaKuko",
-    "KungMangarap"
+var dateInfo = [
+    // color/date/title/href/time/venue
+    "",
+    "#a8dac7/1/Working Girls/#/7:30 AM/Pinoy Box Office",
+    "2",
+    "#a8dac7/3/Insiang/Insiang/7:30 PM/Cinema Centenario",
+    "4",
+    "#a8dac7/5/Tag-araw, Tag-ulan/#/3:30 PM/Pinoy Box Office",
+    "6",
+    "7",
+    "#fcb040/8/Kakabakaba Ka Ba?/Kakabakaba/6:00 PM/Cinema Centenario",
+    "9",
+    "10",
+    "#a8dac7/11/Tag-araw, Tag-ulan/#/7:30 PM/Pinoy Box Office",
+    "12",
+    "#a8dac7/13/Nagalit Ang Buwan Sa Haba Ng Gabi/#/3:00 AM/Cinema One",
+    "#fcb040/14/Maynila sa Mga Kuko ng Liwanag/MaynilaSaKuko/7:30 PM/Cinema Centenario",
+    "#fcb040/15/Kakabakaba Ka Ba?/Kakabakaba/6:00 PM/Cinema Centenario",
+    "16",
+    "17",
+    "#fcb040/18/Maynila sa Mga Kuko ng Liwanag/MaynilaSaKuko/7:30PM/Cinema Centenario",
+    "19",
+    "20",
+    "#a8dac7/21/Tag-araw, Tag-ulan/#/1:00 AM/Pinoy Box Office",
+    "#fcb040/22/Kung Mangarap Ka't Magising/KungMangarap/6:00 PM/Cinema Centenario"
 ]
 
-var dateTitles2 = [
-    "None",
-    "Kung Mangarap Ka't Magising",
-    "None",
-    "Hindi Nahahati Ang Langit",
-    "Insiang",
-    "None"
-];
-
-var dateHrefs2 = [
+var dateInfo2 = [
     
-    "#",
-    "KungMangarap",
-    "#",
-    "#",
-    "Insiang",
-    "#"
+    "",
+    "None/1",
+    "2",
+    "None/3",
+    "4",
+    "None/5",
+    "6",
+    "7",
+    "#fcb040/8/Kung Mangarap Ka't Magising/KungMangarap/8:30 PM/Cinema Centenario",
+    "9",
+    "10",
+    "None/11",
+    "12",
+    "None/13",
+    "None/14",
+    "#fcb040/15/Hindi Nahahati Ang Langit/#/6:00 PM/Cinema Centenario",
+    "16",
+    "17",
+    "#fcb040/18/Insiang/Insiang/10:00 PM/Cinema Centenario",
+    "19",
+    "20",
+    "None/21",
+    "#a8dac7/22/Lumaban Ang Api/#/11:00 AM/Cinema One"
 ]
-
-var dayTimes = [
-    "7:30 PM",
-    "6:00 PM",
-    "7:30 PM",
-    "6:00 PM",
-    "7:30 PM",
-    "6:00 PM"
-];
-
-var dayTimes2 = [
-    "None",
-    "8:30 PM",
-    "None",
-    "3:30 PM",
-    "10:00 PM",
-    "None"
-];
-
-var dayVenues = [
-    "Cinema Centenario",
-    "Cinema Centenario",
-    "Cinema Centenario",
-    "Cinema Centenario"
-];
-
-var dayEntries = [
-    "PHP200 per ticket",
-    "PHP200 per ticket",
-    "PHP200 per ticket",
-    "PHP200 per ticket"
-];
 
 var currentIndex = -1;
 
@@ -435,6 +404,8 @@ function showDayInfo(i) {
         
         currentIndex = i;
 
+        var datesplit = dateInfo[i].split("/");
+        
         var dayInfo = document.getElementById("dayinfo");
         var daynumber = document.getElementById("daynumber");
         var dayinfoday = document.getElementById("dayinfoday");
@@ -443,13 +414,13 @@ function showDayInfo(i) {
         var dayinfovenue = document.getElementById("dayinfovenue");
         var dayinfoentry = document.getElementById("dayinfoentry");
         dayInfo.style.opacity = "1";
-        dayinfoday.innerHTML = dateDates[i];
-        daynumber.style.background = dateColors[i];
-        dayinfofilm.innerHTML = dateTitles[i];
-        dayinfofilm.href = "/pages/films/" + dateHrefs[i] + ".html";
+        dayinfoday.innerHTML = datesplit[1];
+        daynumber.style.background = datesplit[0];
+        dayinfofilm.innerHTML = datesplit[2];
+        dayinfofilm.href = "/pages/films/" + datesplit[3] + ".html";
         
-        dayinfotime.innerHTML = dayTimes[i];
-        dayinfovenue.innerHTML = "Cinema Centenario";
+        dayinfotime.innerHTML = datesplit[4];
+        dayinfovenue.innerHTML = datesplit[5];
         dayinfoentry.innerHTML = "PHP200 per ticket";
         
         var dayright = document.getElementById("dayright");
@@ -460,7 +431,9 @@ function showDayInfo(i) {
         var dayinfovenue2 = document.getElementById("dayinfovenue2");
         var dayinfoentry2 = document.getElementById("dayinfoentry2");
         
-        if(dateTitles2[i] === "None") {
+        var datesplit2 = dateInfo2[i].split("/");
+        
+        if(datesplit2[0] === "None") {
             
             dayright.style.borderRight = "none";
             dayInfo2.style.opacity = "0";
@@ -468,11 +441,11 @@ function showDayInfo(i) {
         }
         
         dayInfo2.style.opacity = "1";
-        dayinfofilm2.innerHTML = dateTitles2[i];
-        dayinfofilm2.href = "/pages/films/" + dateHrefs2[i] + ".html";
+        dayinfofilm2.innerHTML = datesplit2[2];
+        dayinfofilm2.href = "/pages/films/" + datesplit2[3] + ".html";
         
-        dayinfotime2.innerHTML = dayTimes2[i];
-        dayinfovenue2.innerHTML = "Cinema Centenario";
+        dayinfotime2.innerHTML = datesplit2[4];
+        dayinfovenue2.innerHTML = datesplit2[5];
         dayinfoentry2.innerHTML = "PHP200 per ticket";
         
         dayright.style.borderRight = "1px solid black";
