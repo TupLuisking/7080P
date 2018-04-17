@@ -197,7 +197,7 @@ p {
     
     display: grid;
     grid-template-columns: 2fr 125px 2fr;
-    grid-template-rows: 175px;
+    grid-template-rows: 125px;
     grid-template-areas: 
         "navleft logo navright";
     
@@ -317,7 +317,7 @@ p {
     align-items: center;
     
     width: 80%;
-    height: 69px;
+    height: 45px;
     padding: 0px;
     
     margin-bottom: 0px;
@@ -433,12 +433,11 @@ p {
     background: #060707;
     
     position: relative;
-    padding-bottom: 5vw;
 }
 
 #footercontent {
     
-    margin: 5vw;
+    padding: 5vw;
     
     display: flex;
 }
@@ -605,29 +604,6 @@ header {
     color: #060707;
 }
 
-#headerfilmleft h2:before {
-    
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    bottom: -6px;
-    left: 0;
-    
-    background: white;
-    
-    transform-origin: left center;
-    
-    background: #060707;
-    transform: scaleX(1);
-}
-
-#headerfilmleft h2 {
-    
-    padding: 0;
-    margin: 0;
-}
-
 #headerfilmleft a {
     
     margin: 0;
@@ -639,9 +615,54 @@ header {
     margin: 0;
     
     font-weight: normal;
+    
+    font-size: 1.69vw;
 }
 
-#headerbonus {
+#bonusdir {
+    
+    position: relative;
+    
+    text-decoration: none;
+    
+    margin-bottom: 2vw;
+}
+
+#bonusdir:before {
+    
+    content: "";
+    
+    position: absolute;
+    height: 0.5px;
+    width: 100%;
+    
+    left: 0;
+    bottom: -2px;
+    
+    background: black;
+    
+}
+
+#headerfilmleft .headerfilmimg {
+    
+    width: 100%;
+    height: 18vw;
+    
+    position: relative;
+}
+
+#headerfilmleft .headerfilmimg img {
+    
+    height: 115%;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    transform: translate(-50%, -50%);
+}
+
+#headerfilmleft #headerbonus {
     
     display: grid;
     grid-template-columns: auto auto;
@@ -649,12 +670,27 @@ header {
     grid-gap: 0.5vw;
 }
 
+#headerfilmleft #headerbonus p {
+    
+    font-size: 1.5vw;
+}
+
+#headerbonus a {
+    
+    text-decoration: none;
+}
+
+#headerfilmleft #headerbonus #headerplus {
+    
+    font-size: 2vw;
+}
+
 #headerleft {
     
     font-size: 1.5vw;
     
     padding-top: 2.5vw;
-    margin-bottom: vw;
+    margin-bottom: 1.5vw;
     
     text-align: left;
 }
@@ -667,9 +703,9 @@ header {
     align-items: flex-start;
     
     display: grid;
-    grid-template-columns: 1.1fr 1fr 1fr 1fr;
+    grid-template-columns: 1.25fr 1fr 1fr 1fr;
     
-    grid-gap: 7vw;
+    grid-gap: 5vw;
     
     margin-bottom: 1vw;
 }
@@ -740,10 +776,10 @@ header {
 .headerfilm .headerfilmdate {
     
     font-family: "Near Logo";
-    font-size: 0.9vw;
+    font-size: 1.125vw;
     line-height: 1.69vw;
     
-    height: 4vw;
+    height: 5.5vw;
     
     margin-bottom: 0vw;
 }
@@ -1153,15 +1189,25 @@ header .slideshow {
 }
 
 #dayinfobottom {
-    
+
+/*
     display: flex;
-    flex-direction: row;
+    flex-direction: row;    
+*/
+    
+    display: grid;
+    grid-template-columns: auto auto;
 }
 
 #daynumber {
     
+    height: 3.75vw;
+    width: 3.75vw;
+    
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #dayinfo #daynumber #dayinfoday, 
@@ -1410,6 +1456,9 @@ header .slideshow {
     font-family: "Main header";
     font-size: 1.75vw;
     margin-right: 0.5vw;
+    
+    color: black;
+    text-decoration: none;
 }
 
 /* DIRECTORS */
@@ -1617,14 +1666,16 @@ header .slideshow {
     
     transform: translateX(-50%);
     
-    z-index: 1;
+    z-index: 2;
+    
+/*    mix-blend-mode: difference;*/
 }
 
 #dirnav a {
     
     font-size: 2vw;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 3vw;
+    margin-right: 3vw;
     
     color: white;
     text-decoration: none;
@@ -1707,6 +1758,8 @@ header .slideshow {
     
     padding-top: 3px;
     padding-bottom: 3px;
+    
+    font-size: 2vw;
 }
 
 #idirheading, #idirpar {
@@ -1809,7 +1862,12 @@ header .slideshow {
     column-count: 3;
     column-gap: 30px;
     
-    font-size: 0.75em;
+    font-size: 1.75vw
+}
+
+.invisible {
+    
+    visibility: hidden;
 }
 
 #dirprocessguide {
@@ -2042,6 +2100,18 @@ header .slideshow {
     cursor: pointer;
 }
 
+#filminfotrailernone {
+    
+    font-family: "Names";
+    
+    font-size: 1.75vw;
+    
+    color: #df3e3f;
+    
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
 .filminfoheading {
     
     font-family: "Names";
@@ -2161,7 +2231,9 @@ header .slideshow {
     
     text-align: left;
     
-    margin-left: 10px;
+    margin-left: 2vw;
+    
+    font-size: 2vw;
 }
 
 #filmqi {
@@ -3334,6 +3406,7 @@ header .slideshow {
 
 #gqleft p {
     
+    margin-top: 1.5vw;
     width: 50%;
 }
 
@@ -3357,7 +3430,7 @@ header .slideshow {
 
 #gqs p {
     
-    margin-top: 3vw;
+    margin-bottom: 1.5vw;
 }
 
 #gqs .gqheading {
@@ -3369,7 +3442,6 @@ header .slideshow {
 
 #modulegq p {
     
-    margin: 1.5vw 0 0 0;
     font-size: 2vw;
 }
 

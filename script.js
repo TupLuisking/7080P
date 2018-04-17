@@ -199,6 +199,7 @@ function goToSection(i) {
 // NAVIGATION
 
 var navHeight = 69;
+var navSpeed = 1500;
 
 function navToSection(id) {
     
@@ -206,7 +207,7 @@ function navToSection(id) {
     
     $('html, body').animate({
         scrollTop: $("#" + id).offset().top - navHeight
-    }, 750);
+    }, navSpeed);
 }
 
 function navToSectionClass(element) {
@@ -215,7 +216,7 @@ function navToSectionClass(element) {
     
     $('html, body').animate({
         scrollTop: $(element).offset().top - navHeight
-    }, 750);
+    }, navSpeed);
 }
 
 function navTo(element) {
@@ -226,7 +227,7 @@ function navTo(element) {
     
     $('html, body').animate({
         scrollTop: $(element.getAttribute("href")).offset().top - navHeight
-    }, 750);
+    }, navSpeed);
 }
 
 function navTo(element, sectionNumber) {
@@ -238,7 +239,7 @@ function navTo(element, sectionNumber) {
     
     $('html, body').animate({
         scrollTop: $(element.getAttribute("href")).offset().top - navHeight
-    }, 750);
+    }, navSpeed);
 }
 
 // SLIDES
@@ -435,6 +436,7 @@ function showDayInfo(i) {
         currentIndex = i;
 
         var dayInfo = document.getElementById("dayinfo");
+        var daynumber = document.getElementById("daynumber");
         var dayinfoday = document.getElementById("dayinfoday");
         var dayinfofilm = document.getElementById("dayinfofilm");
         var dayinfotime = document.getElementById("dayinfotime");
@@ -442,7 +444,7 @@ function showDayInfo(i) {
         var dayinfoentry = document.getElementById("dayinfoentry");
         dayInfo.style.opacity = "1";
         dayinfoday.innerHTML = dateDates[i];
-        dayinfoday.style.background = dateColors[i];
+        daynumber.style.background = dateColors[i];
         dayinfofilm.innerHTML = dateTitles[i];
         dayinfofilm.href = "/pages/films/" + dateHrefs[i] + ".html";
         
@@ -595,6 +597,10 @@ function hideFilmTrailer() {
     var filmcontainer = document.getElementById("filmtrailercontainer");
     
     filmcontainer.style.transform = "translateY(-100%)";
+    
+    var filmtrailervid = document.getElementById("filmtrailervid");
+    
+    console.log(filmtrailervid);
 }
 
 // STICKER ZOOM 
