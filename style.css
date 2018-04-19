@@ -545,8 +545,6 @@ p {
 
 #nowshowingdesc {
     
-    width: 17.5vw;
-    
     display: flex;
     flex-direction: column;
     margin-right: 2vw;
@@ -561,14 +559,26 @@ p {
     
     text-align: left;
 
-    margin-top: 5vw;
+    margin-top: 2vw;
+    margin-left: 5vw;
+    margin-bottom: 2vw;
     
-    font-size: 0.8vw;
+    font-size: 1vw;
 }
 
 #slides {
     
     position: relative;
+}
+
+.headerbadge {
+    
+    width: 15vw;
+}
+
+.headerbadge p {
+    
+    margin: auto;
 }
 
 header {
@@ -581,9 +591,9 @@ header {
     background-position: center;
     
     display: grid;
-    grid-template-columns: 5fr 1fr;
+    grid-template-columns: 5fr 1.5fr;
     
-    grid-gap: 7vw;
+    grid-gap: 5vw;
     
     position: relative;
 }
@@ -633,7 +643,7 @@ header {
     content: "";
     
     position: absolute;
-    height: 0.5px;
+    height: 2px;
     width: 100%;
     
     left: 0;
@@ -705,7 +715,7 @@ header {
     display: grid;
     grid-template-columns: 1.25fr 1fr 1fr 1fr;
     
-    grid-gap: 5vw;
+    grid-gap: 4vw;
     
     margin-bottom: 1vw;
 }
@@ -840,10 +850,10 @@ header .slideshow:hover {
 
 #minifilms {
     
-    margin: 2.5vw 5vw 4vw 5vw;
+    margin: 2.5vw 5vw 0vw 5vw;
    
     display: flex;
-    flex-direction: row;
+    flex-direction: columng;
     justify-content: flex-start;
     align-self: flex-start;
 }
@@ -861,10 +871,10 @@ header .slideshow:hover {
 .minifilm {
     
     height: auto;
-    width: 15vw;
+    width: 12.5vw;
     
     margin-right: 1vw;
-    margin-left: 1vw;s
+    margin-left: 1vw;
     
     display: flex;
     flex-direction: column;
@@ -1180,7 +1190,7 @@ header .slideshow {
     padding-left: 1vw;
 }
 
-#dayinfo #dayinfoname, #dayinfo2 #dayinfoname {
+#dayinfo .daylabel, #dayinfo2 .daylabel {
     
     color: clear;
     
@@ -1234,12 +1244,17 @@ header .slideshow {
     flex-direction: column;
 }
 
-.daylabel, .dayanswer, #dayreserve {
+.daylabel, .dayanswer, #dayreserve, #dayreserve2 {
     
     font-weight: bold;
 }
 
-#dayreserve {
+.dayanswer {
+    
+    margin-left: 1vw;
+}
+
+#dayreserve, #dayreserve2 {
     
     margin-top: 10px;
 }
@@ -1349,7 +1364,7 @@ header .slideshow {
 /*    border-right: 1px solid #060707;*/
     
     font-family: "Main Header";
-    font-size: 0.75em;
+    font-size: 0.7em;
 }
 
 .anavitem {

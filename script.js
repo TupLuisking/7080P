@@ -387,7 +387,7 @@ var dateInfo2 = [
     "19",
     "20",
     "None/21",
-    "#a8dac7/22/Lumaban Ang Api/#/11:00 AM/Cinema One"
+    "#a8dac7/22/Kapag Lumaban Ang Api/#/11:00 AM/Cinema One"
 ]
 
 var currentIndex = -1;
@@ -413,6 +413,11 @@ function showDayInfo(i) {
         var dayinfotime = document.getElementById("dayinfotime");
         var dayinfovenue = document.getElementById("dayinfovenue");
         var dayinfoentry = document.getElementById("dayinfoentry");
+        var dayreserve = document.getElementById("dayreserve");
+        
+        var dayviewl =  document.getElementById("dayinfoviewl");
+        var dayentryl =  document.getElementById("dayinfoentryl");
+        
         dayInfo.style.opacity = "1";
         dayinfoday.innerHTML = datesplit[1];
         daynumber.style.background = datesplit[0];
@@ -420,8 +425,23 @@ function showDayInfo(i) {
         dayinfofilm.href = "/pages/films/" + datesplit[3] + ".html";
         
         dayinfotime.innerHTML = datesplit[4];
+        
+        if(datesplit[5] === "Cinema Centenario") {
+            
+            dayviewl.innerHTML = "Venue:";
+            dayentryl.innerHTML = "Entry:";
+            dayinfoentry.innerHTML = "PHP200 per ticket";
+            dayreserve.innerHTML = "Contact 09455367054 for reservations.";
+        } else {
+            
+            dayviewl.innerHTML = "Channel:"
+            dayentryl.innerHTML = "";
+            dayinfovenue.innerHTML = "";
+            dayinfoentry.innerHTML = "";
+            dayreserve.innerHTML = "";
+        }
+        
         dayinfovenue.innerHTML = datesplit[5];
-        dayinfoentry.innerHTML = "PHP200 per ticket";
         
         var dayright = document.getElementById("dayright");
         
@@ -430,6 +450,11 @@ function showDayInfo(i) {
         var dayinfotime2 = document.getElementById("dayinfotime2");
         var dayinfovenue2 = document.getElementById("dayinfovenue2");
         var dayinfoentry2 = document.getElementById("dayinfoentry2");
+        
+        var dayviewl2 =  document.getElementById("dayinfoviewl2");
+        var dayentryl2 =  document.getElementById("dayinfoentryl2");
+        
+        var dayreserve2 = document.getElementById("dayreserve2");
         
         var datesplit2 = dateInfo2[i].split("/");
         
@@ -443,10 +468,25 @@ function showDayInfo(i) {
         dayInfo2.style.opacity = "1";
         dayinfofilm2.innerHTML = datesplit2[2];
         dayinfofilm2.href = "/pages/films/" + datesplit2[3] + ".html";
-        
         dayinfotime2.innerHTML = datesplit2[4];
+        
+        
+        if(datesplit2[5] === "Cinema Centenario") {
+            
+            dayviewl2.innerHTML = "Venue:";
+            dayentryl2.innerHTML = "Entry:";
+            dayinfoentry2.innerHTML = "PHP200 per ticket";
+            dayreserve2.innerHTML = "Contact 09455367054 for reservations.";
+        } else {
+            
+            dayviewl2.innerHTML = "Channel:"
+            dayentryl2.innerHTML = "";
+            dayinfovenue2.innerHTML = "";
+            dayinfoentry2.innerHTML = "";
+            dayreserve2.innerHTML = "";
+        }
+        
         dayinfovenue2.innerHTML = datesplit2[5];
-        dayinfoentry2.innerHTML = "PHP200 per ticket";
         
         dayright.style.borderRight = "1px solid black";
     }
