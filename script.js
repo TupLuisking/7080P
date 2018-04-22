@@ -422,7 +422,11 @@ function showDayInfo(i) {
         dayinfoday.innerHTML = datesplit[1];
         daynumber.style.background = datesplit[0];
         dayinfofilm.innerHTML = datesplit[2];
-        dayinfofilm.href = "/pages/films/" + datesplit[3] + ".html";
+        
+        if(datesplit[3] === "#")
+            dayinfofilm.href = "";
+        else
+            dayinfofilm.href = "/pages/films/" + datesplit[3] + ".html";
         
         dayinfotime.innerHTML = datesplit[4];
         
@@ -467,7 +471,11 @@ function showDayInfo(i) {
         
         dayInfo2.style.opacity = "1";
         dayinfofilm2.innerHTML = datesplit2[2];
-        dayinfofilm2.href = "/pages/films/" + datesplit2[3] + ".html";
+        
+        if(datesplit2[3] === "#")
+            dayinfofilm2.href = "";
+        else
+            dayinfofilm2.href = "/pages/films/" + datesplit2[3] + ".html";
         dayinfotime2.innerHTML = datesplit2[4];
         
         
@@ -602,16 +610,23 @@ function showFilmTrailer(ytlink) {
     
     var filmcontainer = document.getElementById("filmtrailercontainer");
     
+    var filmtrailervid = document.getElementById("filmtrailervid");
+    filmtrailervid.src = ytlink;
+    
+    filmcontainer.style.display = "flex";
     filmcontainer.style.transform = "translateY(0)";
+    
 }
 
 function hideFilmTrailer() {
     
     var filmcontainer = document.getElementById("filmtrailercontainer");
     
+    filmcontainer.style.display = "none";
     filmcontainer.style.transform = "translateY(-100%)";
     
     var filmtrailervid = document.getElementById("filmtrailervid");
+    filmtrailervid.src = "";
     
     console.log(filmtrailervid);
 }
